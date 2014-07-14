@@ -1,3 +1,15 @@
+/*
+ * Color Fonts
+ *
+ * MIT licensed
+ * Copyright (C) 2013 Tim Holman, http://tholman.com
+ */
+/*********************************************
+ * VARIABLES + MIXINS
+ *********************************************/
+/*********************************************
+ * MAIN
+ *********************************************/
 * {
   box-sizing: border-box; }
 
@@ -12,16 +24,43 @@ html, body, .main {
 .main .colors {
   height: 100%; }
 .main .color {
+  -webkit-transition: background-color 300ms linear;
+  -moz-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  -o-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
   height: 100%;
   float: left;
   width: 20%; }
+.main .color:nth-child(odd) {
+  background-color: #eee; }
 .main .color:nth-child(1) {
-  background: #FC0000; }
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -ms-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms; }
 .main .color:nth-child(2) {
-  background: #FFEB98; }
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -ms-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms; }
 .main .color:nth-child(3) {
-  background: #87D292; }
+  -webkit-transition-delay: 400ms;
+  -moz-transition-delay: 400ms;
+  -ms-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+  transition-delay: 400ms; }
 .main .color:nth-child(4) {
-  background: #004566; }
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -ms-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms; }
 .main .color:nth-child(5) {
-  background: #191A29; }
+  -webkit-transition-delay: 800ms;
+  -moz-transition-delay: 800ms;
+  -ms-transition-delay: 800ms;
+  -o-transition-delay: 800ms;
+  transition-delay: 800ms; }

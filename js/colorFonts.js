@@ -1,6 +1,8 @@
 var colorFonts = (function() {
 
     'use strict';
+    var colorBars;
+    var colorSet = [ '#FC0000', '#FFEB98', '#87D292', '#004566', '#191A29' ];
 
     /* -------------------------
     /*                    UTILS
@@ -21,11 +23,23 @@ var colorFonts = (function() {
     // Initialize
     function init() {
         
+        setTimeout( function() {
+            assignColors( colorSet );
+        }, 0 );
+    }
+
+    function assignColors( colorSet ) {
+
+        var i = 0;
+        for( i; i < colorBars.length; i++ ) {
+            colorBars[i].style.backgroundColor = colorSet[i];
+        }
     }
 
     function main() {
 
         // Caching
+        colorBars = document.querySelectorAll( '.colors .color' );
 
         // Initialize
         init();
