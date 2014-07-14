@@ -59,10 +59,6 @@ html, body, .main {
 		width: 20%;
 	}
 
-	.color:nth-child( odd ) {
-		background-color: #eee;
-	}
-
 	// Temporary colors
 	.color:nth-child( 1 ) {
 		@include transition-delay( 0ms );

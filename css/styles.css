@@ -32,8 +32,6 @@ html, body, .main {
   height: 100%;
   float: left;
   width: 20%; }
-.main .color:nth-child(odd) {
-  background-color: #eee; }
 .main .color:nth-child(1) {
   -webkit-transition-delay: 0ms;
   -moz-transition-delay: 0ms;
