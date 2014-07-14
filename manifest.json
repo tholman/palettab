@@ -1,0 +1,12 @@
+{
+	"name": "Color Fonts",
+	"description": "A chrome extension to bring awesome colors and fonts to the new tab page!",
+	"version": "1.0",
+	"incognito": "split",
+
+	"chrome_url_overrides": {
+		"newtab": "index.html"
+	},
+
+	"manifest_version": 2
+}
