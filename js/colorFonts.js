@@ -2,10 +2,9 @@ var colorFonts = (function() {
 
     'use strict';
     var colorBars;
-    var colorSet = [ '#FC0000', '#FFEB98', '#87D292', '#004566', '#191A29' ];
 
     /* -------------------------
-    /*                    UTILS
+    /* UTILS
     /* -------------------------*/
 
     // Soft object augmentation
@@ -20,11 +19,15 @@ var colorFonts = (function() {
         return target;
     }
 
+    /* -------------------------
+    /* APP
+    /* -------------------------*/
+
     // Initialize
     function init() {
         
         setTimeout( function() {
-            assignColors( colorSet );
+            assignColors( colors[ Math.floor( Math.random() * colors.length )].colors );
         }, 0 );
     }
 
