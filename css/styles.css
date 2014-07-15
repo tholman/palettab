@@ -84,3 +84,20 @@ html, body, .main {
   -ms-transition-delay: 800ms;
   -o-transition-delay: 800ms;
   transition-delay: 800ms; }
+
+footer {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  position: fixed;
+  height: 110px;
+  width: 100%;
+  bottom: 0px; }
+  footer .footer-item {
+    border-radius: 5px 5px 0px 0px;
+    margin-right: 60px;
+    margin-left: 60px;
+    background: #fff;
+    height: 100%; }
+  footer h1 {
+    display: none; }
+  footer h2 {
+    display: none; }
