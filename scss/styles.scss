@@ -66,7 +66,7 @@ html, body, .main {
 	left: 50%;
 
 	svg {
-		-webkit-transition: -webkit-transform 500ms cubic-bezier(.34,-0.95,0,.96);
+		-webkit-transition: -webkit-transform 500ms cubic-bezier(.85,-0.48,.26,.67);
 		height: 100%;
 		width: 100%;
 
@@ -74,6 +74,12 @@ html, body, .main {
 			fill: #111;
 		}
 	}
+}
+
+// Only added to body temporarily, but keep hidden none the less.
+textarea {
+	pointer-events: none;
+	opacity: 0;
 }
 
 .main {

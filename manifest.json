@@ -8,5 +8,9 @@
 		"newtab": "index.html"
 	},
 
+	"permissions": [
+		"clipboardWrite"
+	],
+
 	"manifest_version": 2
 }
