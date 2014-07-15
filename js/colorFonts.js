@@ -1,7 +1,9 @@
 var colorFonts = (function() {
 
     'use strict';
-    var colorBars, reloadButton;
+    var colorBars, reloadButton, reloadSvg;
+
+    var rotation = 0;
 
     /* -------------------------
     /* UTILS
@@ -28,17 +30,24 @@ var colorFonts = (function() {
 
         // Cache elements
         reloadButton = document.querySelector( '.reload' );
+        reloadSvg    = reloadButton.querySelector( 'svg' );
 
         // Bind events
-        reloadButton.addEventListener('click', function() { reloadColors() });
+        reloadButton.addEventListener('click', function() { reloadClick() });
 
         setTimeout( function() {
             reloadColors();
         }, 0 );
     }
 
-    function reloadColors() {
+    function reloadClick() {
 
+        rotation -= 180;
+        reloadSvg.style.webkitTransform = 'rotateZ( ' + rotation + 'deg )';
+        reloadColors();
+    }
+
+    function reloadColors() {
         assignColors( colors[ Math.floor( Math.random() * colors.length )].colors );
     }
 

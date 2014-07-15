@@ -22,12 +22,12 @@ html, body, .main {
   margin: 0px; }
 
 .reload {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
   border-radius: 100%;
   background: #fff;
   position: fixed;
@@ -36,6 +36,12 @@ html, body, .main {
   width: 50px;
   top: 20px;
   left: 50%; }
+  .reload svg {
+    -webkit-transition: -webkit-transform 500ms cubic-bezier(0.34, -0.95, 0, 0.96);
+    height: 100%;
+    width: 100%; }
+    .reload svg path {
+      fill: #111; }
 
 .main .colors {
   height: 100%; }
