@@ -1,7 +1,7 @@
 var colorFonts = (function() {
 
     'use strict';
-    var colorBars;
+    var colorBars, reloadButton;
 
     /* -------------------------
     /* UTILS
@@ -25,10 +25,21 @@ var colorFonts = (function() {
 
     // Initialize
     function init() {
-        
+
+        // Cache elements
+        reloadButton = document.querySelector( '.reload' );
+
+        // Bind events
+        reloadButton.addEventListener('click', function() { reloadColors() });
+
         setTimeout( function() {
-            assignColors( colors[ Math.floor( Math.random() * colors.length )].colors );
+            reloadColors();
         }, 0 );
+    }
+
+    function reloadColors() {
+
+        assignColors( colors[ Math.floor( Math.random() * colors.length )].colors );
     }
 
     function assignColors( colorSet ) {

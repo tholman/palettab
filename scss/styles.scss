@@ -29,6 +29,13 @@ $topLevel: 1000;
     transition-delay:         $params;
 }
 
+@mixin transform( $params ) {
+    -webkit-transform: $params;
+    -moz-transform:    $params;
+    -ms-transform:     $params;
+    -o-transform:      $params;
+    transform:         $params;
+}
 /*********************************************
  * MAIN
  *********************************************/
@@ -44,6 +51,19 @@ html, body, .main {
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
+}
+
+.reload {
+	@include transform( translateX(-50%) );
+	box-shadow: 0px 2px 1px rgba(0,0,0,.1);
+	border-radius: 100%;
+	background: #fff;
+	position: fixed;
+	cursor: pointer;
+	height: 50px;
+	width: 50px;
+	top: 20px;
+	left: 50%;
 }
 
 .main {

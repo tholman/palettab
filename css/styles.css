@@ -21,6 +21,22 @@ html, body, .main {
   padding: 0px;
   margin: 0px; }
 
+.reload {
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  background: #fff;
+  position: fixed;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  top: 20px;
+  left: 50%; }
+
 .main .colors {
   height: 100%; }
 .main .color {
