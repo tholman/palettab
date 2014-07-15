@@ -41,6 +41,7 @@ $topLevel: 1000;
  *********************************************/
 
 * {
+	-webkit-font-smoothing: antialiased;
 	box-sizing: border-box;
 }
 
@@ -118,22 +119,38 @@ textarea {
 }
 
 footer {
+	-webkit-transition-delay: 400ms;
 	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	-webkit-transition: -webkit-transform 500ms ease-in-out;
+	-webkit-transform: translateY(100%);
 	position: fixed;
 	height: 110px;
 	width: 100%;
 	bottom: 0px;
+	z-index: 1;
+
+	&.active {
+		-webkit-transform: translateY(0%);
+		-webkit-transition-delay: 0ms;
+		z-index: 2;
+	}
 
 	.footer-item {
 		border-radius: 5px 5px 0px 0px;
+		text-align: center;
 		margin-right: 60px;
 		margin-left: 60px;
 		background: #fff;
 		height: 100%;
+		z-index: 0;
 	}
 
 	h1 {
-		display: none;
+		text-transform: capitalize;
+		letter-spacing: 1px;
+		padding-top: 36px;
+		font-weight: bold;
+		font-size: 24px;
 	}
 
 	h2 {

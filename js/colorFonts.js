@@ -1,9 +1,10 @@
 var colorFonts = (function() {
 
     'use strict';
-    var body, colorBars, reloadButton, reloadSvg, textField;
+    var body, colorBars, reloadButton, reloadSvg, textField, footers, footerMains, footerSecondary;
 
     var rotation = 0;
+    var currentFooter = 0;
 
     /* -------------------------
     /* UTILS
@@ -34,7 +35,6 @@ var colorFonts = (function() {
         }
 
         // Bind events
-        reloadButton.addEventListener('click', function() { reloadClick() });
         reloadButton.addEventListener('click', function() { reloadClick() });
 
         setTimeout( function() {
@@ -70,7 +70,19 @@ var colorFonts = (function() {
     }
 
     function reloadColors() {
-        assignColors( colors[ Math.floor( Math.random() * colors.length )].colors );
+
+        var colorSet = colors[ Math.floor( Math.random() * colors.length )]; //Random
+        assignColors( colorSet.colors );
+        footers[ currentFooter ].classList.add( 'active' );
+        footerMains[ currentFooter ].innerHTML = colorSet.name;
+
+        currentFooter++;
+        if (currentFooter > 1) {
+            currentFooter = 0;
+        }
+
+        footers[ currentFooter ].classList.remove( 'active' );
+
     }
 
     function assignColors( colorSet ) {
@@ -86,11 +98,15 @@ var colorFonts = (function() {
     function main() {
 
         // Caching
-        body         = document.body;
-        colorBars    = document.querySelectorAll( '.colors .color' );
-        reloadButton = document.querySelector( '.reload' );
-        reloadSvg    = reloadButton.querySelector( 'svg' );
-        textField    = document.createElement( 'textarea' );
+        body             = document.body;
+        colorBars        = document.querySelectorAll( '.colors .color' );
+        reloadButton     = document.querySelector( '.reload' );
+        reloadSvg        = reloadButton.querySelector( 'svg' );
+        textField        = document.createElement( 'textarea' );
+        footers          = document.querySelectorAll( 'footer' );
+        footerMains      = document.querySelectorAll( '.footer-item h1' );
+        footerSecondary  = document.querySelectorAll( '.footer-item h2' );
+
 
         // Initialize
         init();
