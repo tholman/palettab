@@ -59,6 +59,24 @@ textarea {
   height: 100%;
   float: left;
   width: 20%; }
+  .main .color .text {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    -webkit-transition: opacity 300ms linear;
+    -moz-transition: opacity 300ms linear;
+    -ms-transition: opacity 300ms linear;
+    -o-transition: opacity 300ms linear;
+    transition: opacity 300ms linear;
+    letter-spacing: 1px;
+    padding-top: 80%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+    color: #fff;
+    height: 60%;
+    opacity: 0; }
+    .main .color .text:hover {
+      opacity: 1; }
 .main .color:nth-child(1) {
   -webkit-transition-delay: 0ms;
   -moz-transition-delay: 0ms;

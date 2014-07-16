@@ -2026,18 +2026,6 @@ var colors = [
     "url": "http://www.colourlovers.com/palette/657922/Best_Wishes_For_2009"
   },
   {
-    "title": "killer, man.",
-    "userName": "X-EcutionerStyle",
-    "colors": [
-      "85847E",
-      "AB6A6E",
-      "F7345B",
-      "353130",
-      "CBCFB4"
-    ],
-    "url": "http://www.colourlovers.com/palette/1323722/killer_man."
-  },
-  {
     "title": "early morning",
     "userName": "IshakPasha",
     "colors": [
@@ -2960,18 +2948,6 @@ var colors = [
       "6BACBF"
     ],
     "url": "http://www.colourlovers.com/palette/943434/get_me"
-  },
-  {
-    "title": "t e n d e r *",
-    "userName": "Tzadkiel",
-    "colors": [
-      "ED5672",
-      "160E32",
-      "9EAE8A",
-      "CDBB93",
-      "FBC599"
-    ],
-    "url": "http://www.colourlovers.com/palette/2378957/t_e_n_d_e_r_*"
   },
   {
     "title": "land of 1000 dances",

@@ -1,7 +1,7 @@
 var colorFonts = (function() {
 
     'use strict';
-    var body, colorBars, reloadButton, reloadSvg, textField, footers, footerMains, footerSecondary, footerLinks;
+    var body, colorBars, colorText, reloadButton, reloadSvg, textField, footers, footerMains, footerSecondary, footerLinks;
 
     var rotation = 0;
     var currentFooter = 0;
@@ -52,7 +52,7 @@ var colorFonts = (function() {
     function barClick( event ) {
         
         var element = event.srcElement;
-        copyText( element.getAttribute('data-color') );
+        copyText( element.getAttribute('data-color') || element.innerHTML );
         copySuccess( element );
     }
 
@@ -92,8 +92,10 @@ var colorFonts = (function() {
         var i = 0;
         for( i; i < colorBars.length; i++ ) {
             var bar = colorBars[i];
-            bar.style.backgroundColor = '#' + colorSet[i];
-            bar.setAttribute( 'data-color', '#' + colorSet[i] );
+            var hashColor = '#' + colorSet[i];
+            bar.style.backgroundColor = hashColor;
+            bar.setAttribute( 'data-color', hashColor );
+            colorText[i].innerHTML = hashColor;
         }
     }
 
@@ -102,6 +104,9 @@ var colorFonts = (function() {
         // Caching
         body             = document.body;
         colorBars        = document.querySelectorAll( '.colors .color' );
+        colorText        = document.querySelectorAll( '.colors .color .text' );
+
+
         reloadButton     = document.querySelector( '.reload' );
         reloadSvg        = reloadButton.querySelector( 'svg' );
         textField        = document.createElement( 'textarea' );

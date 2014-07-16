@@ -94,6 +94,24 @@ textarea {
 		height: 100%;
 		float: left;
 		width: 20%;
+
+		.text {
+			font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+			@include transition( opacity, 300ms, linear );
+			letter-spacing: 1px;
+			padding-top: 80%;
+			text-align: center;
+			font-weight: bold;
+			font-size: 22px;
+			cursor: pointer;
+			color: #fff;
+			height: 60%;
+			opacity: 0;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
 	}
 
 	// Temporary colors
