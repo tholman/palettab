@@ -110,17 +110,26 @@ footer {
     margin-right: 60px;
     margin-left: 60px;
     background: #fff;
+    overflow: auto;
     height: 100%;
     z-index: 0; }
+  footer a {
+    margin-top: 33px;
+    display: block; }
+  footer h1, footer h2, footer a {
+    display: inline-block;
+    text-decoration: none; }
   footer h1 {
+    color: #111;
     text-transform: capitalize;
     letter-spacing: 1px;
-    padding-top: 30px;
     font-weight: bold;
     font-size: 22px;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    margin-top: 0px; }
   footer h2 {
     letter-spacing: 1px;
+    margin-bottom: 0px;
     margin-top: 3px;
     font-size: 12px;
     color: #ccc; }

@@ -1,7 +1,7 @@
 var colorFonts = (function() {
 
     'use strict';
-    var body, colorBars, reloadButton, reloadSvg, textField, footers, footerMains, footerSecondary;
+    var body, colorBars, reloadButton, reloadSvg, textField, footers, footerMains, footerSecondary, footerLinks;
 
     var rotation = 0;
     var currentFooter = 0;
@@ -76,6 +76,7 @@ var colorFonts = (function() {
         footers[ currentFooter ].classList.add( 'active' );
         footerMains[ currentFooter ].innerHTML = colorSet.title;
         footerSecondary[ currentFooter ].innerHTML = "Created by <span class='capital'>" + colorSet.userName + "</span>";
+        footerLinks[ currentFooter ].href = colorSet.url;
 
         currentFooter++;
         if (currentFooter > 1) {
@@ -107,6 +108,7 @@ var colorFonts = (function() {
         footers          = document.querySelectorAll( 'footer' );
         footerMains      = document.querySelectorAll( '.footer-item h1' );
         footerSecondary  = document.querySelectorAll( '.footer-item h2' );
+        footerLinks      = document.querySelectorAll( '.footer-item a' );
 
 
         // Initialize
