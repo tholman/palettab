@@ -74,7 +74,8 @@ var colorFonts = (function() {
         var colorSet = colors[ Math.floor( Math.random() * colors.length )]; //Random
         assignColors( colorSet.colors );
         footers[ currentFooter ].classList.add( 'active' );
-        footerMains[ currentFooter ].innerHTML = colorSet.name;
+        footerMains[ currentFooter ].innerHTML = colorSet.title;
+        footerSecondary[ currentFooter ].innerHTML = "Created by <span class='capital'>" + colorSet.userName + "</span>";
 
         currentFooter++;
         if (currentFooter > 1) {
@@ -90,8 +91,8 @@ var colorFonts = (function() {
         var i = 0;
         for( i; i < colorBars.length; i++ ) {
             var bar = colorBars[i];
-            bar.style.backgroundColor = colorSet[i];
-            bar.setAttribute( 'data-color', colorSet[i] );
+            bar.style.backgroundColor = '#' + colorSet[i];
+            bar.setAttribute( 'data-color', '#' + colorSet[i] );
         }
     }
 
