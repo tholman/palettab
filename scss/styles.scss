@@ -56,7 +56,7 @@ html, body, .main {
 
 .reload {
 	box-shadow: 0px 2px 1px rgba( 0, 0, 0, 0.1 );
-	@include transform( translateX( -50% ) );
+	margin-left: -25px;
 	border-radius: 100%;
 	background: #fff;
 	position: fixed;
@@ -65,6 +65,7 @@ html, body, .main {
 	width: 50px;
 	top: 20px;
 	left: 50%;
+	z-index: 3;
 
 	svg {
 		-webkit-transition: -webkit-transform 500ms cubic-bezier(.85,-0.48,.26,.67);

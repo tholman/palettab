@@ -24,11 +24,7 @@ html, body, .main {
 
 .reload {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
+  margin-left: -25px;
   border-radius: 100%;
   background: #fff;
   position: fixed;
@@ -36,7 +32,8 @@ html, body, .main {
   height: 50px;
   width: 50px;
   top: 20px;
-  left: 50%; }
+  left: 50%;
+  z-index: 3; }
   .reload svg {
     -webkit-transition: -webkit-transform 500ms cubic-bezier(0.85, -0.48, 0.26, 0.67);
     height: 100%;

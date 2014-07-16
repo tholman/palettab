@@ -45,7 +45,7 @@ var colorFonts = (function() {
     function reloadClick() {
 
         rotation -= 180;
-        reloadSvg.style.webkitTransform = 'rotateZ( ' + rotation + 'deg )';
+        reloadSvg.style.webkitTransform = 'translateZ(0px) rotateZ( ' + rotation + 'deg )';
         reloadColors();
     }
 
