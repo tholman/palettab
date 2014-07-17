@@ -96,21 +96,30 @@ textarea {
 		float: left;
 		width: 20%;
 
-		.text {
+		.hex {
 			font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 			@include transition( opacity, 300ms, linear );
 			letter-spacing: 1px;
-			padding-top: 80%;
+			padding-top: 65%;
 			text-align: center;
 			font-weight: bold;
 			font-size: 22px;
 			cursor: pointer;
 			color: #fff;
-			height: 60%;
+			height: 55%;
 			opacity: 0;
 
 			&:hover {
 				opacity: 1;
+			}
+		}
+
+		.font {
+
+			.sample {
+				text-align: center;
+				font-size: 120px;
+				color: #fff;
 			}
 		}
 	}

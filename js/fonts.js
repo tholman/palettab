@@ -1457,7 +1457,7 @@ for( i; i < totalFontOptions; i++ ) {
 
 var WebFontConfig = {
     google: {
-        families: ["Annie Use Your Telescope", "Didact Gothic", "Varela", "Basic", "Quando"] ,
+        families: [ usedFonts[0].name, usedFonts[1].name, usedFonts[2].name, usedFonts[3].name, usedFonts[4].name ],
         text: 'Ag' // Only need those two letters!
     }
 };
