@@ -1,3 +1,9 @@
+/*!
+ * Color Fonts
+ *
+ * colors.js contains api results from colorlovers.com
+ */
+
 var colors = [
   {
     "title": "Giant Goldfish",
@@ -599,7 +605,7 @@ var colors = [
     "url": "http://www.colourlovers.com/palette/301154/Influenza"
   },
   {
-    "title": "400 unique artists ♥",
+    "title": "400 unique artists",
     "userName": "Aurelliana",
     "colors": [
       "A8E6CE",
@@ -947,7 +953,7 @@ var colors = [
     "url": "http://www.colourlovers.com/palette/806955/[slow_motion]"
   },
   {
-    "title": "One Sixty-Eight ☆",
+    "title": "One Sixty-Eight",
     "userName": "sugar!",
     "colors": [
       "5E9FA3",
@@ -1475,7 +1481,7 @@ var colors = [
     "url": "http://www.colourlovers.com/palette/1774220/Earth_warrior"
   },
   {
-    "title": "Bad Kitten ™",
+    "title": "Bad Kitten",
     "userName": "Bionic Blender",
     "colors": [
       "261C21",
@@ -1582,7 +1588,7 @@ var colors = [
     "url": "http://www.colourlovers.com/palette/646744/Craving_Starbucks"
   },
   {
-    "title": "Hippie van ☮",
+    "title": "Hippie van",
     "userName": "alisa-beata",
     "colors": [
       "FDE6BD",
@@ -2660,18 +2666,6 @@ var colors = [
       "000000"
     ],
     "url": "http://www.colourlovers.com/palette/123774/Homage_to_the_Chefs"
-  },
-  {
-    "title": "This Desert Life",
-    "userName": "prairieman",
-    "colors": [
-      "DDE0CF",
-      "C6BE9A",
-      "AD8B32",
-      "937460",
-      "8C5B7B"
-    ],
-    "url": "http://www.colourlovers.com/palette/94279/This_Desert_Life"
   },
   {
     "title": "everything counts",
