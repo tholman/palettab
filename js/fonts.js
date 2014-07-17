@@ -1445,8 +1445,1140 @@ var fontOptions = [
   {
     "name": "Maiden Orange",
     "creator": "Astigmatic"
+  },
+  {
+    "name": "Poly",
+    "creator": "Nicolás Silva"
+  },
+  {
+    "name": "Happy Monkey",
+    "creator": "Brenda Gallo"
+  },
+  {
+    "name": "Prosto One",
+    "creator": "Multiple Designers"
+  },
+  {
+    "name": "Nova Mono",
+    "creator": "Wojciech Kalinowski"
+  },
+  {
+    "name": "Vibur",
+    "creator": "Johan Kallas"
+  },
+  {
+    "name": "Monoton",
+    "creator": "Vernon Adams"
+  },
+  {
+    "name": "Delius Swash Caps",
+    "creator": "Natalia Raices"
+  },
+  {
+    "name": "Averia Sans Libre",
+    "creator": "Dan Sayers"
+  },
+  {
+    "name": "VT323",
+    "creator": "Peter Hull"
+  },
+  {
+    "name": "Megrim",
+    "creator": "Daniel Johnson"
+  },
+  {
+    "name": "Average",
+    "creator": "Eduardo Tunni"
+  },
+  {
+    "name": "IM Fell English SC",
+    "creator": "Igino Marini"
+  },
+  {
+    "name": "Norican",
+    "creator": "Vernon Adams"
+  },
+  {
+    "name": "Rationale",
+    "creator": "Cyreal"
+  },
+  {
+    "name": "Geo",
+    "creator": "Ben Weiner"
+  },
+  {
+    "name": "Rufina",
+    "creator": "Martin Sommaruga"
+  },
+  {
+    "name": "Baumans",
+    "creator": "Cyreal"
+  },
+  {
+    "name": "Italianno",
+    "creator": "TypeSETit"
+  },
+  {
+    "name": "IM Fell Double Pica",
+    "creator": "Igino Marini"
+  },
+  {
+    "name": "Finger Paint",
+    "creator": "Ralph du Carrois"
+  },
+  {
+    "name": "Text Me One",
+    "creator": "Julia Petretta"
+  },
+  {
+    "name": "Skranji",
+    "creator": "Neapolitan"
+  },
+  {
+    "name": "Gilda Display",
+    "creator": "Eduardo Tunni"
+  },
+  {
+    "name": "Bowlby One SC",
+    "creator": "Vernon Adams"
+  },
+  {
+    "name": "Port Lligat Slab",
+    "creator": "Tipo"
+  },
+  {
+    "name": "Arizonia",
+    "creator": "TypeSETit"
+  },
+  {
+    "name": "Oregano",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "IM Fell French Canon",
+    "creator": "Igino Marini"
+  },
+  {
+    "name": "Freckle Face",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Vast Shadow",
+    "creator": "Nicole Fally"
+  },
+  {
+    "name": "Voces",
+    "creator": "Multiple Designers"
+  },
+  {
+    "name": "Unna",
+    "creator": "Omnibus-Type"
+  },
+  {
+    "name": "Wallpoet",
+    "creator": "Lars Berggren"
+  },
+  {
+    "name": "Redressed",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Miltonian Tattoo",
+    "creator": "Pablo Impallari"
+  },
+  {
+    "name": "Meddon",
+    "creator": "Vernon Adams"
+  },
+  {
+    "name": "Kite One",
+    "creator": "Eduardo Tunni"
+  },
+  {
+    "name": "Mate SC",
+    "creator": "Eduardo Tunni"
+  },
+  {
+    "name": "Clicker Script",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Press Start 2P",
+    "creator": "CodeMan38"
+  },
+  {
+    "name": "Sniglet",
+    "creator": "Haley Fiege"
+  },
+  {
+    "name": "Delius Unicase",
+    "creator": "Natalia Raices"
+  },
+  {
+    "name": "Flamenco",
+    "creator": "LatinoType"
+  },
+  {
+    "name": "Mr De Haviland",
+    "creator": "Sudtipos"
+  },
+  {
+    "name": "Dorsa",
+    "creator": "Santiago Orozco"
+  },
+  {
+    "name": "Nova Round",
+    "creator": "Wojciech Kalinowski"
+  },
+  {
+    "name": "Belgrano",
+    "creator": "LatinoType"
+  },
+  {
+    "name": "Gravitas One",
+    "creator": "Sorkin Type"
+  },
+  {
+    "name": "PT Mono",
+    "creator": "ParaType"
+  },
+  {
+    "name": "Numans",
+    "creator": "Jovanny Lemonad"
+  },
+  {
+    "name": "Snippet",
+    "creator": "Gesine Todt"
+  },
+  {
+    "name": "Poller One",
+    "creator": "Yvonne Schüttler"
+  },
+  {
+    "name": "Buenard",
+    "creator": "FontFuror"
+  },
+  {
+    "name": "Buda",
+    "creator": "Adèle Antignac"
+  },
+  {
+    "name": "Ledger",
+    "creator": "Denis Masharov"
+  },
+  {
+    "name": "IM Fell Great Primer SC",
+    "creator": "Igino Marini"
+  },
+  {
+    "name": "Qwigley",
+    "creator": "TypeSETit"
+  },
+  {
+    "name": "Swanky and Moo Moo",
+    "creator": "Kimberly Geswein"
+  },
+  {
+    "name": "Bilbo Swash Caps",
+    "creator": "TypeSETit"
+  },
+  {
+    "name": "Shojumaru",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Henny Penny",
+    "creator": "Brownfox"
+  },
+  {
+    "name": "UnifrakturCook",
+    "creator": "j. 'mach' wust"
+  },
+  {
+    "name": "Oleo Script Swash Caps",
+    "creator": "soytutype fonts"
+  },
+  {
+    "name": "Sofadi One",
+    "creator": "Botjo Nikoltchev"
+  },
+  {
+    "name": "Sofia",
+    "creator": "LatinoType"
+  },
+  {
+    "name": "Amethysta",
+    "creator": "Cyreal"
+  },
+  {
+    "name": "Ceviche One",
+    "creator": "LatinoType"
+  },
+  {
+    "name": "Cutive Mono",
+    "creator": "Vernon Adams"
+  },
+  {
+    "name": "Fjord One",
+    "creator": "Viktoriya Grabowska"
+  },
+  {
+    "name": "Zeyada",
+    "creator": "Kimberly Geswein"
+  },
+  {
+    "name": "Mouse Memoirs",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Artifika",
+    "creator": "Cyreal"
+  },
+  {
+    "name": "Londrina Solid",
+    "creator": "Marcelo Magalhães"
+  },
+  {
+    "name": "MedievalSharp",
+    "creator": "Wojciech Kalinowski"
+  },
+  {
+    "name": "Concert One",
+    "creator": "Multiple Designers"
+  },
+  {
+    "name": "Dynalight",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Linden Hill",
+    "creator": "Barry Schwartz"
+  },
+  {
+    "name": "IM Fell French Canon SC",
+    "creator": "Igino Marini"
+  },
+  {
+    "name": "Ruslan Display",
+    "creator": "Denis Masharov"
+  },
+  {
+    "name": "IM Fell Great Primer",
+    "creator": "Igino Marini"
+  },
+  {
+    "name": "Quintessential",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Petrona",
+    "creator": "Ringo Romei"
+  },
+  {
+    "name": "Alike Angular",
+    "creator": "Cyreal"
+  },
+  {
+    "name": "Mate",
+    "creator": "Eduardo Tunni"
+  },
+  {
+    "name": "Mr Dafoe",
+    "creator": "Sudtipos"
+  },
+  {
+    "name": "Euphoria Script",
+    "creator": "Sabrina Mariela Lopez"
+  },
+  {
+    "name": "Unica One",
+    "creator": "Eduardo Tunni"
+  },
+  {
+    "name": "Donegal One",
+    "creator": "Gary Lonergan"
+  },
+  {
+    "name": "Astloch",
+    "creator": "Dan Rhatigan"
+  },
+  {
+    "name": "Oxygen Mono",
+    "creator": "Vernon Adams"
+  },
+  {
+    "name": "Monofett",
+    "creator": "Vernon Adams"
+  },
+  {
+    "name": "Rammetto One",
+    "creator": "Vernon Adams"
+  },
+  {
+    "name": "Oldenburg",
+    "creator": "Nicole Fally"
+  },
+  {
+    "name": "Gabriela",
+    "creator": "Eduardo Tunni"
+  },
+  {
+    "name": "League Script",
+    "creator": "Haley Fiege"
+  },
+  {
+    "name": "Julee",
+    "creator": "Julian Tunni"
+  },
+  {
+    "name": "Irish Grover",
+    "creator": "Sideshow"
+  },
+  {
+    "name": "Nova Slim",
+    "creator": "Wojciech Kalinowski"
+  },
+  {
+    "name": "Balthazar",
+    "creator": "Dario Manuel Muhafara"
+  },
+  {
+    "name": "Mystery Quest",
+    "creator": "Sideshow"
+  },
+  {
+    "name": "Inika",
+    "creator": "Constanza Artigas"
+  },
+  {
+    "name": "Kenia",
+    "creator": "Julia Petretta"
+  },
+  {
+    "name": "Galindo",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Overlock SC",
+    "creator": "Dario Manuel Muhafara"
+  },
+  {
+    "name": "Junge",
+    "creator": "Cyreal"
+  },
+  {
+    "name": "Prociono",
+    "creator": "Barry Schwartz"
+  },
+  {
+    "name": "Sail",
+    "creator": "LatinoType"
+  },
+  {
+    "name": "Nova Script",
+    "creator": "Wojciech Kalinowski"
+  },
+  {
+    "name": "Engagement",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Bigshot One",
+    "creator": "Gesine Todt"
+  },
+  {
+    "name": "Rosarivo",
+    "creator": "Pablo Ugerman"
+  },
+  {
+    "name": "Revalia",
+    "creator": "Multiple Designers"
+  },
+  {
+    "name": "Knewave",
+    "creator": "Tyler Finck"
+  },
+  {
+    "name": "Cambo",
+    "creator": "Huerta Tipográfica"
+  },
+  {
+    "name": "Geostar Fill",
+    "creator": "Joe Prince"
+  },
+  {
+    "name": "Medula One",
+    "creator": "LatinoType"
+  },
+  {
+    "name": "IM Fell Double Pica SC",
+    "creator": "Igino Marini"
+  },
+  {
+    "name": "Amarante",
+    "creator": "Karolina Lach"
+  },
+  {
+    "name": "Montaga",
+    "creator": "Alejandra Rodriguez"
+  },
+  {
+    "name": "Trade Winds",
+    "creator": "Sideshow"
+  },
+  {
+    "name": "Smythe",
+    "creator": "Vernon Adams"
+  },
+  {
+    "name": "Nova Flat",
+    "creator": "Wojciech Kalinowski"
+  },
+  {
+    "name": "Cagliostro",
+    "creator": "MADType"
+  },
+  {
+    "name": "Chango",
+    "creator": "Fontstage"
+  },
+  {
+    "name": "Life Savers",
+    "creator": "Impallari Type"
+  },
+  {
+    "name": "Modern Antiqua",
+    "creator": "Wojciech Kalinowski"
+  },
+  {
+    "name": "Aladin",
+    "creator": "Sudtipos"
+  },
+  {
+    "name": "Lancelot",
+    "creator": "Marion Kadi"
+  },
+  {
+    "name": "Seaweed Script",
+    "creator": "Neapolitan"
+  },
+  {
+    "name": "Goblin One",
+    "creator": "Sorkin Type"
+  },
+  {
+    "name": "Rouge Script",
+    "creator": "Sabrina Mariela Lopez"
+  },
+  {
+    "name": "Nova Oval",
+    "creator": "Wojciech Kalinowski"
+  },
+  {
+    "name": "Creepster",
+    "creator": "Sideshow"
+  },
+  {
+    "name": "Smokum",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Geostar",
+    "creator": "Joe Prince"
+  },
+  {
+    "name": "Asset",
+    "creator": "Sorkin Type"
+  },
+  {
+    "name": "Passero One",
+    "creator": "Viktoriya Grabowska"
+  },
+  {
+    "name": "Trochut",
+    "creator": "Andreu Balius"
+  },
+  {
+    "name": "Bilbo",
+    "creator": "TypeSETit"
+  },
+  {
+    "name": "Condiment",
+    "creator": "Sudtipos"
+  },
+  {
+    "name": "Stint Ultra Condensed",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Aubrey",
+    "creator": "Cyreal"
+  },
+  {
+    "name": "Galdeano",
+    "creator": "Dario Manuel Muhafara"
+  },
+  {
+    "name": "Rye",
+    "creator": "Nicole Fally"
+  },
+  {
+    "name": "Atomic Age",
+    "creator": "James Grieshaber"
+  },
+  {
+    "name": "Federant",
+    "creator": "Cyreal"
+  },
+  {
+    "name": "Stoke",
+    "creator": "Nicole Fally"
+  },
+  {
+    "name": "Miltonian",
+    "creator": "Pablo Impallari"
+  },
+  {
+    "name": "Jacques Francois",
+    "creator": "Cyreal"
+  },
+  {
+    "name": "Nova Cut",
+    "creator": "Wojciech Kalinowski"
+  },
+  {
+    "name": "Sonsie One",
+    "creator": "Riccardo De Franceschi"
+  },
+  {
+    "name": "Habibi",
+    "creator": "Magnus Gaarde"
+  },
+  {
+    "name": "Iceberg",
+    "creator": "Cyreal"
+  },
+  {
+    "name": "Offside",
+    "creator": "Eduardo Tunni"
+  },
+  {
+    "name": "Raleway Dots",
+    "creator": "Multiple Designers"
+  },
+  {
+    "name": "Supermercado One",
+    "creator": "James Grieshaber"
+  },
+  {
+    "name": "Milonga",
+    "creator": "Impallari Type"
+  },
+  {
+    "name": "Port Lligat Sans",
+    "creator": "Tipo"
+  },
+  {
+    "name": "Della Respira",
+    "creator": "Nathan Willis"
+  },
+  {
+    "name": "Esteban",
+    "creator": "Angélica Díaz"
+  },
+  {
+    "name": "Molle",
+    "creator": "Elena Albertoni"
+  },
+  {
+    "name": "Ruluko",
+    "creator": "Multiple Designers"
+  },
+  {
+    "name": "Devonshire",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Pirata One",
+    "creator": "Multiple Designers"
+  },
+  {
+    "name": "Titan One",
+    "creator": "Rodrigo Fuenzalida"
+  },
+  {
+    "name": "Cherry Swash",
+    "creator": "Nataliya Kasatkina"
+  },
+  {
+    "name": "Piedra",
+    "creator": "Sudtipos"
+  },
+  {
+    "name": "Aguafina Script",
+    "creator": "Sudtipos"
+  },
+  {
+    "name": "Fondamento",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Paprika",
+    "creator": "Eduardo Tunni"
+  },
+  {
+    "name": "Lovers Quarrel",
+    "creator": "TypeSETit"
+  },
+  {
+    "name": "Seymour One",
+    "creator": "Vernon Adams"
+  },
+  {
+    "name": "Monsieur La Doulaise",
+    "creator": "Sudtipos"
+  },
+  {
+    "name": "Trykker",
+    "creator": "Magnus Gaarde"
+  },
+  {
+    "name": "Chela One",
+    "creator": "Miguel Hernandez"
+  },
+  {
+    "name": "Averia Libre",
+    "creator": "Dan Sayers"
+  },
+  {
+    "name": "Averia Serif Libre",
+    "creator": "Dan Sayers"
+  },
+  {
+    "name": "Miniver",
+    "creator": "Open Window"
+  },
+  {
+    "name": "Snowburst One",
+    "creator": "Annet Stirling"
+  },
+  {
+    "name": "Keania One",
+    "creator": "Julia Petretta"
+  },
+  {
+    "name": "Fresca",
+    "creator": "Fontstage"
+  },
+  {
+    "name": "Ranchers",
+    "creator": "Impallari Type"
+  },
+  {
+    "name": "Ribeye Marrow",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Share Tech Mono",
+    "creator": "Ralph du Carrois"
+  },
+  {
+    "name": "Wellfleet",
+    "creator": "Riccardo De Franceschi"
+  },
+  {
+    "name": "Krona One",
+    "creator": "Yvonne Schüttler"
+  },
+  {
+    "name": "Ruthie",
+    "creator": "TypeSETit"
+  },
+  {
+    "name": "McLaren",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Germania One",
+    "creator": "John Vargas Beltrán"
+  },
+  {
+    "name": "Caesar Dressing",
+    "creator": "Open Window"
+  },
+  {
+    "name": "Londrina Shadow",
+    "creator": "Marcelo Magalhães"
+  },
+  {
+    "name": "Jacques Francois Shadow",
+    "creator": "Cyreal"
+  },
+  {
+    "name": "Jolly Lodger",
+    "creator": "Font Diner"
+  },
+  {
+    "name": "Antic Didone",
+    "creator": "Santiago Orozco"
+  },
+  {
+    "name": "Rum Raisin",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Joti One",
+    "creator": "Eduardo Tunni"
+  },
+  {
+    "name": "Asul",
+    "creator": "Mariela Monsalve"
+  },
+  {
+    "name": "Mrs Saint Delafield",
+    "creator": "Sudtipos"
+  },
+  {
+    "name": "Italiana",
+    "creator": "Santiago Orozco"
+  },
+  {
+    "name": "Marko One",
+    "creator": "Cyreal"
+  },
+  {
+    "name": "Nosifer",
+    "creator": "Typomondo"
+  },
+  {
+    "name": "Croissant One",
+    "creator": "Eduardo Tunni"
+  },
+  {
+    "name": "Original Surfer",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Gorditas",
+    "creator": "Gustavo Dipre"
+  },
+  {
+    "name": "Eagle Lake",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Elsie Swash Caps",
+    "creator": "Alejandro Inler"
+  },
+  {
+    "name": "Montserrat Subrayada",
+    "creator": "Julieta Ulanovsky"
+  },
+  {
+    "name": "Autour One",
+    "creator": "Eben Sorkin"
+  },
+  {
+    "name": "Stint Ultra Expanded",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Ek Mukta",
+    "creator": "Ek Type"
+  },
+  {
+    "name": "Spicy Rice",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Emblema One",
+    "creator": "Riccardo De Franceschi"
+  },
+  {
+    "name": "Meie Script",
+    "creator": "Multiple Designers"
+  },
+  {
+    "name": "Glass Antiqua",
+    "creator": "Denis Masharov"
+  },
+  {
+    "name": "Sarina",
+    "creator": "James Grieshaber"
+  },
+  {
+    "name": "Londrina Sketch",
+    "creator": "Marcelo Magalhães"
+  },
+  {
+    "name": "Elsie",
+    "creator": "Alejandro Inler"
+  },
+  {
+    "name": "Almendra",
+    "creator": "Ana Sanfelippo"
+  },
+  {
+    "name": "Fira Sans",
+    "creator": "Carrois and Edenspiekermann"
+  },
+  {
+    "name": "Emilys Candy",
+    "creator": "Neapolitan"
+  },
+  {
+    "name": "Sirin Stencil",
+    "creator": "Cyreal"
+  },
+  {
+    "name": "Londrina Outline",
+    "creator": "Marcelo Magalhães"
+  },
+  {
+    "name": "Eater",
+    "creator": "Typomondo"
+  },
+  {
+    "name": "Stalemate",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Diplomata",
+    "creator": "Eduardo Tunni"
+  },
+  {
+    "name": "Akronim",
+    "creator": "Grzegorz Klimczewski"
+  },
+  {
+    "name": "Mrs Sheppards",
+    "creator": "Sudtipos"
+  },
+  {
+    "name": "Combo",
+    "creator": "Eduardo Tunni"
+  },
+  {
+    "name": "Peralta",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Bubbler One",
+    "creator": "Brenda Gallo"
+  },
+  {
+    "name": "Ewert",
+    "creator": "Multiple Designers"
+  },
+  {
+    "name": "Butterfly Kids",
+    "creator": "Tart Workshop"
+  },
+  {
+    "name": "Romanesco",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Chicle",
+    "creator": "Sudtipos"
+  },
+  {
+    "name": "Risque",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Sevillana",
+    "creator": "Brownfox"
+  },
+  {
+    "name": "Ribeye",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Bigelow Rules",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Princess Sofia",
+    "creator": "Tart Workshop"
+  },
+  {
+    "name": "Macondo Swash Caps",
+    "creator": "John Vargas Beltrán"
+  },
+  {
+    "name": "Dr Sugiyama",
+    "creator": "Sudtipos"
+  },
+  {
+    "name": "Herr Von Muellerhoff",
+    "creator": "Sudtipos"
+  },
+  {
+    "name": "Purple Purse",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Felipa",
+    "creator": "Fontstage"
+  },
+  {
+    "name": "New Rocker",
+    "creator": "Impallari Type"
+  },
+  {
+    "name": "Margarine",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Faster One",
+    "creator": "Eduardo Tunni"
+  },
+  {
+    "name": "Mr Bedfort",
+    "creator": "Sudtipos"
+  },
+  {
+    "name": "Fascinate",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Vampiro One",
+    "creator": "Riccardo De Franceschi"
+  },
+  {
+    "name": "Metal Mania",
+    "creator": "Open Window"
+  },
+  {
+    "name": "Averia Gruesa Libre",
+    "creator": "Dan Sayers"
+  },
+  {
+    "name": "Jim Nightshade",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Miss Fajardose",
+    "creator": "Sudtipos"
+  },
+  {
+    "name": "Diplomata SC",
+    "creator": "Eduardo Tunni"
+  },
+  {
+    "name": "Stalinist One",
+    "creator": "Multiple Designers"
+  },
+  {
+    "name": "Uncial Antiqua",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Underdog",
+    "creator": "Multiple Designers"
+  },
+  {
+    "name": "Butcherman",
+    "creator": "Typomondo"
+  },
+  {
+    "name": "Almendra SC",
+    "creator": "Ana Sanfelippo"
+  },
+  {
+    "name": "Macondo",
+    "creator": "John Vargas Beltrán"
+  },
+  {
+    "name": "Flavors",
+    "creator": "Sideshow"
+  },
+  {
+    "name": "Fira Mono",
+    "creator": "Carrois and Edenspiekermann"
+  },
+  {
+    "name": "Ruge Boogie",
+    "creator": "TypeSETit"
+  },
+  {
+    "name": "Unlock",
+    "creator": "Eduardo Tunni"
+  },
+  {
+    "name": "Source Serif Pro",
+    "creator": "Frank Grießhammer"
+  },
+  {
+    "name": "Arbutus",
+    "creator": "Karolina Lach"
+  },
+  {
+    "name": "Fascinate Inline",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Fruktur",
+    "creator": "Viktoriya Grabowska"
+  },
+  {
+    "name": "Erica One",
+    "creator": "LatinoType"
+  },
+  {
+    "name": "Bonbon",
+    "creator": "Cyreal"
+  },
+  {
+    "name": "Rubik One",
+    "creator": "Hubert and Fischer"
+  },
+  {
+    "name": "Hanalei",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Hind",
+    "creator": "Indian Type Foundry"
+  },
+  {
+    "name": "Kalam",
+    "creator": "Indian Type Foundry"
+  },
+  {
+    "name": "Rajdhani",
+    "creator": "Indian Type Foundry"
+  },
+  {
+    "name": "Almendra Display",
+    "creator": "Ana Sanfelippo"
+  },
+  {
+    "name": "Hanalei Fill",
+    "creator": "Astigmatic"
+  },
+  {
+    "name": "Plaster",
+    "creator": "Eben Sorkin"
+  },
+  {
+    "name": "Teko",
+    "creator": "Indian Type Foundry"
+  },
+  {
+    "name": "Karma",
+    "creator": "Indian Type Foundry"
+  },
+  {
+    "name": "Rubik Mono One",
+    "creator": "Hubert and Fischer"
+  },
+  {
+    "name": "Warnes",
+    "creator": "Eduardo Tunni"
   }
-];
+]
 
 var usedFonts = [];
 var totalFontOptions = 5;
