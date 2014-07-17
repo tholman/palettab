@@ -74,10 +74,13 @@ textarea {
     opacity: 0; }
     .main .color .hex:hover {
       opacity: 1; }
-  .main .color .font .sample {
-    text-align: center;
-    font-size: 120px;
-    color: #fff; }
+  .main .color .font {
+    line-height: 120px; }
+    .main .color .font .sample {
+      vertical-align: middle;
+      text-align: center;
+      font-size: 120px;
+      color: #fff; }
 .main .color:nth-child(1) {
   -webkit-transition-delay: 0ms;
   -moz-transition-delay: 0ms;
