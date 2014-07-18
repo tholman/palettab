@@ -134,7 +134,7 @@ textarea {
 
 			.container {
 				line-height: 100%;
-				// border-bottom: 5px solid rgba(255, 255, 255, 0.1);
+				padding-top: 60px;
 			}
 
 			.sample {
@@ -215,7 +215,6 @@ footer {
 		text-align: center;
 		margin-right: 60px;
 		margin-left: 60px;
-		background: #fff;
 		overflow: auto;
 		height: 100%;
 		z-index: 0;
@@ -251,6 +250,36 @@ footer {
 
 	.capital {
 		text-transform: capitalize;
+	}
+
+	.top-dip-thingo {
+		height: 15px;
+	}
+
+	.the-rest {
+		background: #fff;
+		height: 100%;
+	}
+
+	.left-part, .right-part {
+		width: 50%;
+		height: 15px;
+		background: #fff;
+	}
+
+	.left-part {
+		margin-left: -23px;
+		float: left;	
+	}
+
+	.right-part {
+		margin-right: -23px;
+		float: right;
+	}
+
+	svg {
+		float: left;
+		fill: #fff;
 	}
 }
 

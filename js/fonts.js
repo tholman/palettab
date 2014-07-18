@@ -1103,10 +1103,10 @@ var fontOptions = [
     "name": "Cousine",
     "creator": "Steve Matteson"
   },
-  {
-    "name": "Slackey",
-    "creator": "Sideshow"
-  },
+  // {
+  //   "name": "Slackey",
+  //   "creator": "Sideshow"
+  // },
   {
     "name": "Grand Hotel",
     "creator": "Astigmatic",
@@ -2201,10 +2201,10 @@ var fontOptions = [
     "name": "Wellfleet",
     "creator": "Riccardo De Franceschi"
   },
-  {
-    "name": "Krona One",
-    "creator": "Yvonne Schüttler"
-  },
+  // {
+  //   "name": "Krona One",
+  //   "creator": "Yvonne Schüttler"
+  // },
   {
     "name": "Ruthie",
     "creator": "TypeSETit"

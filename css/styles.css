@@ -88,7 +88,8 @@ textarea {
       .main .color .font:hover .eye {
         opacity: 1; }
     .main .color .font .container {
-      line-height: 100%; }
+      line-height: 100%;
+      padding-top: 60px; }
     .main .color .font .sample {
       font-size: 120px;
       height: 120px;
@@ -165,7 +166,6 @@ footer {
     text-align: center;
     margin-right: 60px;
     margin-left: 60px;
-    background: #fff;
     overflow: auto;
     height: 100%;
     z-index: 0; }
@@ -191,6 +191,24 @@ footer {
     color: #ccc; }
   footer .capital {
     text-transform: capitalize; }
+  footer .top-dip-thingo {
+    height: 15px; }
+  footer .the-rest {
+    background: #fff;
+    height: 100%; }
+  footer .left-part, footer .right-part {
+    width: 50%;
+    height: 15px;
+    background: #fff; }
+  footer .left-part {
+    margin-left: -23px;
+    float: left; }
+  footer .right-part {
+    margin-right: -23px;
+    float: right; }
+  footer svg {
+    float: left;
+    fill: #fff; }
 
 canvas {
   width: 200px;
