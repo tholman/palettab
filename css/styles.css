@@ -166,7 +166,7 @@ footer {
     text-align: center;
     margin-right: 60px;
     margin-left: 60px;
-    overflow: auto;
+    overflow: hidden;
     height: 100%;
     z-index: 0; }
   footer a {

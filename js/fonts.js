@@ -2217,10 +2217,10 @@ var fontOptions = [
     "name": "Germania One",
     "creator": "John Vargas Beltrán"
   },
-  {
-    "name": "Caesar Dressing",
-    "creator": "Open Window"
-  },
+  // {
+  //   "name": "Caesar Dressing",
+  //   "creator": "Open Window"
+  // },
   {
     "name": "Londrina Shadow",
     "creator": "Marcelo Magalhães"

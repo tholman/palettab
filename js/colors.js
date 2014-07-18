@@ -1073,18 +1073,6 @@ var colors = [
     "url": "http://www.colourlovers.com/palette/1040266/Outer_Rings"
   },
   {
-    "title": "i n v i s i b l e",
-    "userName": "tvr",
-    "colors": [
-      "FCFEF5",
-      "E9FFE1",
-      "CDCFB7",
-      "D6E6C3",
-      "FAFBE3"
-    ],
-    "url": "http://www.colourlovers.com/palette/670816/i_n_v_i_s_i_b_l_e"
-  },
-  {
     "title": "a lost memory.",
     "userName": "X-EcutionerStyle",
     "colors": [
