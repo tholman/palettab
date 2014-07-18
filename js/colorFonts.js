@@ -1,7 +1,9 @@
 var colorFonts = (function() {
 
     'use strict';
-    var body, colorBars, colorText, reloadButton, reloadSvg, textField, footers, footerMains, footerSecondary, footerLinks, barFonts;
+    var body, colorBars, colorText, reloadButton, reloadSvg, textField,
+        footers, footerMains, footerSecondary, footerLinks, barFonts,
+        barNames, barCreators;
 
     var rotation = 0;
     var currentFooter = 0;
@@ -106,6 +108,13 @@ var colorFonts = (function() {
         var i = 0;
         for( i; i < barFonts.length; i++ ) {
             barFonts[i].style.fontFamily = usedFonts[i].name;
+            barNames[i].innerHTML        = usedFonts[i].name;
+            barCreators[i].innerHTML     = "by " + usedFonts[i].creator;
+
+            if( usedFonts[i].line ) {
+                barFonts[i].style.lineHeight = usedFonts[i].line + 'px';
+                barFonts[i].style.color      = "#ff0000";
+            }
         }
     }
 
@@ -116,6 +125,8 @@ var colorFonts = (function() {
         colorBars        = document.querySelectorAll( '.colors .color' );
         colorText        = document.querySelectorAll( '.colors .color .hex' );
         barFonts         = document.querySelectorAll( '.colors .font .sample' );
+        barNames         = document.querySelectorAll( '.colors .font .name' );
+        barCreators      = document.querySelectorAll( '.colors .font .creator' );
 
 
         reloadButton     = document.querySelector( '.reload' );
