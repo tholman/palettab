@@ -3,7 +3,7 @@ var colorFonts = (function() {
     'use strict';
     var body, colorBars, colorText, reloadButton, reloadSvg, textField,
         footers, footerMains, footerSecondary, footerLinks, barFonts,
-        barNames, barCreators;
+        fontBlock, barNames, barCreators;
 
     var rotation = 0;
     var currentFooter = 0;
@@ -115,6 +115,8 @@ var colorFonts = (function() {
                 barFonts[i].style.lineHeight = usedFonts[i].line + 'px';
                 barFonts[i].style.color      = "#ff0000";
             }
+
+            fontBlock[i].href = "http://www.google.com/fonts/specimen/" + usedFonts[i].name
         }
     }
 
@@ -124,10 +126,11 @@ var colorFonts = (function() {
         body             = document.body;
         colorBars        = document.querySelectorAll( '.colors .color' );
         colorText        = document.querySelectorAll( '.colors .color .hex' );
+
+        fontBlock        = document.querySelectorAll( '.colors .font' );
         barFonts         = document.querySelectorAll( '.colors .font .sample' );
         barNames         = document.querySelectorAll( '.colors .font .name' );
         barCreators      = document.querySelectorAll( '.colors .font .creator' );
-
 
         reloadButton     = document.querySelector( '.reload' );
         reloadSvg        = reloadButton.querySelector( 'svg' );

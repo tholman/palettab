@@ -414,7 +414,8 @@ var fontOptions = [
   },
   {
     "name": "Rambla",
-    "creator": "Martin Sommaruga"
+    "creator": "Martin Sommaruga",
+    "line": 154
   },
   {
     "name": "Vidaloka",
@@ -675,10 +676,10 @@ var fontOptions = [
     "name": "Sorts Mill Goudy",
     "creator": "Barry Schwartz"
   },
-  {
-    "name": "Michroma",
-    "creator": "Vernon Adams"
-  },
+  // {
+  //   "name": "Michroma",
+  //   "creator": "Vernon Adams"
+  // },
   {
     "name": "Love Ya Like A Sister",
     "creator": "Kimberly Geswein"
@@ -723,10 +724,10 @@ var fontOptions = [
     "name": "Doppio One",
     "creator": "Szymon Celej"
   },
-  {
-    "name": "Sigmar One",
-    "creator": "Vernon Adams"
-  },
+  // {
+  //   "name": "Sigmar One",
+  //   "creator": "Vernon Adams"
+  // },
   {
     "name": "Goudy Bookletter 1911",
     "creator": "Barry Schwartz"
@@ -1175,7 +1176,8 @@ var fontOptions = [
   },
   {
     "name": "Forum",
-    "creator": "Denis Masharov"
+    "creator": "Denis Masharov",
+    "line": 157
   },
   {
     "name": "Petit Formal Script",
@@ -1441,7 +1443,8 @@ var fontOptions = [
   },
   {
     "name": "Tulpen One",
-    "creator": "Naima Ben Ayed"
+    "creator": "Naima Ben Ayed",
+    "line": 153
   },
   {
     "name": "Cedarville Cursive",
@@ -1593,10 +1596,10 @@ var fontOptions = [
     "name": "Miltonian Tattoo",
     "creator": "Pablo Impallari"
   },
-  {
-    "name": "Meddon",
-    "creator": "Vernon Adams"
-  },
+  // {
+  //   "name": "Meddon",
+  //   "creator": "Vernon Adams"
+  // },
   {
     "name": "Kite One",
     "creator": "Eduardo Tunni"
@@ -1916,7 +1919,8 @@ var fontOptions = [
   // },
   {
     "name": "Medula One",
-    "creator": "LatinoType"
+    "creator": "LatinoType",
+    "line": 147
   },
   {
     "name": "IM Fell Double Pica SC",
@@ -1970,13 +1974,14 @@ var fontOptions = [
     "name": "Seaweed Script",
     "creator": "Neapolitan"
   },
-  {
-    "name": "Goblin One",
-    "creator": "Sorkin Type"
-  },
+  // {
+  //   "name": "Goblin One",
+  //   "creator": "Sorkin Type"
+  // },
   {
     "name": "Rouge Script",
-    "creator": "Sabrina Mariela Lopez"
+    "creator": "Sabrina Mariela Lopez",
+    "line": 159
   },
   {
     "name": "Nova Oval",
@@ -2051,10 +2056,10 @@ var fontOptions = [
     "name": "Nova Cut",
     "creator": "Wojciech Kalinowski"
   },
-  {
-    "name": "Sonsie One",
-    "creator": "Riccardo De Franceschi"
-  },
+  // {
+  //   "name": "Sonsie One",
+  //   "creator": "Riccardo De Franceschi"
+  // },
   {
     "name": "Habibi",
     "creator": "Magnus Gaarde"
@@ -2162,10 +2167,10 @@ var fontOptions = [
     "name": "Miniver",
     "creator": "Open Window"
   },
-  {
-    "name": "Snowburst One",
-    "creator": "Annet Stirling"
-  },
+  // {
+  //   "name": "Snowburst One",
+  //   "creator": "Annet Stirling"
+  // },
   {
     "name": "Keania One",
     "creator": "Julia Petretta"
@@ -2236,7 +2241,8 @@ var fontOptions = [
   },
   {
     "name": "Asul",
-    "creator": "Mariela Monsalve"
+    "creator": "Mariela Monsalve",
+    "line": 148
   },
   {
     "name": "Mrs Saint Delafield",
@@ -2408,10 +2414,10 @@ var fontOptions = [
     "name": "Bigelow Rules",
     "creator": "Astigmatic"
   },
-  {
-    "name": "Princess Sofia",
-    "creator": "Tart Workshop"
-  },
+  // {
+  //   "name": "Princess Sofia",
+  //   "creator": "Tart Workshop"
+  // },
   {
     "name": "Macondo Swash Caps",
     "creator": "John Vargas Beltrán"
@@ -2432,10 +2438,10 @@ var fontOptions = [
     "name": "Felipa",
     "creator": "Fontstage"
   },
-  {
-    "name": "New Rocker",
-    "creator": "Impallari Type"
-  },
+  // {
+  //   "name": "New Rocker",
+  //   "creator": "Impallari Type"
+  // },
   // {
   //   "name": "Margarine",
   //   "creator": "Astigmatic"
@@ -2452,14 +2458,14 @@ var fontOptions = [
     "name": "Fascinate",
     "creator": "Astigmatic"
   },
-  {
-    "name": "Vampiro One",
-    "creator": "Riccardo De Franceschi"
-  },
-  {
-    "name": "Metal Mania",
-    "creator": "Open Window"
-  },
+  // {
+  //   "name": "Vampiro One",
+  //   "creator": "Riccardo De Franceschi"
+  // },
+  // {
+  //   "name": "Metal Mania",
+  //   "creator": "Open Window"
+  // },
   {
     "name": "Averia Gruesa Libre",
     "creator": "Dan Sayers"
@@ -2470,7 +2476,8 @@ var fontOptions = [
   },
   {
     "name": "Miss Fajardose",
-    "creator": "Sudtipos"
+    "creator": "Sudtipos",
+    "line": 170
   },
   // {
   //   "name": "Diplomata SC",
@@ -2567,10 +2574,10 @@ var fontOptions = [
     "name": "Almendra Display",
     "creator": "Ana Sanfelippo"
   },
-  {
-    "name": "Hanalei Fill",
-    "creator": "Astigmatic"
-  },
+  // {
+  //   "name": "Hanalei Fill",
+  //   "creator": "Astigmatic"
+  // },
   {
     "name": "Plaster",
     "creator": "Eben Sorkin"

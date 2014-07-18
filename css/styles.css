@@ -53,6 +53,7 @@ textarea {
   -ms-transition: background-color 300ms linear;
   -o-transition: background-color 300ms linear;
   transition: background-color 300ms linear;
+  position: relative;
   height: 100%;
   float: left;
   width: 20%; }
@@ -75,8 +76,17 @@ textarea {
     .main .color .hex:hover {
       opacity: 1; }
   .main .color .font {
-    margin-top: -25px;
-    text-align: center; }
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 160px;
+    -webkit-transition: -webkit-transform 300ms ease;
+    -webkit-transform: translate3d(0px, 75px, 0px);
+    text-decoration: none; }
+    .main .color .font:hover {
+      -webkit-transform: translate3d(0px, 0px, 0px); }
+      .main .color .font:hover .eye {
+        opacity: 1; }
     .main .color .font .sample {
       line-height: 130px;
       border-bottom: 5px solid rgba(255, 255, 255, 0.3);
@@ -88,7 +98,7 @@ textarea {
       letter-spacing: 1px;
       font-weight: bold; }
     .main .color .font .name {
-      margin-top: 30px;
+      margin-top: 40px;
       text-transform: uppercase;
       font-size: 16px;
       color: #000; }
@@ -96,6 +106,15 @@ textarea {
       margin-top: 4px;
       color: #fff;
       font-size: 12px; }
+    .main .color .font .eye {
+      -webkit-transition: opacity 300ms ease;
+      -moz-transition: opacity 300ms ease;
+      -ms-transition: opacity 300ms ease;
+      -o-transition: opacity 300ms ease;
+      transition: opacity 300ms ease;
+      padding-top: 10px;
+      height: 75px;
+      opacity: 0; }
 .main .color:nth-child(1) {
   -webkit-transition-delay: 0ms;
   -moz-transition-delay: 0ms;
