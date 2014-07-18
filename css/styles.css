@@ -87,9 +87,9 @@ textarea {
       -webkit-transform: translate3d(0px, 0px, 0px); }
       .main .color .font:hover .eye {
         opacity: 1; }
+    .main .color .font .container {
+      line-height: 100%; }
     .main .color .font .sample {
-      line-height: 130px;
-      border-bottom: 5px solid rgba(255, 255, 255, 0.3);
       font-size: 120px;
       height: 120px;
       color: #fff; }
@@ -98,7 +98,7 @@ textarea {
       letter-spacing: 1px;
       font-weight: bold; }
     .main .color .font .name {
-      margin-top: 40px;
+      margin-top: 60px;
       text-transform: uppercase;
       font-size: 16px;
       color: #000; }
@@ -191,3 +191,7 @@ footer {
     color: #ccc; }
   footer .capital {
     text-transform: capitalize; }
+
+canvas {
+  width: 200px;
+  height: 200px; }

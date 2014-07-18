@@ -110,12 +110,6 @@ var colorFonts = (function() {
             barFonts[i].style.fontFamily = usedFonts[i].name;
             barNames[i].innerHTML        = usedFonts[i].name;
             barCreators[i].innerHTML     = "by " + usedFonts[i].creator;
-
-            if( usedFonts[i].line ) {
-                barFonts[i].style.lineHeight = usedFonts[i].line + 'px';
-                barFonts[i].style.color      = "#ff0000";
-            }
-
             fontBlock[i].href = "http://www.google.com/fonts/specimen/" + usedFonts[i].name
         }
     }
@@ -139,6 +133,8 @@ var colorFonts = (function() {
         footerMains      = document.querySelectorAll( '.footer-item h1' );
         footerSecondary  = document.querySelectorAll( '.footer-item h2' );
         footerLinks      = document.querySelectorAll( '.footer-item a' );
+
+
 
 
         // Initialize
