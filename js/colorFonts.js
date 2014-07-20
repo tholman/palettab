@@ -2,11 +2,9 @@ var colorFonts = (function() {
 
     'use strict';
     var body, colorBars, colorText, reloadButton, reloadSvg, textField,
-        footers, footerMains, footerSecondary, footerLinks, barFonts,
-        fontBlock, barNames, barCreators;
+        barFonts, fontBlock, barNames, barCreators;
 
     var rotation = 0;
-    var currentFooter = 0;
 
     /* -------------------------
     /* UTILS
@@ -77,18 +75,6 @@ var colorFonts = (function() {
 
         var colorSet = colors[ Math.floor( Math.random() * colors.length )]; //Random
         assignColors( colorSet.colors );
-        footers[ currentFooter ].classList.add( 'active' );
-        footerMains[ currentFooter ].innerHTML = colorSet.title;
-        footerSecondary[ currentFooter ].innerHTML = "Created by <span class='capital'>" + colorSet.userName + "</span>";
-        footerLinks[ currentFooter ].href = colorSet.url;
-
-        currentFooter++;
-        if (currentFooter > 1) {
-            currentFooter = 0;
-        }
-
-        footers[ currentFooter ].classList.remove( 'active' );
-
     }
 
     function assignColors( colorSet ) {
@@ -118,7 +104,7 @@ var colorFonts = (function() {
 
         // Caching
         body             = document.body;
-        colorBars        = document.querySelectorAll( '.colors .color' );
+        colorBars        = document.querySelectorAll( '.colors .contents' );
         colorText        = document.querySelectorAll( '.colors .color .hex' );
 
         fontBlock        = document.querySelectorAll( '.colors .font' );
@@ -129,10 +115,6 @@ var colorFonts = (function() {
         reloadButton     = document.querySelector( '.reload' );
         reloadSvg        = reloadButton.querySelector( 'svg' );
         textField        = document.createElement( 'textarea' );
-        footers          = document.querySelectorAll( 'footer' );
-        footerMains      = document.querySelectorAll( '.footer-item h1' );
-        footerSecondary  = document.querySelectorAll( '.footer-item h2' );
-        footerLinks      = document.querySelectorAll( '.footer-item a' );
 
         // Initialize
         init();

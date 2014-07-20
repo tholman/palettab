@@ -1002,10 +1002,10 @@ var fontOptions = [
     "name": "Merienda One",
     "creator": "Eduardo Tunni"
   },
-  {
-    "name": "Fontdiner Swanky",
-    "creator": "Font Diner"
-  },
+  // {
+  //   "name": "Fontdiner Swanky",
+  //   "creator": "Font Diner"
+  // },
   {
     "name": "The Girl Next Door",
     "creator": "Kimberly Geswein"
@@ -1133,10 +1133,10 @@ var fontOptions = [
     "creator": "Gesine Todt",
     "line": 144
   },
-  {
-    "name": "Days One",
-    "creator": "Jovanny Lemonad"
-  },
+  // {
+  //   "name": "Days One",
+  //   "creator": "Jovanny Lemonad"
+  // },
   {
     "name": "Sancreek",
     "creator": "Vernon Adams"
@@ -1826,10 +1826,10 @@ var fontOptions = [
   //   "name": "Monofett",
   //   "creator": "Vernon Adams"
   // },
-  {
-    "name": "Rammetto One",
-    "creator": "Vernon Adams"
-  },
+  // {
+  //   "name": "Rammetto One",
+  //   "creator": "Vernon Adams"
+  // },
   {
     "name": "Oldenburg",
     "creator": "Nicole Fally"
@@ -1870,10 +1870,10 @@ var fontOptions = [
     "name": "Kenia",
     "creator": "Julia Petretta"
   },
-  {
-    "name": "Galindo",
-    "creator": "Astigmatic"
-  },
+  // {
+  //   "name": "Galindo",
+  //   "creator": "Astigmatic"
+  // },
   {
     "name": "Overlock SC",
     "creator": "Dario Manuel Muhafara"
@@ -1993,10 +1993,10 @@ var fontOptions = [
     "name": "Nova Oval",
     "creator": "Wojciech Kalinowski"
   },
-  {
-    "name": "Creepster",
-    "creator": "Sideshow"
-  },
+  // {
+  //   "name": "Creepster",
+  //   "creator": "Sideshow"
+  // },
   // {
   //   "name": "Smokum",
   //   "creator": "Astigmatic"
@@ -2241,10 +2241,10 @@ var fontOptions = [
     "name": "Rum Raisin",
     "creator": "Astigmatic"
   },
-  {
-    "name": "Joti One",
-    "creator": "Eduardo Tunni"
-  },
+  // {
+  //   "name": "Joti One",
+  //   "creator": "Eduardo Tunni"
+  // },
   {
     "name": "Asul",
     "creator": "Mariela Monsalve",
@@ -2304,10 +2304,10 @@ var fontOptions = [
     "name": "Ek Mukta",
     "creator": "Ek Type"
   },
-  {
-    "name": "Spicy Rice",
-    "creator": "Astigmatic"
-  },
+  // {
+  //   "name": "Spicy Rice",
+  //   "creator": "Astigmatic"
+  // },
   {
     "name": "Emblema One",
     "creator": "Riccardo De Franceschi"
@@ -2529,10 +2529,10 @@ var fontOptions = [
     "name": "Ruge Boogie",
     "creator": "TypeSETit"
   },
-  {
-    "name": "Unlock",
-    "creator": "Eduardo Tunni"
-  },
+  // {
+  //   "name": "Unlock",
+  //   "creator": "Eduardo Tunni"
+  // },
   {
     "name": "Source Serif Pro",
     "creator": "Frank Grießhammer"
@@ -2546,10 +2546,10 @@ var fontOptions = [
     "creator": "Astigmatic",
     "line": 142
   },
-  {
-    "name": "Fruktur",
-    "creator": "Viktoriya Grabowska"
-  },
+  // {
+  //   "name": "Fruktur",
+  //   "creator": "Viktoriya Grabowska"
+  // },
   {
     "name": "Erica One",
     "creator": "LatinoType"

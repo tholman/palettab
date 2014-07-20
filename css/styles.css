@@ -22,6 +22,13 @@ html, body, .main {
   padding: 0px;
   margin: 0px; }
 
+body {
+  background: #f8f8f8; }
+
+.main {
+  padding-right: 58px;
+  padding-left: 58px; }
+
 .reload {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
   margin-left: -25px;
@@ -31,7 +38,7 @@ html, body, .main {
   cursor: pointer;
   height: 50px;
   width: 50px;
-  top: 20px;
+  top: 60px;
   left: 50%;
   z-index: 3; }
   .reload svg {
@@ -46,7 +53,12 @@ textarea {
   opacity: 0; }
 
 .main .colors {
+  padding-top: 180px;
   height: 100%; }
+.main .contents {
+  border-radius: 5px;
+  height: 100%;
+  width: 100%; }
 .main .color {
   -webkit-transition: background-color 300ms linear;
   -moz-transition: background-color 300ms linear;
@@ -54,7 +66,9 @@ textarea {
   -o-transition: background-color 300ms linear;
   transition: background-color 300ms linear;
   position: relative;
-  height: 100%;
+  height: 430px;
+  padding-left: 2px;
+  padding-right: 2px;
   float: left;
   width: 20%; }
   .main .color .hex {
@@ -91,7 +105,7 @@ textarea {
       line-height: 100%;
       padding-top: 60px; }
     .main .color .font .sample {
-      font-size: 120px;
+      font-size: 80px;
       height: 120px;
       color: #fff; }
     .main .color .font .name, .main .color .font .creator {
@@ -148,6 +162,7 @@ textarea {
   transition-delay: 800ms; }
 
 footer {
+  -webkit-filter: drop-shadow(0px -2px 3px rgba(0, 0, 0, 0.2));
   -webkit-transition-delay: 400ms;
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   -webkit-transition: -webkit-transform 500ms ease-in-out;
@@ -155,12 +170,8 @@ footer {
   position: fixed;
   height: 110px;
   width: 100%;
-  bottom: 0px;
-  z-index: 1; }
-  footer.active {
-    -webkit-transform: translateY(0%);
-    -webkit-transition-delay: 0ms;
-    z-index: 2; }
+  bottom: 15px;
+  z-index: 2; }
   footer .footer-item {
     border-radius: 5px 5px 0px 0px;
     text-align: center;
@@ -169,28 +180,6 @@ footer {
     overflow: hidden;
     height: 100%;
     z-index: 0; }
-  footer a {
-    margin-top: 22px;
-    display: block; }
-  footer h1, footer h2, footer a {
-    display: inline-block;
-    text-decoration: none; }
-  footer h1 {
-    color: #111;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    font-weight: bold;
-    font-size: 22px;
-    margin-bottom: 0px;
-    margin-top: 0px; }
-  footer h2 {
-    letter-spacing: 1px;
-    margin-bottom: 0px;
-    margin-top: 3px;
-    font-size: 12px;
-    color: #ccc; }
-  footer .capital {
-    text-transform: capitalize; }
   footer .top-dip-thingo {
     height: 15px; }
   footer .the-rest {
@@ -209,7 +198,3 @@ footer {
   footer svg {
     float: left;
     fill: #fff; }
-
-canvas {
-  width: 200px;
-  height: 200px; }
