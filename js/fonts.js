@@ -510,10 +510,10 @@ var fontOptions = [
     "name": "Paytone One",
     "creator": "Vernon Adams"
   },
-  {
-    "name": "Alfa Slab One",
-    "creator": "JM Solé"
-  },
+  // {
+  //   "name": "Alfa Slab One",
+  //   "creator": "JM Solé"
+  // },
   {
     "name": "Source Code Pro",
     "creator": "Paul D. Hunt"

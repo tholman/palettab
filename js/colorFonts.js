@@ -96,7 +96,7 @@ var colorFonts = (function() {
             barFonts[i].style.fontFamily = usedFonts[i].name;
             barNames[i].innerHTML        = usedFonts[i].name;
             barCreators[i].innerHTML     = "by " + usedFonts[i].creator;
-            fontBlock[i].href            = "http://www.google.com/fonts/specimen/" + usedFonts[i].name
+            // fontBlock[i].href            = "http://www.google.com/fonts/specimen/" + usedFonts[i].name
         }
     }
 
@@ -108,9 +108,9 @@ var colorFonts = (function() {
         colorText        = document.querySelectorAll( '.colors .color .hex' );
 
         fontBlock        = document.querySelectorAll( '.colors .font' );
-        barFonts         = document.querySelectorAll( '.colors .font .sample' );
-        barNames         = document.querySelectorAll( '.colors .font .name' );
-        barCreators      = document.querySelectorAll( '.colors .font .creator' );
+        barFonts         = document.querySelectorAll( '.colors .sample' );
+        barNames         = document.querySelectorAll( '.colors .name' );
+        barCreators      = document.querySelectorAll( '.colors .creator' );
 
         reloadButton     = document.querySelector( '.reload' );
         reloadSvg        = reloadButton.querySelector( 'svg' );
