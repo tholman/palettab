@@ -1,8 +1,7 @@
 var colorFonts = (function() {
 
     'use strict';
-    var body, colorBars, colorText, reloadButton, reloadSvg, textField,
-        colorEyes, barFonts, fontBlock, barNames, barCreators;
+    var body, colorBars, colorText, reloadButton, reloadSvg, textField;
 
     var rotation = 0;
 
@@ -37,10 +36,10 @@ var colorFonts = (function() {
         // Bind events
         reloadButton.addEventListener('click', function() { reloadClick() });
 
-        assignFonts();
+        // assignFonts();
 
         setTimeout( function() {
-            reloadColors();
+            // reloadColors();
         }, 0 );
     }
 
@@ -105,21 +104,14 @@ var colorFonts = (function() {
 
         // Caching
         body             = document.body;
-        colorBars        = document.querySelectorAll( '.colors .contents' );
-        colorEyes        = document.querySelectorAll( '.colors .eye svg' );
-        colorText        = document.querySelectorAll( '.colors .color .hex' );
-
-        fontBlock        = document.querySelectorAll( '.colors .font' );
-        barFonts         = document.querySelectorAll( '.colors .contents' );
-        barNames         = document.querySelectorAll( '.colors .name' );
-        barCreators      = document.querySelectorAll( '.colors .creator' );
+        
 
         reloadButton     = document.querySelector( '.reload' );
         reloadSvg        = reloadButton.querySelector( 'svg' );
         textField        = document.createElement( 'textarea' );
 
         // Initialize
-        init();
+        // init();
     }
 
     return extend( main, {
