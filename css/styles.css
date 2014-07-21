@@ -106,17 +106,34 @@ textarea {
       color: #fff; }
   .main .color .info {
     background: #fff;
-    padding-top: 30px;
     position: absolute;
     width: 100%;
     bottom: 0px;
-    height: 100px; }
+    height: 90px; }
+    .main .color .info .sexy-tricky-to-code-dip {
+      margin-top: -10px;
+      height: 10px; }
+      .main .color .info .sexy-tricky-to-code-dip svg {
+        float: left;
+        height: 10px;
+        width: 30px;
+        fill: #fff; }
+      .main .color .info .sexy-tricky-to-code-dip .left-part, .main .color .info .sexy-tricky-to-code-dip .right-part {
+        background: #fff;
+        height: 100%;
+        width: 50%; }
+      .main .color .info .sexy-tricky-to-code-dip .left-part {
+        float: left;
+        margin-left: -15px; }
+      .main .color .info .sexy-tricky-to-code-dip .right-part {
+        float: right;
+        margin-right: -15px; }
     .main .color .info .name, .main .color .info .creator {
       font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
       letter-spacing: 1px;
       font-weight: bold; }
     .main .color .info .name {
-      margin-top: 3px;
+      margin-top: 20px;
       text-transform: uppercase;
       font-size: 15px;
       color: #000; }
