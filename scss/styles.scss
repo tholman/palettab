@@ -94,6 +94,24 @@ textarea {
 	}
 }
 
+.card-holster {
+
+	// Temporarily center card
+	-webkit-transform: translate3d( -50%, -50%, 0px );
+	-webkit-transform-origin: 50% 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+	// Fixed now, will be dynamic later!
+	.card {
+		border-radius: 5px;
+		background: #fff;
+		height: 430px;
+		width: 250px;
+	}
+}
+
 // Old stuff that used to do the text align trick!
 // .container {
 // 	text-decoration: none;

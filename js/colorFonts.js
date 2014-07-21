@@ -1,7 +1,9 @@
 var colorFonts = (function() {
 
     'use strict';
-    var body, colorBars, colorText, reloadButton, reloadSvg, textField;
+    var body, reloadButton, reloadSvg, textField;
+
+    var cards;
 
     var rotation = 0;
 
@@ -29,8 +31,8 @@ var colorFonts = (function() {
     function init() {
 
         var i = 0;
-        for( i; i < colorBars.length; i++ ) {
-            colorBars[i].addEventListener( 'click', function( event ) { barClick( event ) } );
+        for( i; i < cards.length; i++ ) {
+            cards[i].addEventListener( 'click', function( event ) { barClick( event ) } );
         }
 
         // Bind events
@@ -39,7 +41,7 @@ var colorFonts = (function() {
         // assignFonts();
 
         setTimeout( function() {
-            // reloadColors();
+            reloadColors();
         }, 0 );
     }
 
@@ -79,13 +81,13 @@ var colorFonts = (function() {
     function assignColors( colorSet ) {
 
         var i = 0;
-        for( i; i < colorBars.length; i++ ) {
-            var bar = colorBars[i];
+        for( i; i < cards.length; i++ ) {
+            var card = cards[i];
             var hashColor = '#' + colorSet[i];
-            bar.style.backgroundColor = hashColor;
-            bar.setAttribute( 'data-color', hashColor );
-            colorEyes[i].style.fill = hashColor;
-            colorText[i].innerHTML = hashColor;
+            card.style.backgroundColor = hashColor;
+            // bar.setAttribute( 'data-color', hashColor );
+            // colorEyes[i].style.fill = hashColor;
+            // colorText[i].innerHTML = hashColor;
         }
     }
 
@@ -105,13 +107,16 @@ var colorFonts = (function() {
         // Caching
         body             = document.body;
         
-
+        // UI
         reloadButton     = document.querySelector( '.reload' );
         reloadSvg        = reloadButton.querySelector( 'svg' );
         textField        = document.createElement( 'textarea' );
 
+        // Cards
+        cards            = document.querySelectorAll( '.card' );
+
         // Initialize
-        // init();
+        init();
     }
 
     return extend( main, {
