@@ -97,7 +97,8 @@ textarea {
 .main {
 
 	.colors {
-		padding-top: 180px;
+		// padding-top: 180px;
+		padding-top: 50px;
 		height: 100%;
 	}
 
@@ -162,16 +163,22 @@ textarea {
 			}
 		}
 
-		.info {
+		.info-bar {
+			@include transition( -webkit-transform, 250ms, ease-in-out );
+			-webkit-transform: translate3d( 0px, 30px, 0px);
+			height: 140px;
 			background: #fff;
-			position: absolute;
-			width: 100%;
-			bottom: 0px;
-			height: 90px;
+
+			&:hover {
+				-webkit-transform: translate3d( 0px, 0px, 0px);
+			}
 
 			.sexy-tricky-to-code-dip {
+				margin-bottom: 25px;
 				margin-top: -10px;
 				height: 10px;
+				float: left;
+				width: 100%;
 
 				svg {
 					float: left;
@@ -197,6 +204,16 @@ textarea {
 				}
 			}
 
+		}
+
+		.info {
+			-webkit-transform: translateZ(0px);
+			border-radius: 0px 0px 4px 4px;
+			position: absolute;
+			overflow: hidden;
+			width: 100%;
+			bottom: 0px;
+
 			.name, .creator {
 				font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 				letter-spacing: 1px;
@@ -220,8 +237,12 @@ textarea {
 				@include transition( opacity, 300ms, ease );
 				padding-top: 10px;
 				height: 75px;
-				opacity: 0;
-				display: none;
+				opacity: 1;
+				fill: inherit;
+
+				path {
+					fill: inherit;
+				}
 			}
 		}
 	}

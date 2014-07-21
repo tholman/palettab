@@ -2,7 +2,7 @@ var colorFonts = (function() {
 
     'use strict';
     var body, colorBars, colorText, reloadButton, reloadSvg, textField,
-        barFonts, fontBlock, barNames, barCreators;
+        colorEyes, barFonts, fontBlock, barNames, barCreators;
 
     var rotation = 0;
 
@@ -85,6 +85,7 @@ var colorFonts = (function() {
             var hashColor = '#' + colorSet[i];
             bar.style.backgroundColor = hashColor;
             bar.setAttribute( 'data-color', hashColor );
+            colorEyes[i].style.fill = hashColor;
             colorText[i].innerHTML = hashColor;
         }
     }
@@ -105,6 +106,7 @@ var colorFonts = (function() {
         // Caching
         body             = document.body;
         colorBars        = document.querySelectorAll( '.colors .contents' );
+        colorEyes        = document.querySelectorAll( '.colors .eye svg' );
         colorText        = document.querySelectorAll( '.colors .color .hex' );
 
         fontBlock        = document.querySelectorAll( '.colors .font' );
