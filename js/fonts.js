@@ -469,10 +469,10 @@ var fontOptions = [
     "name": "Oleo Script",
     "creator": "soytutype fonts"
   },
-  {
-    "name": "Bangers",
-    "creator": "Vernon Adams"
-  },
+  // {
+  //   "name": "Bangers",
+  //   "creator": "Vernon Adams"
+  // },
   {
     "name": "Lusitana",
     "creator": "Ana Paula Megda"
@@ -481,11 +481,11 @@ var fontOptions = [
     "name": "Marck Script",
     "creator": "Denis Masharov"
   },
-  {
-    "name": "Cinzel",
-    "creator": "Natanael Gama",
-    "line": 158
-  },
+  // {
+  //   "name": "Cinzel",
+  //   "creator": "Natanael Gama",
+  //   "line": 158
+  // },
   {
     "name": "Bevan",
     "creator": "Vernon Adams"
@@ -1112,10 +1112,10 @@ var fontOptions = [
     "creator": "Astigmatic",
     "line": 159
   },
-  {
-    "name": "Gruppo",
-    "creator": "Vernon Adams"
-  },
+  // {
+  //   "name": "Gruppo",
+  //   "creator": "Vernon Adams"
+  // },
   {
     "name": "Brawler",
     "creator": "Cyreal"
@@ -1337,10 +1337,10 @@ var fontOptions = [
     "name": "Capriola",
     "creator": "Viktoriya Grabowska"
   },
-  {
-    "name": "IM Fell DW Pica",
-    "creator": "Igino Marini"
-  },
+  // {
+  //   "name": "IM Fell DW Pica",
+  //   "creator": "Igino Marini"
+  // },
   {
     "name": "Mountains of Christmas",
     "creator": "Tart Workshop"
@@ -1357,10 +1357,10 @@ var fontOptions = [
     "name": "Codystar",
     "creator": "Neapolitan"
   },
-  {
-    "name": "Sunshiney",
-    "creator": "Sideshow"
-  },
+  // {
+  //   "name": "Sunshiney",
+  //   "creator": "Sideshow"
+  // },
   {
     "name": "Gafata",
     "creator": "Lautaro Hourcade"
@@ -1369,10 +1369,10 @@ var fontOptions = [
     "name": "Chau Philomene One",
     "creator": "Vicente Lamonaca"
   },
-  {
-    "name": "Short Stack",
-    "creator": "James Grieshaber"
-  },
+  // {
+  //   "name": "Short Stack",
+  //   "creator": "James Grieshaber"
+  // },
   {
     "name": "Oranienbaum",
     "creator": "Multiple Designers"
@@ -1381,10 +1381,10 @@ var fontOptions = [
     "name": "Over the Rainbow",
     "creator": "Kimberly Geswein"
   },
-  {
-    "name": "Holtwood One SC",
-    "creator": "Vernon Adams"
-  },
+  // {
+  //   "name": "Holtwood One SC",
+  //   "creator": "Vernon Adams"
+  // },
   // {
   //   "name": "Bowlby One",
   //   "creator": "Vernon Adams"
@@ -1417,10 +1417,10 @@ var fontOptions = [
     "name": "Cantora One",
     "creator": "Impallari Type"
   },
-  {
-    "name": "IM Fell DW Pica SC",
-    "creator": "Igino Marini"
-  },
+  // {
+  //   "name": "IM Fell DW Pica SC",
+  //   "creator": "Igino Marini"
+  // },
   {
     "name": "UnifrakturMaguntia",
     "creator": "j. 'mach' wust"
@@ -1466,10 +1466,10 @@ var fontOptions = [
     "name": "Happy Monkey",
     "creator": "Brenda Gallo"
   },
-  {
-    "name": "Prosto One",
-    "creator": "Multiple Designers"
-  },
+  // {
+  //   "name": "Prosto One",
+  //   "creator": "Multiple Designers"
+  // },
   {
     "name": "Nova Mono",
     "creator": "Wojciech Kalinowski"
@@ -1625,10 +1625,10 @@ var fontOptions = [
     "name": "Sniglet",
     "creator": "Haley Fiege"
   },
-  {
-    "name": "Delius Unicase",
-    "creator": "Natalia Raices"
-  },
+  // {
+  //   "name": "Delius Unicase",
+  //   "creator": "Natalia Raices"
+  // },
   {
     "name": "Flamenco",
     "creator": "LatinoType"
@@ -1681,10 +1681,10 @@ var fontOptions = [
     "name": "Ledger",
     "creator": "Denis Masharov"
   },
-  {
-    "name": "IM Fell Great Primer SC",
-    "creator": "Igino Marini"
-  },
+  // {
+  //   "name": "IM Fell Great Primer SC",
+  //   "creator": "Igino Marini"
+  // },
   {
     "name": "Qwigley",
     "creator": "TypeSETit"
@@ -1701,10 +1701,10 @@ var fontOptions = [
     "name": "Shojumaru",
     "creator": "Astigmatic"
   },
-  {
-    "name": "Henny Penny",
-    "creator": "Brownfox"
-  },
+  // {
+  //   "name": "Henny Penny",
+  //   "creator": "Brownfox"
+  // },
   {
     "name": "UnifrakturCook",
     "creator": "j. 'mach' wust"
@@ -2005,10 +2005,10 @@ var fontOptions = [
   //   "name": "Geostar",
   //   "creator": "Joe Prince"
   // },
-  {
-    "name": "Passero One",
-    "creator": "Viktoriya Grabowska"
-  },
+  // {
+  //   "name": "Passero One",
+  //   "creator": "Viktoriya Grabowska"
+  // },
   {
     "name": "Trochut",
     "creator": "Andreu Balius"
@@ -2189,10 +2189,10 @@ var fontOptions = [
     "name": "Ranchers",
     "creator": "Impallari Type"
   },
-  {
-    "name": "Ribeye Marrow",
-    "creator": "Astigmatic"
-  },
+  // {
+  //   "name": "Ribeye Marrow",
+  //   "creator": "Astigmatic"
+  // },
   {
     "name": "Share Tech Mono",
     "creator": "Ralph du Carrois"
@@ -2350,10 +2350,6 @@ var fontOptions = [
     "name": "Sirin Stencil",
     "creator": "Cyreal",
     "line": 126
-  },
-  {
-    "name": "Londrina Outline",
-    "creator": "Marcelo Magalhães"
   },
   // {
   //   "name": "Eater",
@@ -2599,10 +2595,10 @@ var fontOptions = [
     "name": "Karma",
     "creator": "Indian Type Foundry"
   },
-  {
-    "name": "Rubik Mono One",
-    "creator": "Hubert and Fischer"
-  },
+  // {
+  //   "name": "Rubik Mono One",
+  //   "creator": "Hubert and Fischer"
+  // },
   {
     "name": "Warnes",
     "creator": "Eduardo Tunni"
