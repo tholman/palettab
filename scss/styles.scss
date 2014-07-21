@@ -36,6 +36,7 @@ $topLevel: 1000;
     -o-transform:      $params;
     transform:         $params;
 }
+
 /*********************************************
  * MAIN
  *********************************************/
@@ -56,6 +57,12 @@ html, body, .main {
 
 body {
 	background: #f8f8f8;
+}
+
+// Only added to body temporarily when copying text, but keep hidden none the less.
+textarea {
+	pointer-events: none;
+	opacity: 0;
 }
 
 .main {
@@ -85,12 +92,6 @@ body {
 			fill: #111;
 		}
 	}
-}
-
-// Only added to body temporarily, but keep hidden none the less.
-textarea {
-	pointer-events: none;
-	opacity: 0;
 }
 
 .main {
@@ -139,18 +140,25 @@ textarea {
 
 		.container {
 			text-decoration: none;
-			line-height: 100%;
-			padding-top: 100px;
-			width: 100%;
-
 			position: absolute;
-			top: 50px;
+			line-height: 100%;
+			color: #fff;
+			width: 100%;
+			bottom: 200px;
 
 
 			.sample {
+				vertical-align: bottom;
+				display: inline-block;
+				line-height: 80px;
 				font-size: 80px;
 				height: 120px;
-				color: #fff;
+				width: 100%;
+			}
+
+			.smaller-cuter-sample {
+				font-size: 32px;
+				width: 100%;
 			}
 		}
 
@@ -216,27 +224,6 @@ textarea {
 				display: none;
 			}
 		}
-	}
-
-	// Temporary colors
-	.color:nth-child( 1 ) {
-		@include transition-delay( 0ms );
-	}
-
-	.color:nth-child( 2 ) {
-		@include transition-delay( 200ms );
-	}
-
-	.color:nth-child( 3 ) {
-		@include transition-delay( 400ms );
-	}
-
-	.color:nth-child( 4 ) {
-		@include transition-delay( 600ms );
-	}
-
-	.color:nth-child( 5 ) {
-		@include transition-delay( 800ms );
 	}
 }
 

@@ -1329,10 +1329,10 @@ var fontOptions = [
     "name": "Metamorphous",
     "creator": "James Grieshaber"
   },
-  {
-    "name": "Cinzel Decorative",
-    "creator": "Natanael Gama"
-  },
+  // {
+  //   "name": "Cinzel Decorative",
+  //   "creator": "Natanael Gama"
+  // },
   {
     "name": "Capriola",
     "creator": "Viktoriya Grabowska"
@@ -1774,10 +1774,10 @@ var fontOptions = [
     "name": "IM Fell French Canon SC",
     "creator": "Igino Marini"
   },
-  {
-    "name": "Ruslan Display",
-    "creator": "Denis Masharov"
-  },
+  // {
+  //   "name": "Ruslan Display",
+  //   "creator": "Denis Masharov"
+  // },
   {
     "name": "IM Fell Great Primer",
     "creator": "Igino Marini"
@@ -2615,6 +2615,6 @@ for( i; i < totalFontOptions; i++ ) {
 var WebFontConfig = {
     google: {
         families: [ usedFonts[0].name, usedFonts[1].name, usedFonts[2].name, usedFonts[3].name, usedFonts[4].name ],
-        text: 'Ag' // Only need those two letters!
+        text: 'AaBbCcg' // Only need these letters, thanks google fonts for being awesome!
     }
 };
