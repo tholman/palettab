@@ -92,8 +92,6 @@ textarea {
 			fill: #111;
 		}
 	}
-	opacity: 0;
-	pointer-events: none;
 }
 
 .card-holster {
@@ -113,7 +111,7 @@ textarea {
 		height: 430px;
 		width: 250px;
 
-		.font-samples {
+		.top-half {
 			position: absolute;
 			text-align: center;
 			height: 330px;
@@ -121,37 +119,53 @@ textarea {
 			left: 0px;
 			top: 0px;
 
-			.centering-container {
+			.font-container {
 				position: absolute;
 				height: 150px;
 				width: 100%;
 				top: 90px;
-			}
 
-			.sample-container {
-				text-decoration: none;
-				position: absolute;
-				line-height: 100%;
-				color: #fff;
-				width: 100%;
+				.sample-container {
+					text-decoration: none;
+					position: absolute;
+					line-height: 100%;
+					color: #fff;
+					width: 100%;
 
-				&.large {
-					bottom: 60px;
+					&.large {
+						bottom: 60px;
 
-					.sample {
-						font-size: 80px;
+						.sample {
+							font-size: 80px;
+						}
+					}
+
+					&.small {
+						bottom: 0px;
+						.sample {
+							font-size: 32px;
+						}
 					}
 				}
+			}
 
-				&.small {
-					bottom: 0px;
-					.sample {
-						font-size: 32px;
-					}
+			.hex-container {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				top: 0px;
+				left:0px;
+
+				.hex-value {
+
+				}
+
+				// Hahahaha! get it, hexy!
+				.hexy-icon {
+
 				}
 			}
 		}
-
 	}
 }
 

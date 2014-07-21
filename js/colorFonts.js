@@ -114,7 +114,7 @@ var colorFonts = (function() {
 
         // Cards
         cards            = document.querySelectorAll( '.card' );
-        fontSamples      = document.querySelectorAll( '.font-samples' );
+        fontSamples      = document.querySelectorAll( '.top-half .font-container' );
 
         // Initialize
         init();

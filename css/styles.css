@@ -44,9 +44,7 @@ textarea {
   width: 50px;
   top: 60px;
   left: 50%;
-  z-index: 3;
-  opacity: 0;
-  pointer-events: none; }
+  z-index: 3; }
   .reload svg {
     -webkit-transition: -webkit-transform 500ms cubic-bezier(0.85, -0.48, 0.26, 0.67);
     height: 100%;
@@ -66,32 +64,38 @@ textarea {
     background: #fff;
     height: 430px;
     width: 250px; }
-    .card-holster .card .font-samples {
+    .card-holster .card .top-half {
       position: absolute;
       text-align: center;
       height: 330px;
       width: 100%;
       left: 0px;
       top: 0px; }
-      .card-holster .card .font-samples .centering-container {
+      .card-holster .card .top-half .font-container {
         position: absolute;
         height: 150px;
         width: 100%;
         top: 90px; }
-      .card-holster .card .font-samples .sample-container {
-        text-decoration: none;
+        .card-holster .card .top-half .font-container .sample-container {
+          text-decoration: none;
+          position: absolute;
+          line-height: 100%;
+          color: #fff;
+          width: 100%; }
+          .card-holster .card .top-half .font-container .sample-container.large {
+            bottom: 60px; }
+            .card-holster .card .top-half .font-container .sample-container.large .sample {
+              font-size: 80px; }
+          .card-holster .card .top-half .font-container .sample-container.small {
+            bottom: 0px; }
+            .card-holster .card .top-half .font-container .sample-container.small .sample {
+              font-size: 32px; }
+      .card-holster .card .top-half .hex-container {
         position: absolute;
-        line-height: 100%;
-        color: #fff;
-        width: 100%; }
-        .card-holster .card .font-samples .sample-container.large {
-          bottom: 60px; }
-          .card-holster .card .font-samples .sample-container.large .sample {
-            font-size: 80px; }
-        .card-holster .card .font-samples .sample-container.small {
-          bottom: 0px; }
-          .card-holster .card .font-samples .sample-container.small .sample {
-            font-size: 32px; }
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        left: 0px; }
 
 footer {
   -webkit-filter: drop-shadow(0px -2px 3px rgba(0, 0, 0, 0.2));
