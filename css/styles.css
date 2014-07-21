@@ -44,7 +44,9 @@ textarea {
   width: 50px;
   top: 60px;
   left: 50%;
-  z-index: 3; }
+  z-index: 3;
+  opacity: 0;
+  pointer-events: none; }
   .reload svg {
     -webkit-transition: -webkit-transform 500ms cubic-bezier(0.85, -0.48, 0.26, 0.67);
     height: 100%;
@@ -59,10 +61,37 @@ textarea {
   left: 50%;
   top: 50%; }
   .card-holster .card {
+    position: relative;
     border-radius: 5px;
     background: #fff;
     height: 430px;
     width: 250px; }
+    .card-holster .card .font-samples {
+      position: absolute;
+      text-align: center;
+      height: 330px;
+      width: 100%;
+      left: 0px;
+      top: 0px; }
+      .card-holster .card .font-samples .centering-container {
+        position: absolute;
+        height: 150px;
+        width: 100%;
+        top: 90px; }
+      .card-holster .card .font-samples .sample-container {
+        text-decoration: none;
+        position: absolute;
+        line-height: 100%;
+        color: #fff;
+        width: 100%; }
+        .card-holster .card .font-samples .sample-container.large {
+          bottom: 60px; }
+          .card-holster .card .font-samples .sample-container.large .sample {
+            font-size: 80px; }
+        .card-holster .card .font-samples .sample-container.small {
+          bottom: 0px; }
+          .card-holster .card .font-samples .sample-container.small .sample {
+            font-size: 32px; }
 
 footer {
   -webkit-filter: drop-shadow(0px -2px 3px rgba(0, 0, 0, 0.2));

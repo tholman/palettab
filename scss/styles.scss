@@ -92,6 +92,8 @@ textarea {
 			fill: #111;
 		}
 	}
+	opacity: 0;
+	pointer-events: none;
 }
 
 .card-holster {
@@ -105,10 +107,51 @@ textarea {
 
 	// Fixed now, will be dynamic later!
 	.card {
+		position: relative;
 		border-radius: 5px;
 		background: #fff;
 		height: 430px;
 		width: 250px;
+
+		.font-samples {
+			position: absolute;
+			text-align: center;
+			height: 330px;
+			width: 100%;
+			left: 0px;
+			top: 0px;
+
+			.centering-container {
+				position: absolute;
+				height: 150px;
+				width: 100%;
+				top: 90px;
+			}
+
+			.sample-container {
+				text-decoration: none;
+				position: absolute;
+				line-height: 100%;
+				color: #fff;
+				width: 100%;
+
+				&.large {
+					bottom: 60px;
+
+					.sample {
+						font-size: 80px;
+					}
+				}
+
+				&.small {
+					bottom: 0px;
+					.sample {
+						font-size: 32px;
+					}
+				}
+			}
+		}
+
 	}
 }
 

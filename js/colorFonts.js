@@ -3,7 +3,7 @@ var colorFonts = (function() {
     'use strict';
     var body, reloadButton, reloadSvg, textField;
 
-    var cards;
+    var cards, fontSamples;
 
     var rotation = 0;
 
@@ -38,7 +38,7 @@ var colorFonts = (function() {
         // Bind events
         reloadButton.addEventListener('click', function() { reloadClick() });
 
-        // assignFonts();
+        assignFonts();
 
         setTimeout( function() {
             reloadColors();
@@ -94,10 +94,10 @@ var colorFonts = (function() {
     function assignFonts() {
 
         var i = 0;
-        for( i; i < barFonts.length; i++ ) {
-            barFonts[i].style.fontFamily = usedFonts[i].name;
-            barNames[i].innerHTML        = usedFonts[i].name;
-            barCreators[i].innerHTML     = "by " + usedFonts[i].creator;
+        for( i; i < cards.length; i++ ) {
+            fontSamples[i].style.fontFamily = usedFonts[i].name;
+            // cards[i].innerHTML        = usedFonts[i].name;
+            // barCreators[i].innerHTML     = "by " + usedFonts[i].creator;
             // fontBlock[i].href            = "http://www.google.com/fonts/specimen/" + usedFonts[i].name
         }
     }
@@ -114,6 +114,7 @@ var colorFonts = (function() {
 
         // Cards
         cards            = document.querySelectorAll( '.card' );
+        fontSamples      = document.querySelectorAll( '.font-samples' );
 
         // Initialize
         init();
