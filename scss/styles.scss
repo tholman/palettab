@@ -146,14 +146,14 @@ textarea {
 			width: 100%;
 			bottom: 200px;
 
+			&.bigger-one {
+				margin-bottom: 65px;
+			}
 
 			.sample {
-				vertical-align: bottom;
-				display: inline-block;
-				line-height: 80px;
 				font-size: 80px;
 				height: 120px;
-				width: 100%;
+
 			}
 
 			.smaller-cuter-sample {

@@ -100,13 +100,11 @@ textarea {
     color: #fff;
     width: 100%;
     bottom: 200px; }
+    .main .color .container.bigger-one {
+      margin-bottom: 65px; }
     .main .color .container .sample {
-      vertical-align: bottom;
-      display: inline-block;
-      line-height: 80px;
       font-size: 80px;
-      height: 120px;
-      width: 100%; }
+      height: 120px; }
     .main .color .container .smaller-cuter-sample {
       font-size: 32px;
       width: 100%; }

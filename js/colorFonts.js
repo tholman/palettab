@@ -108,7 +108,7 @@ var colorFonts = (function() {
         colorText        = document.querySelectorAll( '.colors .color .hex' );
 
         fontBlock        = document.querySelectorAll( '.colors .font' );
-        barFonts         = document.querySelectorAll( '.colors .container' );
+        barFonts         = document.querySelectorAll( '.colors .contents' );
         barNames         = document.querySelectorAll( '.colors .name' );
         barCreators      = document.querySelectorAll( '.colors .creator' );
 
