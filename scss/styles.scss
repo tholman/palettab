@@ -114,12 +114,25 @@ textarea {
 		.top-half {
 			position: absolute;
 			text-align: center;
+			cursor: pointer;
 			height: 330px;
 			width: 100%;
 			left: 0px;
 			top: 0px;
 
+			&:hover {
+
+				.font-container {
+					opacity: 0;
+				}
+
+				.hex-container {
+					opacity: 1;
+				}
+			}
+
 			.font-container {
+				@include transition( opacity, 200ms, linear );
 				position: absolute;
 				height: 150px;
 				width: 100%;
@@ -150,19 +163,32 @@ textarea {
 			}
 
 			.hex-container {
+				@include transition( opacity, 200ms, linear );
+				font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 				position: absolute;
 				height: 100%;
 				width: 100%;
+				color: #fff;
+				opacity: 0;
+				left: 0px;
 				top: 0px;
-				left:0px;
 
-				.hex-value {
-
+				.hex-centerer {
+					position: absolute;
+					width: 100%;
+					top: 155px;
 				}
 
-				// Hahahaha! get it, hexy!
+				// Hahahaha! get it, hexy, like sexy but hex.
 				.hexy-icon {
+					margin-bottom: 12px;
+				}
 
+				.hex-value {
+					text-transform: lowercase;
+					letter-spacing: 0.5px;
+					font-weight: bold;
+					font-size: 25px;
 				}
 			}
 		}

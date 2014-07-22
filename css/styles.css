@@ -67,11 +67,21 @@ textarea {
     .card-holster .card .top-half {
       position: absolute;
       text-align: center;
+      cursor: pointer;
       height: 330px;
       width: 100%;
       left: 0px;
       top: 0px; }
+      .card-holster .card .top-half:hover .font-container {
+        opacity: 0; }
+      .card-holster .card .top-half:hover .hex-container {
+        opacity: 1; }
       .card-holster .card .top-half .font-container {
+        -webkit-transition: opacity 200ms linear;
+        -moz-transition: opacity 200ms linear;
+        -ms-transition: opacity 200ms linear;
+        -o-transition: opacity 200ms linear;
+        transition: opacity 200ms linear;
         position: absolute;
         height: 150px;
         width: 100%;
@@ -91,11 +101,30 @@ textarea {
             .card-holster .card .top-half .font-container .sample-container.small .sample {
               font-size: 32px; }
       .card-holster .card .top-half .hex-container {
+        -webkit-transition: opacity 200ms linear;
+        -moz-transition: opacity 200ms linear;
+        -ms-transition: opacity 200ms linear;
+        -o-transition: opacity 200ms linear;
+        transition: opacity 200ms linear;
+        font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
         position: absolute;
         height: 100%;
         width: 100%;
-        top: 0px;
-        left: 0px; }
+        color: #fff;
+        opacity: 0;
+        left: 0px;
+        top: 0px; }
+        .card-holster .card .top-half .hex-container .hex-centerer {
+          position: absolute;
+          width: 100%;
+          top: 155px; }
+        .card-holster .card .top-half .hex-container .hexy-icon {
+          margin-bottom: 12px; }
+        .card-holster .card .top-half .hex-container .hex-value {
+          text-transform: lowercase;
+          letter-spacing: 0.5px;
+          font-weight: bold;
+          font-size: 25px; }
 
 footer {
   -webkit-filter: drop-shadow(0px -2px 3px rgba(0, 0, 0, 0.2));

@@ -3,7 +3,7 @@ var colorFonts = (function() {
     'use strict';
     var body, reloadButton, reloadSvg, textField;
 
-    var cards, fontSamples;
+    var cards, fontSamples, hexValues;
 
     var rotation = 0;
 
@@ -84,10 +84,9 @@ var colorFonts = (function() {
         for( i; i < cards.length; i++ ) {
             var card = cards[i];
             var hashColor = '#' + colorSet[i];
+            card.setAttribute( 'data-color', hashColor );
             card.style.backgroundColor = hashColor;
-            // bar.setAttribute( 'data-color', hashColor );
-            // colorEyes[i].style.fill = hashColor;
-            // colorText[i].innerHTML = hashColor;
+            hexValues[i].innerHTML = hashColor;
         }
     }
 
@@ -115,6 +114,7 @@ var colorFonts = (function() {
         // Cards
         cards            = document.querySelectorAll( '.card' );
         fontSamples      = document.querySelectorAll( '.top-half .font-container' );
+        hexValues        = document.querySelectorAll( '.hex-value' );
 
         // Initialize
         init();
