@@ -3,7 +3,7 @@ var colorFonts = (function() {
     'use strict';
     var body, reloadButton, reloadSvg, textField;
 
-    var cards, fontSamples, hexValues;
+    var cards, fontSamples, fontNames, fontCreators, hexValues;
 
     var rotation = 0;
 
@@ -95,8 +95,8 @@ var colorFonts = (function() {
         var i = 0;
         for( i; i < cards.length; i++ ) {
             fontSamples[i].style.fontFamily = usedFonts[i].name;
-            // cards[i].innerHTML        = usedFonts[i].name;
-            // barCreators[i].innerHTML     = "by " + usedFonts[i].creator;
+            fontNames[i].innerHTML          = usedFonts[i].name;
+            fontCreators[i].innerHTML       = "by " + usedFonts[i].creator;
             // fontBlock[i].href            = "http://www.google.com/fonts/specimen/" + usedFonts[i].name
         }
     }
@@ -115,6 +115,9 @@ var colorFonts = (function() {
         cards            = document.querySelectorAll( '.card' );
         fontSamples      = document.querySelectorAll( '.top-half .font-container' );
         hexValues        = document.querySelectorAll( '.hex-value' );
+
+        fontNames        = document.querySelectorAll( '.name' );
+        fontCreators     = document.querySelectorAll( '.creator' );
 
         // Initialize
         init();
