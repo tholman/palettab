@@ -114,6 +114,11 @@ textarea {
 		height: 430px;
 		width: 250px;
 
+		.color-wrapper {
+			border-radius: 5px 5px 10px 10px;
+			height: 100%;
+		}
+
 		.top-half {
 			position: absolute;
 			cursor: pointer;

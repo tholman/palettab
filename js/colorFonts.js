@@ -112,7 +112,7 @@ var colorFonts = (function() {
         textField        = document.createElement( 'textarea' );
 
         // Cards
-        cards            = document.querySelectorAll( '.card' );
+        cards            = document.querySelectorAll( '.color-wrapper' );
         fontSamples      = document.querySelectorAll( '.top-half .font-container' );
         hexValues        = document.querySelectorAll( '.hex-value' );
 

@@ -67,6 +67,9 @@ textarea {
     overflow: hidden;
     height: 430px;
     width: 250px; }
+    .card-holster .card .color-wrapper {
+      border-radius: 5px 5px 10px 10px;
+      height: 100%; }
     .card-holster .card .top-half {
       position: absolute;
       cursor: pointer;
