@@ -71,6 +71,8 @@ textarea {
       border-radius: 5px 5px 10px 10px;
       height: 100%; }
     .card-holster .card .top-half {
+      -webkit-transition: -webkit-transform 300ms ease;
+      -webkit-transform: translateY(0px);
       position: absolute;
       cursor: pointer;
       height: 395px;
@@ -83,10 +85,6 @@ textarea {
         opacity: 1; }
       .card-holster .card .top-half .font-container {
         -webkit-transition: opacity 200ms linear;
-        -moz-transition: opacity 200ms linear;
-        -ms-transition: opacity 200ms linear;
-        -o-transition: opacity 200ms linear;
-        transition: opacity 200ms linear;
         position: absolute;
         height: 150px;
         width: 100%;
@@ -196,6 +194,8 @@ textarea {
   .card-holster .mouse-over-top .copy-text {
     -webkit-transform: translateY(0px) !important;
     opacity: 1 !important; }
+  .card-holster .mouse-over-bottom .top-half {
+    -webkit-transform: translateY(-40px); }
   .card-holster .mouse-over-bottom .bottom-half {
     -webkit-transform: translateY(10px); }
   .card-holster .mouse-over-bottom .eye {

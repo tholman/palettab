@@ -120,6 +120,8 @@ textarea {
 		}
 
 		.top-half {
+			-webkit-transition: -webkit-transform 300ms ease;
+			-webkit-transform: translateY(0px);
 			position: absolute;
 			cursor: pointer;
 			height: 395px;
@@ -139,7 +141,7 @@ textarea {
 			}
 
 			.font-container {
-				@include transition( opacity, 200ms, linear );
+				-webkit-transition: opacity 200ms linear;
 				position: absolute;
 				height: 150px;
 				width: 100%;
@@ -304,6 +306,10 @@ textarea {
 	}
 
 	.mouse-over-bottom {
+
+		.top-half {
+			-webkit-transform: translateY(-40px);
+		}
 
 		.bottom-half {
 			-webkit-transform: translateY(10px);
