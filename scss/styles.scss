@@ -98,19 +98,25 @@ textarea {
 
 	// Temporarily center card
 	-webkit-transform: translate3d( -50%, -50%, 0px );
+	-webkit-transition: -webkit-transform 300ms ease;
 	-webkit-transform-origin: 50% 50%;
+	transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
 	position: absolute;
 	left: 50%;
 	top: 50%;
 
 	// Fixed now, will be dynamic later!
 	.card {
-		-webkit-transform: translateZ(0px);
-		position: relative;
+		-webkit-transition: -webkit-transform 400ms ease;
+		-webkit-transform: translate3d(-50%, -50%, 0px);
+		-webkit-backface-visibility: hidden;
+		position: absolute;
 		text-align: center;
 		border-radius: 5px;
 		background: #fff;
 		overflow: hidden;
+		z-index: 2;
 		height: 430px;
 		width: 250px;
 
@@ -221,8 +227,10 @@ textarea {
 			-webkit-transition: -webkit-transform 300ms ease;
 			-webkit-transform: translateY(75px);
 			position: absolute;
+			text-decoration: none;
 			width: 100%;
 			bottom: 0px;
+			left: 0;
 
 			.sexy-tricky-to-code-dip {
 				overflow: hidden;
@@ -266,6 +274,7 @@ textarea {
 						text-transform: uppercase;
 						letter-spacing: 0.5px;
 						font-size: 15px;
+						color: #000;
 					}
 
 					.creator {

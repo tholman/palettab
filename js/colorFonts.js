@@ -123,7 +123,7 @@ var colorFonts = (function() {
             fontSamples[i].style.fontFamily = usedFonts[i].name;
             fontNames[i].innerHTML          = usedFonts[i].name;
             fontCreators[i].innerHTML       = "by " + usedFonts[i].creator;
-            // fontBlock[i].href            = "http://www.google.com/fonts/specimen/" + usedFonts[i].name
+            cardBottom[i].href              = "http://www.google.com/fonts/specimen/" + usedFonts[i].name
         }
     }
 
