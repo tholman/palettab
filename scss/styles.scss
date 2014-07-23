@@ -217,7 +217,7 @@ textarea {
 
 		.bottom-half {
 			-webkit-transition: -webkit-transform 300ms ease;
-			-webkit-transform: translateZ(0px);
+			-webkit-transform: translateY(75px);
 			position: absolute;
 			width: 100%;
 			bottom: 0px;
@@ -274,13 +274,23 @@ textarea {
 					}
 				}
 			}
+
+			.eye-container {
+				background: #fff;
+				height: 70px;
+
+				.eye {
+					-webkit-transition: all 300ms ease;
+					opacity: 0;
+				}
+			}
 		}
 	}
 
 	.mouse-over-top {
 
 		.bottom-half {
-			-webkit-transform: translateY(70px);
+			-webkit-transform: translateY(135px);
 
 			.font-details {
 				opacity: 0;
@@ -289,6 +299,17 @@ textarea {
 
 		.copy-text {
 			-webkit-transform: translateY( 0px ) !important;
+			opacity: 1 !important;
+		}
+	}
+
+	.mouse-over-bottom {
+
+		.bottom-half {
+			-webkit-transform: translateY(10px);
+		}
+
+		.eye {
 			opacity: 1 !important;
 		}
 	}

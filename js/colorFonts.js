@@ -3,7 +3,7 @@ var colorFonts = (function() {
     'use strict';
     var body, reloadButton, reloadSvg, textField;
 
-    var cards, cardTop, cardBottom, fontSamples, fontNames, fontCreators, hexValues;
+    var cards, cardTop, cardBottom, fontSamples, fontNames, fontCreators, hexValues, eyes;
 
     var rotation = 0;
 
@@ -37,6 +37,7 @@ var colorFonts = (function() {
             cardTop[i].addEventListener( 'mouseover', function( event ) { onMouseOverTop( event, card ) });
             cardTop[i].addEventListener( 'mouseout', function( event ) { onMouseOut( event, card ) });
             cardBottom[i].addEventListener( 'mouseover', function( event ) { onMouseOverBottom( event, card ) } );
+            cardBottom[i].addEventListener( 'mouseout', function( event ) { onMouseOut( event, card ) });
         }
 
         // Bind events
@@ -111,6 +112,7 @@ var colorFonts = (function() {
             card.setAttribute( 'data-color', hashColor );
             card.style.backgroundColor = hashColor;
             hexValues[i].innerHTML = hashColor;
+            eyes[i].style.fill = hashColor;
         }
     }
 
@@ -146,6 +148,7 @@ var colorFonts = (function() {
 
         fontNames        = document.querySelectorAll( '.name' );
         fontCreators     = document.querySelectorAll( '.creator' );
+        eyes             = document.querySelectorAll( '.bottom-half .eye svg path' );
 
         // Initialize
         init();
