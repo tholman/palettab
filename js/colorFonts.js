@@ -3,7 +3,7 @@ var colorFonts = (function() {
     'use strict';
     var body, reloadButton, reloadSvg, textField;
 
-    var cards, fontSamples, fontNames, fontCreators, hexValues;
+    var cards, cardTop, cardBottom, fontSamples, fontNames, fontCreators, hexValues;
 
     var rotation = 0;
 
@@ -32,7 +32,10 @@ var colorFonts = (function() {
 
         var i = 0;
         for( i; i < cards.length; i++ ) {
+            var card = cards[i];
             cards[i].addEventListener( 'click', function( event ) { barClick( event ) } );
+            cardTop[i].addEventListener( 'mouseover', function( event ) { onMouseOverTop( event, card ) });
+            cardBottom[i].addEventListener( 'mouseover', function( event ) { onMouseOverBottom( event, card ) } );
         }
 
         // Bind events
@@ -44,6 +47,18 @@ var colorFonts = (function() {
             reloadColors();
         }, 0 );
     }
+
+    // @TODO: Find a  better way that is not constantly adding classes
+    function onMouseOverTop( event, element ) {
+        element.classList.remove( 'mouse-over-bottom' );
+        element.classList.add( 'mouse-over-top' );
+    }
+
+    function onMouseOverBottom( event, element ) {
+        element.classList.remove( 'mouse-over-top' );
+        element.classList.add( 'mouse-over-bottom' );
+    }
+
 
     function reloadClick() {
 
@@ -113,6 +128,10 @@ var colorFonts = (function() {
 
         // Cards
         cards            = document.querySelectorAll( '.color-wrapper' );
+
+        cardTop          = document.querySelectorAll( '.top-half' );
+        cardBottom       = document.querySelectorAll( '.bottom-half' );
+
         fontSamples      = document.querySelectorAll( '.top-half .font-container' );
         hexValues        = document.querySelectorAll( '.hex-value' );
 
