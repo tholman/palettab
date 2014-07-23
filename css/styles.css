@@ -73,7 +73,7 @@ textarea {
     .card-holster .card .top-half {
       position: absolute;
       cursor: pointer;
-      height: 330px;
+      height: 395px;
       width: 100%;
       left: 0px;
       top: 0px; }
@@ -130,7 +130,20 @@ textarea {
           letter-spacing: 0.5px;
           font-weight: bold;
           font-size: 25px; }
+      .card-holster .card .top-half .copy-text {
+        -webkit-transition: -webkit-transform 300ms, opacity 300ms;
+        font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        letter-spacing: 1px;
+        position: absolute;
+        font-weight: bold;
+        font-size: 12px;
+        bottom: 10px;
+        color: #fff;
+        width: 100%;
+        -webkit-transform: translateY(-50px);
+        opacity: 0; }
     .card-holster .card .bottom-half {
+      -webkit-transition: -webkit-transform 300ms ease;
       -webkit-transform: translateZ(0px);
       position: absolute;
       width: 100%;
@@ -157,6 +170,7 @@ textarea {
         background: #fff;
         height: 90px; }
         .card-holster .card .bottom-half .bottom-bottom-container .font-details {
+          -webkit-transition: opacity 300ms ease;
           font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
           padding-top: 20px;
           font-weight: bold; }
@@ -169,6 +183,13 @@ textarea {
             margin-top: 4px;
             font-size: 12px;
             color: #cccccc; }
+  .card-holster .mouse-over-top .bottom-half {
+    -webkit-transform: translateY(70px); }
+    .card-holster .mouse-over-top .bottom-half .font-details {
+      opacity: 0; }
+  .card-holster .mouse-over-top .copy-text {
+    -webkit-transform: translateY(0px) !important;
+    opacity: 1 !important; }
 
 footer {
   -webkit-filter: drop-shadow(0px -2px 3px rgba(0, 0, 0, 0.2));

@@ -122,7 +122,7 @@ textarea {
 		.top-half {
 			position: absolute;
 			cursor: pointer;
-			height: 330px;
+			height: 395px;
 			width: 100%;
 			left: 0px;
 			top: 0px;
@@ -198,9 +198,25 @@ textarea {
 					font-size: 25px;
 				}
 			}
+
+			.copy-text {
+				-webkit-transition: -webkit-transform 300ms, opacity 300ms;
+				font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+				letter-spacing: 1px;
+				position: absolute;
+				font-weight: bold;
+				font-size: 12px;
+				bottom: 10px;
+				color: #fff;
+				width: 100%;
+
+				-webkit-transform: translateY( -50px );
+				opacity: 0;
+			}
 		}
 
 		.bottom-half {
+			-webkit-transition: -webkit-transform 300ms ease;
 			-webkit-transform: translateZ(0px);
 			position: absolute;
 			width: 100%;
@@ -239,6 +255,7 @@ textarea {
 				height: 90px;
 
 				.font-details {
+					-webkit-transition: opacity 300ms ease;
 					font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 					padding-top: 20px;
 					font-weight: bold;
@@ -257,6 +274,22 @@ textarea {
 					}
 				}
 			}
+		}
+	}
+
+	.mouse-over-top {
+
+		.bottom-half {
+			-webkit-transform: translateY(70px);
+
+			.font-details {
+				opacity: 0;
+			}
+		}
+
+		.copy-text {
+			-webkit-transform: translateY( 0px ) !important;
+			opacity: 1 !important;
 		}
 	}
 }

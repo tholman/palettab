@@ -35,6 +35,7 @@ var colorFonts = (function() {
             var card = cards[i];
             cards[i].addEventListener( 'click', function( event ) { barClick( event ) } );
             cardTop[i].addEventListener( 'mouseover', function( event ) { onMouseOverTop( event, card ) });
+            cardTop[i].addEventListener( 'mouseout', function( event ) { onMouseOut( event, card ) });
             cardBottom[i].addEventListener( 'mouseover', function( event ) { onMouseOverBottom( event, card ) } );
         }
 
@@ -57,6 +58,14 @@ var colorFonts = (function() {
     function onMouseOverBottom( event, element ) {
         element.classList.remove( 'mouse-over-top' );
         element.classList.add( 'mouse-over-bottom' );
+    }
+
+    function onMouseOut( event, element ) {
+        
+        if( event.toElement.nodeName === 'BODY' ) {
+            element.classList.remove( 'mouse-over-top' );
+            element.classList.remove( 'mouse-over-bottom' );
+        }
     }
 
 
