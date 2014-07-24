@@ -4,6 +4,7 @@ var colorFonts = (function() {
     var body, reloadButton, reloadSvg, textField;
 
     var cards, cardTop, cardBottom, fontSamples, fontNames, fontCreators, hexValues, eyes;
+    var palleteColors;
 
     var rotation = 0;
 
@@ -114,6 +115,10 @@ var colorFonts = (function() {
             hexValues[i].innerHTML = hashColor;
             eyes[i].style.fill = hashColor;
         }
+
+        for( i = 0; i < palleteColors.length; i++ ) {
+            palleteColors[i].style.background = '#' + colorSet[i];
+        }
     }
 
     function assignFonts() {
@@ -149,6 +154,8 @@ var colorFonts = (function() {
         fontNames        = document.querySelectorAll( '.name' );
         fontCreators     = document.querySelectorAll( '.creator' );
         eyes             = document.querySelectorAll( '.bottom-half .eye svg path' );
+
+        palleteColors    = document.querySelectorAll( '.sweet-color' );
 
         // Initialize
         init();

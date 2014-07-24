@@ -210,6 +210,18 @@ textarea {
   .card-holster .mouse-over-bottom .eye {
     opacity: 1 !important; }
 
+.pallete-info {
+  -webkit-transform: translateX(-50%);
+  position: absolute;
+  bottom: 120px;
+  left: 50%; }
+  .pallete-info .colorset {
+    width: 160px; }
+    .pallete-info .colorset .sweet-color {
+      width: 20%;
+      height: 5px;
+      float: left; }
+
 footer {
   -webkit-filter: drop-shadow(0px -2px 3px rgba(0, 0, 0, 0.2));
   -webkit-transition-delay: 400ms;
