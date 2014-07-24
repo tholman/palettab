@@ -4,7 +4,7 @@ var colorFonts = (function() {
     var body, reloadButton, reloadSvg, textField;
 
     var cards, cardTop, cardBottom, fontSamples, fontNames, fontCreators, hexValues, eyes;
-    var palleteColors;
+    var palleteName, palleteCreator, palleteColors;
 
     var rotation = 0;
 
@@ -101,10 +101,12 @@ var colorFonts = (function() {
     function reloadColors() {
 
         var colorSet = colors[ Math.floor( Math.random() * colors.length )]; //Random
-        assignColors( colorSet.colors );
+        assignColors( colorSet );
     }
 
-    function assignColors( colorSet ) {
+    function assignColors( set ) {
+
+        var colorSet = set.colors;
 
         var i = 0;
         for( i; i < cards.length; i++ ) {
@@ -119,6 +121,9 @@ var colorFonts = (function() {
         for( i = 0; i < palleteColors.length; i++ ) {
             palleteColors[i].style.background = '#' + colorSet[i];
         }
+
+        palleteName.innerHTML    = set.title;
+        palleteCreator.innerHTML = "by " + set.userName;
     }
 
     function assignFonts() {
@@ -156,6 +161,8 @@ var colorFonts = (function() {
         eyes             = document.querySelectorAll( '.bottom-half .eye svg path' );
 
         palleteColors    = document.querySelectorAll( '.sweet-color' );
+        palleteName      = document.querySelector( '.pallete-info .name' );
+        palleteCreator   = document.querySelector( '.pallete-info .creator' );
 
         // Initialize
         init();

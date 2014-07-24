@@ -211,16 +211,32 @@ textarea {
     opacity: 1 !important; }
 
 .pallete-info {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   -webkit-transform: translateX(-50%);
+  width: 500px;
   position: absolute;
-  bottom: 120px;
+  text-align: center;
+  bottom: 70px;
   left: 50%; }
   .pallete-info .colorset {
+    margin: auto;
     width: 160px; }
     .pallete-info .colorset .sweet-color {
       width: 20%;
       height: 5px;
       float: left; }
+  .pallete-info .name {
+    text-transform: capitalize;
+    font-weight: bold;
+    padding-top: 18px;
+    font-size: 25px;
+    color: #000; }
+  .pallete-info .creator {
+    letter-spacing: 0.8px;
+    font-weight: bold;
+    padding-top: 4px;
+    font-size: 13px;
+    color: #ccc; }
 
 footer {
   -webkit-filter: drop-shadow(0px -2px 3px rgba(0, 0, 0, 0.2));

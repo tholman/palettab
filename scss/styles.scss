@@ -332,12 +332,16 @@ textarea {
 
 
 .pallete-info {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	-webkit-transform: translateX(-50%);
+	width: 500px;
 	position: absolute;
-	bottom: 120px;
+	text-align: center;
+	bottom: 70px;
 	left: 50%;
 
 	.colorset {
+		margin: auto;
 		width: 160px;
 
 		.sweet-color {
@@ -345,6 +349,22 @@ textarea {
 			height: 5px;
 			float: left;
 		}
+	}
+
+	.name {
+		text-transform: capitalize;
+		font-weight: bold;
+		padding-top: 18px;
+		font-size: 25px;
+		color: #000;
+	}
+
+	.creator {
+		letter-spacing: 0.8px;
+		font-weight: bold;
+		padding-top: 4px;
+		font-size: 13px;
+		color: #ccc;
 	}
 }
 
