@@ -94,6 +94,25 @@ textarea {
 	}
 }
 
+$squareWidth: 10px;
+.loader {
+
+	-webkit-transform: translate3d( -50%, -50%, 0px );
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: $squareWidth * 3;
+	width: $squareWidth * 3;
+	margin-top: -$squareWidth;
+
+	.square {
+		-webkit-transition: background-color 300ms;
+		float: left;
+		width: $squareWidth;
+		height: $squareWidth;
+	}
+}
+
 .card-holster {
 
 	// Temporarily center card
@@ -354,7 +373,7 @@ textarea {
 	.name {
 		text-transform: capitalize;
 		font-weight: bold;
-		padding-top: 18px;
+		padding-top: 14px;
 		font-size: 25px;
 		color: #000;
 	}
@@ -420,4 +439,9 @@ footer {
 		float: left;
 		fill: #fff;
 	}
+}
+
+// Temporarily hide
+.reload, .card-holster, .pallete-info, footer {
+	display: none;
 }

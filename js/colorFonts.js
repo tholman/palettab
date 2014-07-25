@@ -49,6 +49,9 @@ var colorFonts = (function() {
         setTimeout( function() {
             reloadColors();
         }, 0 );
+
+        // Initialize loader
+        loader();
     }
 
     // @TODO: Find a  better way that is not constantly adding classes
@@ -70,7 +73,6 @@ var colorFonts = (function() {
         }
     }
 
-
     function reloadClick() {
 
         rotation -= 180;
@@ -85,7 +87,6 @@ var colorFonts = (function() {
         copySuccess( element );
     }
 
-    // Copy text to clipboard.
     function copyText( text ) {
         textField.textContent = text;
         document.body.appendChild( textField );
@@ -95,7 +96,6 @@ var colorFonts = (function() {
     }
 
     function copySuccess( element ) {
-        console.log( "show success!" );
     }
 
     function reloadColors() {

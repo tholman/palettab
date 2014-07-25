@@ -52,6 +52,20 @@ textarea {
     .reload svg path {
       fill: #111; }
 
+.loader {
+  -webkit-transform: translate3d(-50%, -50%, 0px);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 30px;
+  width: 30px;
+  margin-top: -10px; }
+  .loader .square {
+    -webkit-transition: background-color 300ms;
+    float: left;
+    width: 10px;
+    height: 10px; }
+
 .card-holster {
   -webkit-transform: translate3d(-50%, -50%, 0px);
   -webkit-transition: -webkit-transform 300ms ease;
@@ -228,7 +242,7 @@ textarea {
   .pallete-info .name {
     text-transform: capitalize;
     font-weight: bold;
-    padding-top: 18px;
+    padding-top: 14px;
     font-size: 25px;
     color: #000; }
   .pallete-info .creator {
@@ -275,3 +289,6 @@ footer {
   footer svg {
     float: left;
     fill: #fff; }
+
+.reload, .card-holster, .pallete-info, footer {
+  display: none; }
