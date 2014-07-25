@@ -40,7 +40,7 @@ var loader = (function() {
 
     function start() {
 
-    	interval = setInterval( iterateColors, 300 );
+    	interval = setInterval( iterateColors, 50 );
     }
 
     function iterateColors() {

@@ -61,7 +61,7 @@ textarea {
   width: 30px;
   margin-top: -10px; }
   .loader .square {
-    -webkit-transition: background-color 300ms;
+    /* -webkit-transition: background-color 0; do we need this?*/
     float: left;
     width: 10px;
     height: 10px; }
