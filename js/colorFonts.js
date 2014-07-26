@@ -71,15 +71,15 @@ var colorFonts = (function() {
     // Series of timed animations, to reveal the font cards.
     function revealCards() {
 
-        var top = (window.innerHeight / 2);
-        var left = (window.innerWidth / 2);
+        var top = Math.floor(window.innerHeight / 2);
+        var left = Math.floor(window.innerWidth / 2);
         cardElements.style.webkitTransform = 'translate3d(' + left + 'px, ' + top + 'px, 0px)';
 
     }
 
     function initializePositions() {
         var top = window.innerHeight + (cardHeight / 2);
-        var left = (window.innerWidth / 2);
+        var left = Math.floor(window.innerWidth / 2);
         cardElements.style.webkitTransform = 'translate3d(' + left + 'px, ' + top + 'px, 0px)';
         cardElements.style.display = 'block';
     }
