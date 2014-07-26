@@ -58,6 +58,7 @@ html, body, .main {
 body {
 	-webkit-transition: background-color 1000ms linear;
 	background-color: rgb(255, 255, 255);
+	overflow: hidden;
 }
 
 // Only added to body temporarily when copying text, but keep hidden none the less.

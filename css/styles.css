@@ -24,7 +24,8 @@ html, body, .main {
 
 body {
   -webkit-transition: background-color 1000ms linear;
-  background-color: white; }
+  background-color: white;
+  overflow: hidden; }
 
 textarea {
   pointer-events: none;
