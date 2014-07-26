@@ -3,6 +3,7 @@ var colorFonts = (function() {
     'use strict';
     var body, reloadButton, reloadSvg, textField;
 
+    var colorSet;
     var cards, cardTop, cardBottom, fontSamples, fontNames, fontCreators, hexValues, eyes;
     var palleteName, palleteCreator, palleteColors;
 
@@ -47,11 +48,12 @@ var colorFonts = (function() {
         assignFonts();
 
         setTimeout( function() {
+            body.style.backgroundColor = '#f8f8f8'; // This fades in the color.
             reloadColors();
+            loader( colorSet.colors );
         }, 0 );
 
         // Initialize loader
-        loader();
     }
 
     // @TODO: Find a  better way that is not constantly adding classes
@@ -99,8 +101,7 @@ var colorFonts = (function() {
     }
 
     function reloadColors() {
-
-        var colorSet = colors[ Math.floor( Math.random() * colors.length )]; //Random
+        colorSet = colors[ Math.floor( Math.random() * colors.length )]; //Random
         assignColors( colorSet );
     }
 

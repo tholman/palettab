@@ -2,20 +2,8 @@
 var loader = (function() {
 
     'use strict';
+    var palette;
     var body, loader, squares;
-
-    var colors = [
-    	'#326474',
-    	'#263A4A',
-    	'#A9D5DE',
-    	'#F6EFDC',
-    	'#FF5400',
-    	'#F6EFDC',
-    	'#A9D5DE',
-    	'#263A4A',
-    	'#326474',
-    ]
-
     var interval;
 
     /* -------------------------
@@ -46,19 +34,32 @@ var loader = (function() {
     function iterateColors() {
 
 		var i = 0;
-		for( var i; i < colors.length; i++ ) {
-			squares[i].style.backgroundColor = colors[i];
+		for( var i; i < palette.length; i++ ) {
+			squares[i].style.backgroundColor = '#' + palette[i];
 		}
 
 		// Move last item in array to first
-		colors.splice(0, 0, colors.splice(8, 1)[0]);
+		palette.splice(0, 0, palette.splice(palette.length - 1, 1)[0]);
     }
 
     function stop() {
     	clearInterval( interval );
     }
 
-    function main() {
+    function main( colors ) {
+
+        // There is always 5 colors.
+        palette = [
+            colors[0],
+            colors[1],
+            colors[2],
+            colors[3],
+            colors[4],
+            colors[3],
+            colors[2],
+            colors[1],
+            colors[0],
+        ];
 
         // Caching
         body             = document.body;

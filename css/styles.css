@@ -23,7 +23,8 @@ html, body, .main {
   margin: 0px; }
 
 body {
-  background: #f8f8f8; }
+  -webkit-transition: background-color 1000ms linear;
+  background-color: white; }
 
 textarea {
   pointer-events: none;
@@ -61,7 +62,6 @@ textarea {
   width: 30px;
   margin-top: -10px; }
   .loader .square {
-    /* -webkit-transition: background-color 0; do we need this?*/
     float: left;
     width: 10px;
     height: 10px; }
