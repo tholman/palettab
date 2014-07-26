@@ -4,13 +4,15 @@ var colorFonts = (function() {
     var body, reloadButton, reloadSvg, textField;
 
     var colorSet, localLoader;
-    var cardElements, cards, cardTop, cardBottom, fontSamples, fontNames, fontCreators, hexValues, eyes;
+    var cardElements, cards, cardDivs, cardTop, cardBottom, fontSamples, fontNames, fontCreators, hexValues, eyes;
     var palleteName, palleteCreator, palleteColors;
 
     var rotation = 0;
 
     var cardWidth = 250;
     var cardHeight = 430;
+
+    var inertiaNames = [ 'inertia-a', 'inertia-b', 'inertia-x', 'inertia-c', 'inertia-d']
 
     /* -------------------------
     /* UTILS
@@ -75,7 +77,7 @@ var colorFonts = (function() {
         var j = 0;
         for( var i = -2; i < 3; i++ ){
             var rotate = i * 6;
-            cardElements[j].style.webkitTransform = 'translate3d(' + center + 'px, ' + top + 'px, 0px) rotateZ(' + rotate + 'deg)';
+            cardElements[j].style.webkitTransform = 'translate3d(' + center + 'px, ' + top + 'px, 0px) rotateZ(' + 0 + 'deg)';
             j++;
         }    
 
@@ -86,7 +88,8 @@ var colorFonts = (function() {
             var j = 0;
             for( var i = -2; i < 3; i++ ){
                 var left = Math.floor( (center + ( i * (cardWidth + 6) ) ) ) ;
-                cardElements[j].style.webkitTranstion = '-webkit-transform 500ms ease';
+                cardDivs[j].style.webkitAnimation = inertiaNames[j] + ' 600ms';
+                cardElements[j].style.webkitTransition = '-webkit-transform 900ms ease';
                 cardElements[j].style.webkitTransform = 'translate3d(' + left + 'px, ' + top + 'px, 0px) rotateZ(0deg)';
                 j++;
             }            
@@ -216,8 +219,8 @@ var colorFonts = (function() {
         }
 
         cardElements     = document.querySelectorAll( '.card-holster' );
-
         cards            = document.querySelectorAll( '.color-wrapper' );
+        cardDivs         = document.querySelectorAll( '.card' );
 
         cardTop          = document.querySelectorAll( '.top-half' );
         cardBottom       = document.querySelectorAll( '.bottom-half' );
