@@ -41,7 +41,7 @@ var colorFonts = (function() {
         for( i; i < cards.length; i++ ) {
             (function() {
                 var card = cards[i];
-                cards[i].addEventListener( 'click', function( event ) { barClick( event ) } );
+                cards[i].addEventListener( 'click', function( event ) { barClick( event, card ) } );
                 cardTop[i].addEventListener( 'mouseover', function( event ) { onMouseOverTop( event, card ) });
                 cardTop[i].addEventListener( 'mouseout', function( event ) { onMouseOut( event, card ) });
                 cardBottom[i].addEventListener( 'mouseover', function( event ) { onMouseOverBottom( event, card ) } );
@@ -142,11 +142,10 @@ var colorFonts = (function() {
         reloadColors();
     }
 
-    function barClick( event ) {
+    function barClick( event, card ) {
         
-        var element = event.srcElement;
-        copyText( element.getAttribute('data-color') || element.innerHTML );
-        copySuccess( element );
+        copyText( card.getAttribute('data-color'));
+        copySuccess( card );
     }
 
     function copyText( text ) {
