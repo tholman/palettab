@@ -2017,11 +2017,11 @@ var fontOptions = [
     "name": "Bilbo",
     "creator": "TypeSETit"
   },
-  {
-    "name": "Condiment",
-    "creator": "Sudtipos",
-    "line": 191
-  },
+  // {
+  //   "name": "Condiment",
+  //   "creator": "Sudtipos",
+  //   "line": 191
+  // },
   {
     "name": "Stint Ultra Condensed",
     "creator": "Astigmatic"
