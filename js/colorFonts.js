@@ -3,11 +3,14 @@ var colorFonts = (function() {
     'use strict';
     var body, reloadButton, reloadSvg, textField;
 
-    var colorSet;
-    var cards, cardTop, cardBottom, fontSamples, fontNames, fontCreators, hexValues, eyes;
+    var colorSet, localLoader;
+    var cardElements, cards, cardTop, cardBottom, fontSamples, fontNames, fontCreators, hexValues, eyes;
     var palleteName, palleteCreator, palleteColors;
 
     var rotation = 0;
+
+    var cardWidth = 250;
+    var cardHeight = 430;
 
     /* -------------------------
     /* UTILS
@@ -44,8 +47,9 @@ var colorFonts = (function() {
 
         // Bind events
         reloadButton.addEventListener('click', function() { reloadClick() });
-
         assignFonts();
+
+        initializePositions();
 
         setTimeout( function() {
             body.style.backgroundColor = '#f8f8f8'; // This fades in the color.
@@ -53,7 +57,31 @@ var colorFonts = (function() {
             loader( colorSet.colors );
         }, 0 );
 
+        setTimeout( function() {
+            revealCards();
+        }, 1000 );
+
+        setTimeout( function() {
+            loader.stop();
+        }, 1500 );
+
         // Initialize loader
+    }
+
+    // Series of timed animations, to reveal the font cards.
+    function revealCards() {
+
+        var top = (window.innerHeight / 2);
+        var left = (window.innerWidth / 2);
+        cardElements.style.webkitTransform = 'translate3d(' + left + 'px, ' + top + 'px, 0px)';
+
+    }
+
+    function initializePositions() {
+        var top = window.innerHeight + (cardHeight / 2);
+        var left = (window.innerWidth / 2);
+        cardElements.style.webkitTransform = 'translate3d(' + left + 'px, ' + top + 'px, 0px)';
+        cardElements.style.display = 'block';
     }
 
     // @TODO: Find a  better way that is not constantly adding classes
@@ -149,6 +177,7 @@ var colorFonts = (function() {
         textField        = document.createElement( 'textarea' );
 
         // Cards
+        cardElements     = document.querySelector( '.card-holster' );
         cards            = document.querySelectorAll( '.color-wrapper' );
 
         cardTop          = document.querySelectorAll( '.top-half' );

@@ -116,14 +116,14 @@ $squareWidth: 10px;
 .card-holster {
 
 	// Temporarily center card
-	-webkit-transform: translate3d( -50%, -50%, 0px );
-	-webkit-transition: -webkit-transform 300ms ease;
+	-webkit-transition: -webkit-transform 900ms ease;
 	-webkit-transform-origin: 50% 50%;
 	transform-style: preserve-3d;
 	-webkit-perspective: 1000px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
+	height: 430px;
+	width: 250px;
+
+	display: none;
 
 	// Fixed now, will be dynamic later!
 	.card {
@@ -442,6 +442,6 @@ footer {
 }
 
 // Temporarily hide
-.reload, .card-holster, .pallete-info, footer {
+.reload, .pallete-info, footer {
 	display: none;
 }

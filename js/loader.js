@@ -6,6 +6,8 @@ var loader = (function() {
     var body, loader, squares;
     var interval;
 
+    var initPeriod = 8;
+
     /* -------------------------
     /* UTILS
     /* -------------------------*/
@@ -44,6 +46,7 @@ var loader = (function() {
 
     function stop() {
     	clearInterval( interval );
+        // loader.style.display = 'none';
     }
 
     function main( colors ) {
@@ -58,7 +61,7 @@ var loader = (function() {
             colors[3],
             colors[2],
             colors[1],
-            colors[0],
+            colors[0]
         ];
 
         // Caching
@@ -84,6 +87,7 @@ var loader = (function() {
     }
 
     return extend( main, {
+        stop: stop
     });
 
 })();
