@@ -62,9 +62,22 @@ var loader = (function() {
         ];
 
         // Caching
-        body             = document.body;
-        loader           = document.querySelector( '.loader' );
-        squares          = document.querySelectorAll( '.loader .square' );
+        body               = document.body;
+        loader             = document.querySelector( '.loader' );
+        var squareElements = document.querySelectorAll( '.loader .square' );
+        
+        // Arranged square elements so they look snake like!
+        squares = [
+            squareElements[0],
+            squareElements[1],
+            squareElements[2],
+            squareElements[5],
+            squareElements[8],
+            squareElements[7],
+            squareElements[6],
+            squareElements[3],
+            squareElements[4]
+        ]
 
         // Initialize
         init();
