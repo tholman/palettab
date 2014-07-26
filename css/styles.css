@@ -72,7 +72,7 @@ textarea {
   transform-style: preserve-3d;
   -webkit-perspective: 1000px;
   height: 430px;
-  width: 250px;
+  width: 0px;
   display: none; }
   .card-holster .card {
     -webkit-transition: -webkit-transform 400ms ease;
