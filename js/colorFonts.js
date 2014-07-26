@@ -65,26 +65,54 @@ var colorFonts = (function() {
             loader.stop();
         }, 1500 );
 
-        // Initialize loader
     }
 
     // Series of timed animations, to reveal the font cards.
     function revealCards() {
 
         var top = Math.floor(window.innerHeight / 2);
-        var left = Math.floor(window.innerWidth / 2);
-        cardElements.style.webkitTransform = 'translate3d(' + left + 'px, ' + top + 'px, 0px)';
+        var center = Math.floor(window.innerWidth / 2);
+        var j = 0;
+        for( var i = -2; i < 3; i++ ){
+            var rotate = i * 6;
+            cardElements[j].style.webkitTransform = 'translate3d(' + center + 'px, ' + top + 'px, 0px) rotateZ(' + rotate + 'deg)';
+            j++;
+        }    
+
+        // @TODO: Do this on animation end, rather than with a timeout.
+        setTimeout( function() {
+            var top = Math.floor(window.innerHeight / 2);
+            var center = Math.floor(window.innerWidth / 2);
+            var j = 0;
+            for( var i = -2; i < 3; i++ ){
+                var left = Math.floor( (center + ( i * (cardWidth + 6) ) ) ) ;
+                cardElements[j].style.webkitTranstion = '-webkit-transform 500ms ease';
+                cardElements[j].style.webkitTransform = 'translate3d(' + left + 'px, ' + top + 'px, 0px) rotateZ(0deg)';
+                j++;
+            }            
+        }, 900 );
 
     }
 
     function initializePositions() {
         var top = window.innerHeight + (cardHeight / 2);
         var left = Math.floor(window.innerWidth / 2);
-        cardElements.style.webkitTransform = 'translate3d(' + left + 'px, ' + top + 'px, 0px)';
-        cardElements.style.display = 'block';
+        
+        // Start positions
+        for( var i = 0; i < cardElements.length; i++ ) {
+            cardElements[i].style.webkitTransform = 'translate3d(' + left + 'px, ' + top + 'px, 0px)';
+            cardElements[i].style.display = 'block';
+        }
+
+        // Start Z Indexs, there's probably a smart mathy way to do this in the above loop.
+        cardElements[0].style.zIndex = 1
+        cardElements[1].style.zIndex = 2
+        cardElements[2].style.zIndex = 3
+        cardElements[3].style.zIndex = 2
+        cardElements[4].style.zIndex = 1
     }
 
-    // @TODO: Find a  better way that is not constantly adding classes
+    // @TODO: Find a better way that is not constantly adding classes
     function onMouseOverTop( event, element ) {
         element.classList.remove( 'mouse-over-bottom' );
         element.classList.add( 'mouse-over-top' );
@@ -177,7 +205,18 @@ var colorFonts = (function() {
         textField        = document.createElement( 'textarea' );
 
         // Cards
-        cardElements     = document.querySelector( '.card-holster' );
+        var cardElement     = document.querySelector( '.card-holster' );
+        // Clone this card, 4 more times.
+        var i = 0;
+        for( i; i < 4; i++ ) {
+
+            // console.log( i );
+            var newCard = cardElement.cloneNode( true );
+            cardElement.parentNode.insertBefore(newCard, cardElement.nextSibling);
+        }
+
+        cardElements     = document.querySelectorAll( '.card-holster' );
+
         cards            = document.querySelectorAll( '.color-wrapper' );
 
         cardTop          = document.querySelectorAll( '.top-half' );

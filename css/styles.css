@@ -74,6 +74,7 @@ textarea {
   -webkit-perspective: 1000px;
   height: 430px;
   width: 0px;
+  position: absolute;
   display: none; }
   .card-holster .card {
     -webkit-transition: -webkit-transform 400ms ease;

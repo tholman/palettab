@@ -46,7 +46,7 @@ var loader = (function() {
 
     function stop() {
     	clearInterval( interval );
-        // loader.style.display = 'none';
+        loader.style.display = 'none';
     }
 
     function main( colors ) {
