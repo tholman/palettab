@@ -414,8 +414,8 @@ footer {
 		}
 
 		.footer-bottom {
-			padding-right: 20px;
-			padding-left: 20px;
+			padding-right: 30px;
+			padding-left: 30px;
 			background: #fff;
 			height: 70px;
 
@@ -432,6 +432,24 @@ footer {
 				span {
 					font-weight: normal;
 					color: #b2d4dc;
+				}
+			}
+
+			.about {
+				-webkit-transform: translateX(-50%);
+				letter-spacing: 0.5px;
+				position: absolute;
+				padding-top: 16px;
+				font-size: 12px;
+				left: 50%;
+
+				a {
+					text-decoration: none;
+					color: #bb84a6;
+
+					&:hover {
+						text-decoration: underline;
+					}
 				}
 			}
 		}

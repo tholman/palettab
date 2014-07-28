@@ -274,8 +274,8 @@ footer {
     footer .footer-item:hover {
       -webkit-transform: translateY(40px); }
     footer .footer-item .footer-bottom {
-      padding-right: 20px;
-      padding-left: 20px;
+      padding-right: 30px;
+      padding-left: 30px;
       background: #fff;
       height: 70px; }
       footer .footer-item .footer-bottom .logo {
@@ -290,6 +290,18 @@ footer {
         footer .footer-item .footer-bottom .logo span {
           font-weight: normal;
           color: #b2d4dc; }
+      footer .footer-item .footer-bottom .about {
+        -webkit-transform: translateX(-50%);
+        letter-spacing: 0.5px;
+        position: absolute;
+        padding-top: 16px;
+        font-size: 12px;
+        left: 50%; }
+        footer .footer-item .footer-bottom .about a {
+          text-decoration: none;
+          color: #bb84a6; }
+          footer .footer-item .footer-bottom .about a:hover {
+            text-decoration: underline; }
   footer .top-dip-thingo {
     height: 15px; }
   footer .the-rest {
