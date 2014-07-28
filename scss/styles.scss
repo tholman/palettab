@@ -351,52 +351,6 @@ $squareWidth: 10px;
 	}
 }
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes inertia-a {
-    0% {
-    	-webkit-transform: translate3d( -50%, -50%, 0px ) rotateZ(0deg);
-    }
-    50% {
-    	-webkit-transform: translate3d( -50%, -50%, 0px ) rotateZ(-12deg);
-    }
-    100% {
-    	-webkit-transform: translate3d( -50%, -50%, 0px ) rotateZ(0deg);
-    }
-}
-@-webkit-keyframes inertia-b {
-    0% {
-    	-webkit-transform: translate3d( -50%, -50%, 0px ) rotateZ(0deg);
-    }
-    30% {
-    	-webkit-transform: translate3d( -50%, -50%, 0px ) rotateZ(-6deg);
-    }
-    100% {
-    	-webkit-transform: translate3d( -50%, -50%, 0px ) rotateZ(0deg);
-    }
-}
-@-webkit-keyframes inertia-c {
-    0% {
-    	-webkit-transform: translate3d( -50%, -50%, 0px ) rotateZ(0deg);
-    }
-    30% {
-    	-webkit-transform: translate3d( -50%, -50%, 0px ) rotateZ(6deg);
-    }
-    100% {
-    	-webkit-transform: translate3d( -50%, -50%, 0px ) rotateZ(0deg);
-    }
-}
-@-webkit-keyframes inertia-d {
-    0% {
-    	-webkit-transform: translate3d( -50%, -50%, 0px ) rotateZ(0deg);
-    }
-    50% {
-    	-webkit-transform: translate3d( -50%, -50%, 0px ) rotateZ(12deg);
-    }
-    100% {
-    	-webkit-transform: translate3d( -50%, -50%, 0px ) rotateZ(0deg);
-    }
-}
-
 .pallete-info {
 	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	-webkit-transform: translateX(-50%);

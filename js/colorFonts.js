@@ -90,8 +90,7 @@ var colorFonts = (function() {
             var j = 0;
             for( var i = -2; i < 3; i++ ){
                 var left = Math.floor( (center + ( i * (cardWidth + 6) ) ) ) ;
-                cardDivs[j].style.webkitAnimation = inertiaNames[j] + ' 600ms';
-                cardElements[j].style.webkitTransition = '-webkit-transform 900ms ease';
+                cardElements[j].style.webkitTransition = '-webkit-transform 400ms ease';
                 cardElements[j].style.webkitTransform = 'translate3d(' + left + 'px, ' + top + 'px, 0px) rotateZ(0deg)';
                 j++;
             }            
