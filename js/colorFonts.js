@@ -78,34 +78,24 @@ var colorFonts = (function() {
         var center = Math.floor(window.innerWidth / 2);
         var j = 0;
         for( var i = -2; i < 3; i++ ){
-            var rotate = i * 6;
-            cardElements[j].style.webkitTransform = 'translate3d(' + center + 'px, ' + top + 'px, 0px) rotateZ(' + 0 + 'deg)';
+            var left = Math.floor( (center + ( i * (cardWidth + 6) ) ) ) ;
+            cardElements[j].style.webkitTransform = 'translate3d(' + left + 'px, ' + top + 'px, 0px)';
             j++;
-        }    
-
-        // @TODO: Do this on animation end, rather than with a timeout.
-        setTimeout( function() {
-            var top = Math.floor(window.innerHeight / 2);
-            var center = Math.floor(window.innerWidth / 2);
-            var j = 0;
-            for( var i = -2; i < 3; i++ ){
-                var left = Math.floor( (center + ( i * (cardWidth + 6) ) ) ) ;
-                cardElements[j].style.webkitTransition = '-webkit-transform 400ms ease';
-                cardElements[j].style.webkitTransform = 'translate3d(' + left + 'px, ' + top + 'px, 0px) rotateZ(0deg)';
-                j++;
-            }            
-        }, 900 );
+        }  
 
     }
 
     function initializePositions() {
         var top = window.innerHeight + (cardHeight / 2);
-        var left = Math.floor(window.innerWidth / 2);
+        var center = Math.floor(window.innerWidth / 2);
         
         // Start positions
-        for( var i = 0; i < cardElements.length; i++ ) {
-            cardElements[i].style.webkitTransform = 'translate3d(' + left + 'px, ' + top + 'px, 0px)';
-            cardElements[i].style.display = 'block';
+        var j = 0;
+        for( var i = -2; i < 3; i++ ){
+            var left = Math.floor( (center + ( i * (cardWidth + 6) ) ) ) ;
+            cardElements[j].style.webkitTransform = 'translate3d(' + left + 'px, ' + top + 'px, 0px)';
+            cardElements[j].style.display = 'block';
+            j++;
         }
 
         // Start Z Indexs, there's probably a smart mathy way to do this in the above loop.
@@ -114,6 +104,12 @@ var colorFonts = (function() {
         cardElements[2].style.zIndex = 3
         cardElements[3].style.zIndex = 2
         cardElements[4].style.zIndex = 1
+
+        cardElements[0].style.webkitTransitionDelay = '300ms';
+        cardElements[1].style.webkitTransitionDelay = '150ms';
+        cardElements[2].style.webkitTransitionDelay = '0ms';
+        cardElements[3].style.webkitTransitionDelay = '150ms';
+        cardElements[4].style.webkitTransitionDelay = '300ms';
     }
 
     // @TODO: Find a better way that is not constantly adding classes
