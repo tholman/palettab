@@ -120,16 +120,26 @@ $squareWidth: 10px;
 	-webkit-transition: -webkit-transform 600ms ease;
 	-webkit-transform-origin: 50% 50%;
 	transform-style: preserve-3d;
-	-webkit-perspective: 1000px;
+	-webkit-perspective: 3000px;
 	height: 430px;
 	width: 0px;
 	position: absolute;
-
 	display: none;
+
+	&.flipped {
+
+		.front {
+			-webkit-transform: translate3d(-50%, -50%, 0px) rotateY(180deg) !important;
+		}
+
+		.back {
+			-webkit-transform: translate3d(-50%, -50%, 0px) rotateY(0deg) !important;
+		}
+	}
 
 	// Fixed now, will be dynamic later!
 	.card {
-		-webkit-transition: -webkit-transform 400ms ease;
+		-webkit-transition: -webkit-transform 500ms ease;
 		-webkit-transform: translate3d(-50%, -50%, 0px);
 		-webkit-backface-visibility: hidden;
 		position: absolute;
@@ -140,6 +150,12 @@ $squareWidth: 10px;
 		z-index: 2;
 		height: 430px;
 		width: 250px;
+
+		&.back {
+			z-index: 1;
+			-webkit-transform: translate3d(-50%, -50%, 0px) rotateY(-180deg);
+			$delay: 200ms;
+		}
 
 		.color-wrapper {
 			border-radius: 5px 5px 10px 10px;
@@ -484,9 +500,4 @@ footer {
 		float: left;
 		fill: #fff;
 	}
-}
-
-// Temporarily hide
-.reload, .pallete-info {
-	display: none;
 }

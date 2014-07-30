@@ -4,13 +4,15 @@ var colorFonts = (function() {
     var body, reloadButton, reloadSvg, textField;
 
     var colorSet, localLoader;
-    var cardElements, cards, cardDivs, cardTop, cardBottom, fontSamples, fontNames, fontCreators, hexValues, eyes;
+    var cardSets = [];
     var palleteName, palleteCreator, palleteColors;
 
     var rotation = 0;
 
     var cardWidth = 250;
     var cardHeight = 430;
+
+    var flipped = false;
 
     var inertiaNames = [ 'inertia-a', 'inertia-b', 'inertia-x', 'inertia-c', 'inertia-d']
 
@@ -38,14 +40,14 @@ var colorFonts = (function() {
     function init() {
 
         var i = 0;
-        for( i; i < cards.length; i++ ) {
+        for( i; i < cardSets.length; i++ ) {
             (function() {
-                var card = cards[i];
-                cards[i].addEventListener( 'click', function( event ) { barClick( event, card ) } );
-                cardTop[i].addEventListener( 'mouseover', function( event ) { onMouseOverTop( event, card ) });
-                cardTop[i].addEventListener( 'mouseout', function( event ) { onMouseOut( event, card ) });
-                cardBottom[i].addEventListener( 'mouseover', function( event ) { onMouseOverBottom( event, card ) } );
-                cardBottom[i].addEventListener( 'mouseout', function( event ) { onMouseOut( event, card ) });
+                var card = cardSets[i].front;
+                card.top.addEventListener( 'click', function( event ) { barClick( event, card.main ) } );
+                card.top.addEventListener( 'mouseover', function( event ) { onMouseOverTop( event, card.main ) });
+                card.top.addEventListener( 'mouseout', function( event ) { onMouseOut( event, card.main ) });
+                card.bottom.addEventListener( 'mouseover', function( event ) { onMouseOverBottom( event, card.main ) } );
+                card.main.addEventListener( 'mouseout', function( event ) { onMouseOut( event, card.main ) });
             })();
         }
 
@@ -79,7 +81,7 @@ var colorFonts = (function() {
         var j = 0;
         for( var i = -2; i < 3; i++ ){
             var left = Math.floor( (center + ( i * (cardWidth + 6) ) ) ) ;
-            cardElements[j].style.webkitTransform = 'translate3d(' + left + 'px, ' + top + 'px, 0px)';
+            cardSets[j].main.style.webkitTransform = 'translate3d(' + left + 'px, ' + top + 'px, 0px)';
             j++;
         }  
 
@@ -93,23 +95,23 @@ var colorFonts = (function() {
         var j = 0;
         for( var i = -2; i < 3; i++ ){
             var left = Math.floor( (center + ( i * (cardWidth + 6) ) ) ) ;
-            cardElements[j].style.webkitTransform = 'translate3d(' + left + 'px, ' + top + 'px, 0px)';
-            cardElements[j].style.display = 'block';
+            cardSets[j].main.style.webkitTransform = 'translate3d(' + left + 'px, ' + top + 'px, 0px)';
+            cardSets[j].main.style.display = 'block';
             j++;
         }
 
-        // Start Z Indexs, there's probably a smart mathy way to do this in the above loop.
-        cardElements[0].style.zIndex = 1
-        cardElements[1].style.zIndex = 2
-        cardElements[2].style.zIndex = 3
-        cardElements[3].style.zIndex = 2
-        cardElements[4].style.zIndex = 1
+        // @TODO: Move into above loop.
+        cardSets[0].main.style.zIndex = 1
+        cardSets[1].main.style.zIndex = 2
+        cardSets[2].main.style.zIndex = 3
+        cardSets[3].main.style.zIndex = 2
+        cardSets[4].main.style.zIndex = 1
 
-        cardElements[0].style.webkitTransitionDelay = '300ms';
-        cardElements[1].style.webkitTransitionDelay = '150ms';
-        cardElements[2].style.webkitTransitionDelay = '0ms';
-        cardElements[3].style.webkitTransitionDelay = '150ms';
-        cardElements[4].style.webkitTransitionDelay = '300ms';
+        cardSets[0].main.style.webkitTransitionDelay = '300ms';
+        cardSets[1].main.style.webkitTransitionDelay = '150ms';
+        cardSets[2].main.style.webkitTransitionDelay = '0ms';
+        cardSets[3].main.style.webkitTransitionDelay = '150ms';
+        cardSets[4].main.style.webkitTransitionDelay = '300ms';
     }
 
     // @TODO: Find a better way that is not constantly adding classes
@@ -132,9 +134,25 @@ var colorFonts = (function() {
 
     function reloadClick() {
 
+        flipped = !flipped;
         rotation -= 180;
         reloadSvg.style.webkitTransform = 'translateZ(0px) rotateZ( ' + rotation + 'deg )';
         reloadColors();
+        assignFonts();
+        flipCards();
+    }
+
+    function flipCards() {
+
+        var setTo = 'card-holster';
+        if( flipped ) {
+            setTo = 'card-holster flipped'
+        }
+
+        var i = 0;
+        for( i; i < cardSets.length; i++ ) {
+            cardSets[i].main.className = setTo;
+        }
     }
 
     function barClick( event, card ) {
@@ -164,13 +182,20 @@ var colorFonts = (function() {
         var colorSet = set.colors;
 
         var i = 0;
-        for( i; i < cards.length; i++ ) {
-            var card = cards[i];
+        for( i; i < cardSets.length; i++ ) {
+            
+            var card;
+            if( flipped ) {
+                card = cardSets[i].back
+            } else {
+                card = cardSets[i].front
+            }
+
             var hashColor = '#' + colorSet[i];
-            card.setAttribute( 'data-color', hashColor );
-            card.style.backgroundColor = hashColor;
-            hexValues[i].innerHTML = hashColor;
-            eyes[i].style.fill = hashColor;
+            card.main.setAttribute( 'data-color', hashColor );
+            card.colorWrapper.style.backgroundColor = hashColor;
+            card.hex.innerHTML = hashColor;
+            card.eye.style.fill = hashColor;
         }
 
         for( i = 0; i < palleteColors.length; i++ ) {
@@ -184,12 +209,58 @@ var colorFonts = (function() {
     function assignFonts() {
 
         var i = 0;
-        for( i; i < cards.length; i++ ) {
-            fontSamples[i].style.fontFamily = usedFonts[i].name;
-            fontNames[i].innerHTML          = usedFonts[i].name;
-            fontCreators[i].innerHTML       = "by " + usedFonts[i].creator;
-            cardBottom[i].href              = "http://www.google.com/fonts/specimen/" + usedFonts[i].name
+        for( i; i < cardSets.length; i++ ) {
+
+            var card;
+            if( flipped ) {
+                card = cardSets[i].back
+            } else {
+                card = cardSets[i].front
+            }
+            
+            card.top.style.fontFamily = usedFonts[i].name;
+            card.fontName.innerHTML          = usedFonts[i].name;
+            card.fontCreator.innerHTML       = "by " + usedFonts[i].creator;
+            card.bottom.href              = "http://www.google.com/fonts/specimen/" + usedFonts[i].name
         }
+    }
+
+    // Yeah, this is a bit excessive, but eh, nicer I feel than 3 functions that do small things.
+    function createCard( baseElement ) {
+
+        var card = {};
+        card.main = baseElement;
+        card.front = {};
+        card.back = {};
+
+        card.front.main = baseElement.querySelector( '.front' );
+        card.back.main  = baseElement.querySelector( '.back'  );
+
+        card.front.colorWrapper = card.front.main.querySelector( '.color-wrapper' );
+        card.back.colorWrapper   = card.back.main.querySelector( '.color-wrapper' );
+
+        card.front.top = card.front.main.querySelector( '.top-half' );
+        card.back.top   = card.back.main.querySelector( '.top-half' );
+
+        card.front.bottom = card.front.main.querySelector( '.bottom-half' );
+        card.back.bottom  = card.back.main.querySelector( '.bottom-half' );
+
+        card.front.sample = card.front.main.querySelector( '.font-container' );
+        card.back.sample  =  card.back.main.querySelector( '.font-container' );
+
+        card.front.hex = card.front.main.querySelector( '.hex-value' );
+        card.back.hex  =  card.back.main.querySelector( '.hex-value' );
+
+        card.front.fontName = card.front.main.querySelector( '.name' );
+        card.back.fontName  =  card.back.main.querySelector( '.name' );
+
+        card.front.fontCreator = card.front.main.querySelector( '.creator' );
+        card.back.fontCreator  =  card.back.main.querySelector( '.creator' );
+
+        card.front.eye = card.front.main.querySelector( '.eye svg path' );
+        card.back.eye  =  card.back.main.querySelector( '.eye svg path' );
+
+        return card;
     }
 
     function main() {
@@ -208,24 +279,18 @@ var colorFonts = (function() {
         var i = 0;
         for( i; i < 4; i++ ) {
 
-            // console.log( i );
             var newCard = cardElement.cloneNode( true );
             cardElement.parentNode.insertBefore(newCard, cardElement.nextSibling);
         }
 
-        cardElements     = document.querySelectorAll( '.card-holster' );
-        cards            = document.querySelectorAll( '.color-wrapper' );
-        cardDivs         = document.querySelectorAll( '.card' );
-
-        cardTop          = document.querySelectorAll( '.top-half' );
-        cardBottom       = document.querySelectorAll( '.bottom-half' );
-
-        fontSamples      = document.querySelectorAll( '.top-half .font-container' );
-        hexValues        = document.querySelectorAll( '.hex-value' );
-
-        fontNames        = document.querySelectorAll( '.name' );
-        fontCreators     = document.querySelectorAll( '.creator' );
-        eyes             = document.querySelectorAll( '.bottom-half .eye svg path' );
+        var cardElements = document.querySelectorAll( '.card-holster' );
+        for( i = 0; i < cardElements.length; i++ ) {
+            
+            var card = createCard( cardElements[i] );
+            card.front.main.style["-webkit-transition-delay"] = (( i * 200 ) + 'ms');
+            card.back.main.style["-webkit-transition-delay"] = (( i * 200 ) + 'ms');
+            cardSets.push( card );
+        }
 
         palleteColors    = document.querySelectorAll( '.sweet-color' );
         palleteName      = document.querySelector( '.pallete-info .name' );

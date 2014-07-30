@@ -71,13 +71,17 @@ textarea {
   -webkit-transition: -webkit-transform 600ms ease;
   -webkit-transform-origin: 50% 50%;
   transform-style: preserve-3d;
-  -webkit-perspective: 1000px;
+  -webkit-perspective: 3000px;
   height: 430px;
   width: 0px;
   position: absolute;
   display: none; }
+  .card-holster.flipped .front {
+    -webkit-transform: translate3d(-50%, -50%, 0px) rotateY(180deg) !important; }
+  .card-holster.flipped .back {
+    -webkit-transform: translate3d(-50%, -50%, 0px) rotateY(0deg) !important; }
   .card-holster .card {
-    -webkit-transition: -webkit-transform 400ms ease;
+    -webkit-transition: -webkit-transform 500ms ease;
     -webkit-transform: translate3d(-50%, -50%, 0px);
     -webkit-backface-visibility: hidden;
     position: absolute;
@@ -88,6 +92,9 @@ textarea {
     z-index: 2;
     height: 430px;
     width: 250px; }
+    .card-holster .card.back {
+      z-index: 1;
+      -webkit-transform: translate3d(-50%, -50%, 0px) rotateY(-180deg); }
     .card-holster .card .color-wrapper {
       border-radius: 5px 5px 10px 10px;
       height: 100%; }
@@ -320,6 +327,3 @@ footer {
   footer svg {
     float: left;
     fill: #fff; }
-
-.reload, .pallete-info {
-  display: none; }
