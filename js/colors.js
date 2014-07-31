@@ -1,7 +1,7 @@
 /*!
  * Color Fonts
  *
- * colors.js contains api results from colorlovers.com
+ * colors.js contains api results from colourlovers.com
  */
 
 var colors = [
@@ -1515,17 +1515,6 @@ var colors = [
       "152B3C"
     ],
     "url": "http://www.colourlovers.com/palette/712051/!_!"
-  },
-  {
-    "title": "takkun",
-    "userName": "oz",
-    "colors": [
-      "E65540",
-      "F8ECC2",
-      "65A8A6",
-      "79896D"
-    ],
-    "url": "http://www.colourlovers.com/palette/171/takkun"
   },
   {
     "title": "pablo neruda",

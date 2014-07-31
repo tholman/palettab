@@ -39,15 +39,26 @@ var colorFonts = (function() {
     // Initialize
     function init() {
 
-        var i = 0;
+        var i = 0, j;
         for( i; i < cardSets.length; i++ ) {
+            var j = 0;
+
             (function() {
-                var card = cardSets[i].front;
-                card.top.addEventListener( 'click', function( event ) { barClick( event, card.main ) } );
-                card.top.addEventListener( 'mouseover', function( event ) { onMouseOverTop( event, card.main ) });
-                card.top.addEventListener( 'mouseout', function( event ) { onMouseOut( event, card.main ) });
-                card.bottom.addEventListener( 'mouseover', function( event ) { onMouseOverBottom( event, card.main ) } );
-                card.main.addEventListener( 'mouseout', function( event ) { onMouseOut( event, card.main ) });
+                var card = cardSets[i];
+
+                card.front.top.addEventListener( 'click', function( event ) { barClick( event, card.front.main ) } );
+                card.front.top.addEventListener( 'mouseover', function( event ) { onMouseOverTop( event, card.front.main ) });
+                card.front.top.addEventListener( 'mouseout', function( event ) { onMouseOut( event, card.front.main ) });
+
+                card.back.top.addEventListener( 'click', function( event ) { barClick( event, card.back.main ) } );
+                card.back.top.addEventListener( 'mouseover', function( event ) { onMouseOverTop( event, card.back.main ) });
+                card.back.top.addEventListener( 'mouseout', function( event ) { onMouseOut( event, card.back.main ) });
+
+                card.front.bottom.addEventListener( 'mouseover', function( event ) { onMouseOverBottom( event, card.front.main ) } );
+                card.back.bottom.addEventListener( 'mouseover', function( event ) { onMouseOverBottom( event, card.back.main ) } );
+
+                card.front.main.addEventListener( 'mouseout', function( event ) { onMouseOut( event, card.front.main ) });
+                card.back.main.addEventListener( 'mouseout', function( event ) { onMouseOut( event, card.back.main ) });
             })();
         }
 
