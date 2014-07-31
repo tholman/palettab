@@ -558,17 +558,6 @@ var colors = [
     "url": "http://www.colourlovers.com/palette/100694/Machu_Picchu"
   },
   {
-    "title": "metro",
-    "userName": "COLOURlover",
-    "colors": [
-      "515151",
-      "FFFFFF",
-      "00B4FF",
-      "EEEEEE"
-    ],
-    "url": "http://www.colourlovers.com/palette/1/metro"
-  },
-  {
     "title": "The Way You Love Me",
     "userName": "sunmeadow",
     "colors": [
