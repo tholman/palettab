@@ -138,18 +138,6 @@ var colors = [
     "url": "http://www.colourlovers.com/palette/77121/Good_Friends"
   },
   {
-    "title": "w o r d l e s s .",
-    "userName": "tvr",
-    "colors": [
-      "FFFFFF",
-      "CBE86B",
-      "F2E9E1",
-      "1C140D",
-      "CBE86B"
-    ],
-    "url": "http://www.colourlovers.com/palette/359978/w_o_r_d_l_e_s_s_."
-  },
-  {
     "title": "Curiosity Killed",
     "userName": "Miaka",
     "colors": [
@@ -316,18 +304,6 @@ var colors = [
       "BF4D28"
     ],
     "url": "http://www.colourlovers.com/palette/953498/Headache"
-  },
-  {
-    "title": "tech light",
-    "userName": "COLOURlover",
-    "colors": [
-      "D1E751",
-      "FFFFFF",
-      "000000",
-      "4DBCE9",
-      "26ADE4"
-    ],
-    "url": "http://www.colourlovers.com/palette/15/tech_light"
   },
   {
     "title": "forever lost",
@@ -1758,18 +1734,6 @@ var colors = [
     "url": "http://www.colourlovers.com/palette/1602801/700_Magic_♥s"
   },
   {
-    "title": "Odd but trendy",
-    "userName": "Beklad",
-    "colors": [
-      "E0EFF1",
-      "7DB4B5",
-      "FFFFFF",
-      "680148",
-      "000000"
-    ],
-    "url": "http://www.colourlovers.com/palette/132637/Odd_but_trendy"
-  },
-  {
     "title": "Chasing Dragons",
     "userName": "Luna Rosa",
     "colors": [
@@ -2394,18 +2358,6 @@ var colors = [
     "url": "http://www.colourlovers.com/palette/473839/Octopus"
   },
   {
-    "title": "Blown Entrepreneur",
-    "userName": "entitydesigns",
-    "colors": [
-      "44749D",
-      "C6D4E1",
-      "FFFFFF",
-      "EBE7E0",
-      "BDB8AD"
-    ],
-    "url": "http://www.colourlovers.com/palette/59867/Blown_Entrepreneur"
-  },
-  {
     "title": "Hibiscus",
     "userName": "shore",
     "colors": [
@@ -2680,18 +2632,6 @@ var colors = [
       "875346"
     ],
     "url": "http://www.colourlovers.com/palette/1630424/California_English"
-  },
-  {
-    "title": "Bridal Veil",
-    "userName": "sewillia",
-    "colors": [
-      "FFFFFF",
-      "FFFAEB",
-      "F0F0D8",
-      "CFCFCF",
-      "967C52"
-    ],
-    "url": "http://www.colourlovers.com/palette/355834/Bridal_Veil"
   },
   {
     "title": "BIG OLE JET AIRLINER",
