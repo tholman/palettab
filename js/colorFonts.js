@@ -220,6 +220,7 @@ var colorFonts = (function() {
     function assignFonts() {
 
         var i = 0;
+        var usedFonts = fontLoader.getCurrentFontNames();
         for( i; i < cardSets.length; i++ ) {
 
             var card;
@@ -234,6 +235,7 @@ var colorFonts = (function() {
             card.fontCreator.innerHTML       = "by " + usedFonts[i].creator;
             card.bottom.href              = "http://www.google.com/fonts/specimen/" + usedFonts[i].name
         }
+        fontLoader.cacheNextFonts();
     }
 
     // Yeah, this is a bit excessive, but eh, nicer I feel than 3 functions that do small things.

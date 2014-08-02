@@ -2604,17 +2604,3 @@ var fontOptions = [
     "creator": "Eduardo Tunni"
   }
 ]
-
-var usedFonts = [];
-var totalFontOptions = 5;
-var i = 0;
-for( i; i < totalFontOptions; i++ ) {
-	usedFonts.push( fontOptions[ Math.floor( Math.random() * fontOptions.length ) ] );
-}
-
-var WebFontConfig = {
-    google: {
-        families: [ usedFonts[0].name, usedFonts[1].name, usedFonts[2].name, usedFonts[3].name, usedFonts[4].name ],
-        text: 'AaBbCcg' // Only need these letters, thanks google fonts for being awesome!
-    }
-};
