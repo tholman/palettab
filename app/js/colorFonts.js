@@ -13,6 +13,7 @@ var colorFonts = (function() {
     var cardHeight = 430;
 
     var flipped = false;
+    var reloadEnabled = true;
 
     var inertiaNames = [ 'inertia-a', 'inertia-b', 'inertia-x', 'inertia-c', 'inertia-d']
 
@@ -145,12 +146,25 @@ var colorFonts = (function() {
 
     function reloadClick() {
 
+        if ( reloadEnabled === false ) {
+            return;
+        }
+
+        reloadEnabled = false;
         flipped = !flipped;
         rotation -= 180;
         reloadSvg.style.webkitTransform = 'translateZ(0px) rotateZ( ' + rotation + 'deg )';
         reloadColors();
         assignFonts();
         flipCards();
+
+        // Re enable reload after cards flip.
+        // @TODO: Should bind on the animationend function.
+        setTimeout( enableReload, 1200 );
+    }
+
+    function enableReload() {
+        reloadEnabled = true;
     }
 
     function flipCards() {
