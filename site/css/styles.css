@@ -1,0 +1,45 @@
+/*
+ * site
+ *
+ * MIT licensed
+ * Copyright (C) 2013 Tim Holman, http://tholman.com
+ */
+/*********************************************
+ *
+ *********************************************/
+* {
+  box-sizing: border-box; }
+
+html, body {
+  min-height: 100%;
+  min-width: 100%;
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px; }
+
+.left {
+  height: 100%;
+  width: 50%;
+  float: left;
+  padding-right: 270px; }
+  .left .colors {
+    height: 100%;
+    width: 100%;
+    float: left;
+    background: #eee; }
+    .left .colors .color {
+      box-shadow: inset -2px 0 5px -2px rgba(0, 0, 0, 0.1);
+      float: left;
+      width: 100%;
+      height: 20%; }
+      .left .colors .color:nth-child(1) {
+        background: #FFF1BA; }
+      .left .colors .color:nth-child(2) {
+        background: #FFC6AB; }
+      .left .colors .color:nth-child(3) {
+        background: #E02856; }
+      .left .colors .color:nth-child(4) {
+        background: #84294E; }
+      .left .colors .color:nth-child(5) {
+        background: #3B0A2E; }
