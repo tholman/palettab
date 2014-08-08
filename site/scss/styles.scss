@@ -10,6 +10,7 @@
  *********************************************/
 
 * {
+	-webkit-font-smoothing: antialiased;
 	box-sizing: border-box;
 }
 
@@ -20,6 +21,7 @@ html, body {
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
+	color: #292e36;
 }
 
 .left {
@@ -63,3 +65,33 @@ html, body {
 		}
 	} 
 }
+
+.right {
+
+	-webkit-transform: translateY(-50%);
+	position: relative;
+	margin-left: -30px;
+	height: 400px;
+	float: left;
+	width: 50%;
+	top: 50%;
+
+	.logo {
+
+	}
+
+	header {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: bold;
+		line-height: 60px;
+		font-size: 60px;
+
+		img {
+			margin-bottom: -7px;
+		}
+	}
+}
+
+
+
+

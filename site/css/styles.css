@@ -8,6 +8,7 @@
  *
  *********************************************/
 * {
+  -webkit-font-smoothing: antialiased;
   box-sizing: border-box; }
 
 html, body {
@@ -16,7 +17,8 @@ html, body {
   height: 100%;
   width: 100%;
   padding: 0px;
-  margin: 0px; }
+  margin: 0px;
+  color: #292e36; }
 
 .left {
   height: 100%;
@@ -43,3 +45,19 @@ html, body {
         background: #84294E; }
       .left .colors .color:nth-child(5) {
         background: #3B0A2E; }
+
+.right {
+  -webkit-transform: translateY(-50%);
+  position: relative;
+  margin-left: -30px;
+  height: 400px;
+  float: left;
+  width: 50%;
+  top: 50%; }
+  .right header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 60px;
+    font-size: 60px; }
+    .right header img {
+      margin-bottom: -7px; }
