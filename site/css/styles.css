@@ -64,3 +64,9 @@ body {
     font-size: 60px; }
     .right header img {
       margin-bottom: -7px; }
+  .right .copy {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    line-height: 25px;
+    margin-top: 40px;
+    font-size: 16px;
+    width: 500px; }
