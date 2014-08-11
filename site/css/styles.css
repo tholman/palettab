@@ -50,6 +50,7 @@ body {
         background: #3B0A2E; }
 
 .right {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   -webkit-transform: translateY(-50%);
   position: relative;
   margin-left: -30px;
@@ -65,8 +66,26 @@ body {
     .right header img {
       margin-bottom: -7px; }
   .right .copy {
-    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     line-height: 25px;
     margin-top: 40px;
     font-size: 16px;
     width: 500px; }
+  .right .button {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    background: #4d7bd6;
+    background: linear-gradient(to top, #4d7bd6 0%, #5587da 100%);
+    box-shadow: inset -1px -1px 2px 0px #2d53af, 1px 1px 3px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid #93B2E5;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    line-height: 39px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 40px;
+    display: block;
+    width: 340px;
+    height: 40px;
+    color: #fff; }
+    .right .button:hover {
+      background: linear-gradient(to top, #5c8ded 0%, #5587da 100%); }
