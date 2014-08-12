@@ -89,3 +89,11 @@ body {
     color: #fff; }
     .right .button:hover {
       background: linear-gradient(to top, #5c8ded 0%, #5587da 100%); }
+
+.sharing {
+  position: fixed;
+  bottom: 15px;
+  right: 15px; }
+  .sharing .twitter-share-button {
+    vertical-align: bottom;
+    margin-right: 10px; }

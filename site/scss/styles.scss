@@ -127,6 +127,18 @@ body {
 	}
 }
 
+.sharing {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+
+	// Damn it twitter, behave!
+	.twitter-share-button {
+		vertical-align: bottom;
+		margin-right: 10px;
+	}
+}
+
 
 
 
