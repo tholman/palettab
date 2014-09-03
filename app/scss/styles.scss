@@ -61,7 +61,7 @@ body {
 	overflow: hidden;
 
   	-webkit-transform-style: preserve-3d;
-  	-webkit-perspective: 1400px;
+  	-webkit-perspective: 1800px;
 }
 
 // Only added to body temporarily when copying text, but keep hidden none the less.
@@ -125,7 +125,7 @@ $squareWidth: 10px;
 	-webkit-transition: -webkit-transform 600ms ease;
 	-webkit-transform-origin: 50% 50%;
 	transform-style: preserve-3d;
-	-webkit-perspective: 1700px;
+	-webkit-perspective: 1400px;
 	height: 430px;
 	width: 0px;
 	position: absolute;
@@ -138,7 +138,7 @@ $squareWidth: 10px;
 		-webkit-transition: -webkit-transform 500ms ease;
 
 		&:hover {
-			-webkit-transform: translateZ( 60px );
+			-webkit-transform: translateZ( 40px );
 		}
 	}
 
