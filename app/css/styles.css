@@ -72,13 +72,23 @@ textarea {
 .card-holster {
   -webkit-transition: -webkit-transform 600ms ease;
   -webkit-transform-origin: 50% 50%;
-  transform-style: preserve-3d;
-  -webkit-perspective: 1400px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-perspective: 1800px;
   height: 430px;
   width: 0px;
   position: absolute;
   display: none; }
+  .card-holster .front,
+  .card-holster .back {
+    -webkit-transition-property: -webkit-transform, box-shadow;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1); }
+  .card-holster:hover .front,
+  .card-holster:hover .back {
+    -webkit-transition-delay: 0ms !important;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1); }
   .card-holster .outer-wrapper {
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
     -webkit-transition-delay: 0ms;
     -webkit-transform: translateZ(0px);
     -webkit-transition: -webkit-transform 500ms ease; }
@@ -89,7 +99,7 @@ textarea {
   .card-holster.flipped .back {
     -webkit-transform: translate3d(-50%, -50%, 0px) rotateY(0deg) !important; }
   .card-holster .card {
-    -webkit-transition: -webkit-transform 500ms ease;
+    -webkit-transition: -webkit-transform 500ms ease, box-shadow 500ms ease;
     -webkit-transform: translate3d(-50%, -50%, 0px);
     -webkit-backface-visibility: hidden;
     position: absolute;

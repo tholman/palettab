@@ -316,8 +316,8 @@ var colorFonts = (function() {
         for( i = 0; i < cardElements.length; i++ ) {
             
             var card = createCard( cardElements[i] );
-            card.front.main.style["-webkit-transition-delay"] = (( i * 200 ) + 'ms');
-            card.back.main.style["-webkit-transition-delay"] = (( i * 200 ) + 'ms');
+            card.front.main.style["-webkit-transition-delay"] = (( i * 200 ) + 'ms, 0ms');
+            card.back.main.style["-webkit-transition-delay"] = (( i * 200 ) + 'ms, 0ms');
             cardSets.push( card );
         }
 
