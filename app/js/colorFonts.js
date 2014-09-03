@@ -60,6 +60,7 @@ var colorFonts = (function() {
 
                 card.front.main.addEventListener( 'mouseout', function( event ) { onMouseOut( event, card.front.main ) });
                 card.back.main.addEventListener( 'mouseout', function( event ) { onMouseOut( event, card.back.main ) });
+
             })();
         }
 
@@ -96,7 +97,6 @@ var colorFonts = (function() {
             cardSets[j].main.style.webkitTransform = 'translate3d(' + left + 'px, ' + top + 'px, 0px)';
             j++;
         }  
-
     }
 
     function initializePositions() {
@@ -244,10 +244,10 @@ var colorFonts = (function() {
                 card = cardSets[i].front
             }
             
-            card.top.style.fontFamily = usedFonts[i].name;
-            card.fontName.innerHTML          = usedFonts[i].name;
-            card.fontCreator.innerHTML       = "by " + usedFonts[i].creator;
-            card.bottom.href              = "http://www.google.com/fonts/specimen/" + usedFonts[i].name
+            card.top.style.fontFamily  = usedFonts[i].name;
+            card.fontName.innerHTML    = usedFonts[i].name;
+            card.fontCreator.innerHTML = "by " + usedFonts[i].creator;
+            card.bottom.href           = "http://www.google.com/fonts/specimen/" + usedFonts[i].name
         }
         fontLoader.cacheNextFonts();
     }
@@ -259,6 +259,8 @@ var colorFonts = (function() {
         card.main = baseElement;
         card.front = {};
         card.back = {};
+
+        card.wrapper = baseElement.querySelector( '.outer-wrapper' );
 
         card.front.main = baseElement.querySelector( '.front' );
         card.back.main  = baseElement.querySelector( '.back'  );

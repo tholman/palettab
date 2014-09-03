@@ -25,7 +25,9 @@ html, body, .main {
 body {
   -webkit-transition: background-color 1000ms linear;
   background-color: white;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-transform-style: preserve-3d;
+  -webkit-perspective: 1400px; }
 
 textarea {
   pointer-events: none;
@@ -71,11 +73,17 @@ textarea {
   -webkit-transition: -webkit-transform 600ms ease;
   -webkit-transform-origin: 50% 50%;
   transform-style: preserve-3d;
-  -webkit-perspective: 3000px;
+  -webkit-perspective: 1700px;
   height: 430px;
   width: 0px;
   position: absolute;
   display: none; }
+  .card-holster .outer-wrapper {
+    -webkit-transition-delay: 0ms;
+    -webkit-transform: translateZ(0px);
+    -webkit-transition: -webkit-transform 500ms ease; }
+    .card-holster .outer-wrapper:hover {
+      -webkit-transform: translateZ(60px); }
   .card-holster.flipped .front {
     -webkit-transform: translate3d(-50%, -50%, 0px) rotateY(180deg) !important; }
   .card-holster.flipped .back {
