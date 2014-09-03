@@ -75,8 +75,7 @@ body {
     background: #4d7bd6;
     background: linear-gradient(to top, #4d7bd6 0%, #5587da 100%);
     box-shadow: inset 0px 2px 0px 0px #6191de, 0px 2px 3px rgba(0, 0, 0, 0.2);
-    border-top: 1px solid #93B2E5;
-    border:1px solid #2d53af;
+    border: 1px solid #2d53af;
     text-decoration: none;
     text-align: center;
     border-radius: 3px;
@@ -92,7 +91,6 @@ body {
       background: linear-gradient(to top, #5587da 0%, #5c8ded 100%); }
     .right .button:active {
       background: linear-gradient(to top, #5c8ded 0%, #5587da 100%); }
-    
 
 .sharing {
   position: fixed;
