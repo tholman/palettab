@@ -142,7 +142,7 @@ $squareWidth: 10px;
 		.front,
 		.back {
 			-webkit-transition-delay: 0ms !important;
-			box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.1);
+			box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.05);
 		}
 	}
 
@@ -152,10 +152,10 @@ $squareWidth: 10px;
 		-webkit-transform-origin: 50% 50%;
 		-webkit-transition-delay: 0ms;
 		-webkit-transform: translateZ( 0px );
-		-webkit-transition: -webkit-transform 500ms ease;
+		-webkit-transition: -webkit-transform 150ms ease;
 
 		&:hover {
-			// -webkit-transform: translateZ( 40px );
+			-webkit-transform: translateZ( 40px );
 		}
 	}
 
@@ -172,7 +172,7 @@ $squareWidth: 10px;
 
 	// Fixed now, will be dynamic later!
 	.card {
-		-webkit-transition: -webkit-transform 500ms ease, box-shadow 500ms ease;
+		-webkit-transition: -webkit-transform 500ms ease, box-shadow 150ms ease;
 		-webkit-transform: translate3d(-50%, -50%, 0px);
 		-webkit-backface-visibility: hidden;
 		position: absolute;
@@ -439,7 +439,7 @@ $squareWidth: 10px;
 }
 
 footer {
-	-webkit-filter: drop-shadow(0px -2px 3px rgba(0,0,0,0.1));
+	-webkit-filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.1));
 	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	position: fixed;
 	height: 70px;
@@ -456,7 +456,7 @@ footer {
 
 
 	.footer-item {
-		-webkit-transition: -webkit-transform 300ms ease-in-out;
+		-webkit-transition: -webkit-transform 200ms ease-out;
 		-webkit-transform: translateY( 50px );
 		border-radius: 5px 5px 0px 0px;
 		text-align: center;
