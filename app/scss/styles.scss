@@ -155,7 +155,7 @@ $squareWidth: 10px;
 		-webkit-transition: -webkit-transform 500ms ease;
 
 		&:hover {
-			-webkit-transform: translateZ( 40px );
+			// -webkit-transform: translateZ( 40px );
 		}
 	}
 
@@ -408,6 +408,7 @@ $squareWidth: 10px;
 	text-align: center;
 	bottom: 70px;
 	left: 50%;
+	opacity: 0;
 
 	.colorset {
 		margin: auto;

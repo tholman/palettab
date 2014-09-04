@@ -92,8 +92,6 @@ textarea {
     -webkit-transition-delay: 0ms;
     -webkit-transform: translateZ(0px);
     -webkit-transition: -webkit-transform 500ms ease; }
-    .card-holster .outer-wrapper:hover {
-      -webkit-transform: translateZ(40px); }
   .card-holster.flipped .front {
     -webkit-transform: translate3d(-50%, -50%, 0px) rotateY(180deg) !important; }
   .card-holster.flipped .back {
@@ -257,7 +255,8 @@ textarea {
   position: absolute;
   text-align: center;
   bottom: 70px;
-  left: 50%; }
+  left: 50%;
+  opacity: 0; }
   .pallete-info .colorset {
     margin: auto;
     width: 160px; }

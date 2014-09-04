@@ -5,7 +5,7 @@ var colorFonts = (function() {
 
     var colorSet, localLoader;
     var cardSets = [];
-    var palleteName, palleteCreator, palleteColors;
+    var paletteInfo, palleteName, palleteCreator, palleteColors;
 
     var rotation = 0;
 
@@ -79,6 +79,11 @@ var colorFonts = (function() {
         setTimeout( function() {
             revealCards();
         }, 1000 );
+
+        setTimeout( function() {
+            // Reveal palette
+            paletteInfo.style.opacity = 1;
+        }, 1100 );
 
         setTimeout( function() {
             loader.stop();
@@ -322,6 +327,7 @@ var colorFonts = (function() {
         }
 
         palleteColors    = document.querySelectorAll( '.sweet-color' );
+        paletteInfo      = document.querySelector( '.pallete-info' );
         palleteName      = document.querySelector( '.pallete-info .name' );
         palleteCreator   = document.querySelector( '.pallete-info .creator' );
 
