@@ -81,11 +81,11 @@ var colorFonts = (function() {
         }, 1000 );
 
         setTimeout( function() {
-            // Reveal palette
             paletteInfo.style.opacity = 1;
         }, 1100 );
 
         setTimeout( function() {
+            reloadButton.classList.add( 'active' );
             loader.stop();
         }, 1500 );
 
