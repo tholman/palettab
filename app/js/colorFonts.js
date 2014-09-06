@@ -214,11 +214,16 @@ var colorFonts = (function() {
         element.style.top = position.y + 'px';
         element.style.color = color;
         document.body.appendChild( element );
+        element.addEventListener( "webkitAnimationEnd", copyAnimationEnd, false);
 
         // Debounce activating animation
         setTimeout( function() {
             element.classList.add( 'active' );
         }, 1);
+    }
+
+    function copyAnimationEnd( event ) {
+        document.body.removeChild( this );
     }
 
     function copySuccess( element ) {
