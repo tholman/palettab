@@ -186,8 +186,11 @@ var colorFonts = (function() {
     }
 
     function barClick( event, card ) {
+
+        var color = card.getAttribute('data-color');
         
-        copyText( card.getAttribute('data-color'));
+        copyText( color );
+        triggerCopyAnimation( event, color );
         copySuccess( card );
     }
 
@@ -197,6 +200,25 @@ var colorFonts = (function() {
         textField.select();
         document.execCommand( 'copy' );
         body.removeChild( textField );
+    }
+
+    function triggerCopyAnimation( event, color ) {
+
+        var position = {};
+        position.x = event.x;
+        position.y = event.y;
+
+        var element = document.createElement( 'div' );
+        element.className = "expander";
+        element.style.left = position.x + 'px';
+        element.style.top = position.y + 'px';
+        element.style.color = color;
+        document.body.appendChild( element );
+
+        // Debounce activating animation
+        setTimeout( function() {
+            element.classList.add( 'active' );
+        }, 1);
     }
 
     function copySuccess( element ) {

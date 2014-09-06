@@ -547,3 +547,29 @@ footer {
 		fill: #fff;
 	}
 }
+
+.expander {
+	// -webkit-transition: box-shadow 1000ms ease-out;
+	box-shadow: 0px 0px 1px 0px;
+	border-radius: 100%;
+	position: absolute;
+	margin-left: -1px;
+	margin-top: -1px;
+	height: 2px;
+	width: 2px;
+
+	&.active {
+		-webkit-animation: expand 1500ms;
+	}
+}
+
+@-webkit-keyframes expand {
+    0% {
+    	box-shadow: 0px 0px 1px 0px;
+    }
+
+    100% {
+    	box-shadow: 0px 0px 1px 2000px;
+    	opacity: 0;
+    }
+}
