@@ -54,10 +54,23 @@ body {
   -webkit-transform: translateY(-50%);
   position: relative;
   margin-left: -30px;
-  height: 400px;
+  margin-top: -5px;
   float: left;
   width: 50%;
   top: 50%; }
+  .right .logo {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 25px;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    float: left;
+    width: 100%; }
+    .right .logo .logo-colors {
+      margin-right: 10px; }
+    .right .logo .red {
+      font-weight: 300;
+      color: #ff6900; }
   .right header {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -99,3 +112,22 @@ body {
   .sharing .twitter-share-button {
     vertical-align: bottom;
     margin-right: 10px; }
+
+.logo-colors {
+  height: 30px;
+  width: 30px;
+  float: left; }
+  .logo-colors .square {
+    float: left;
+    width: 10px;
+    height: 10px; }
+    .logo-colors .square:nth-child(1), .logo-colors .square:nth-child(9) {
+      background: #3e6372; }
+    .logo-colors .square:nth-child(2), .logo-colors .square:nth-child(8) {
+      background: #2a3a48; }
+    .logo-colors .square:nth-child(3), .logo-colors .square:nth-child(7) {
+      background: #b2d4dc; }
+    .logo-colors .square:nth-child(4), .logo-colors .square:nth-child(6) {
+      background: #f5efde; }
+    .logo-colors .square:nth-child(5) {
+      background: #ff6900; }
