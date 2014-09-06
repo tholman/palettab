@@ -5,7 +5,7 @@ var colorFonts = (function() {
 
     var colorSet, localLoader;
     var cardSets = [];
-    var paletteInfo, palleteName, palleteCreator, palleteColors;
+    var paletteInfo, paletteName, paletteCreator, paletteColors;
 
     var rotation = 0;
 
@@ -255,12 +255,12 @@ var colorFonts = (function() {
             card.eye.style.fill = hashColor;
         }
 
-        for( i = 0; i < palleteColors.length; i++ ) {
-            palleteColors[i].style.background = '#' + colorSet[i];
+        for( i = 0; i < paletteColors.length; i++ ) {
+            paletteColors[i].style.background = '#' + colorSet[i];
         }
 
-        palleteName.innerHTML    = set.title;
-        palleteCreator.innerHTML = "by " + set.userName;
+        paletteName.innerHTML    = set.title;
+        paletteCreator.innerHTML = "by " + set.userName;
     }
 
     function assignFonts() {
@@ -353,10 +353,10 @@ var colorFonts = (function() {
             cardSets.push( card );
         }
 
-        palleteColors    = document.querySelectorAll( '.sweet-color' );
-        paletteInfo      = document.querySelector( '.pallete-info' );
-        palleteName      = document.querySelector( '.pallete-info .name' );
-        palleteCreator   = document.querySelector( '.pallete-info .creator' );
+        paletteColors    = document.querySelectorAll( '.sweet-color' );
+        paletteInfo      = document.querySelector( '.palette-info' );
+        paletteName      = document.querySelector( '.palette-info .name' );
+        paletteCreator   = document.querySelector( '.palette-info .creator' );
 
         // Initialize
         init();

@@ -256,7 +256,7 @@ textarea {
   .card-holster .mouse-over-bottom .eye {
     opacity: 1 !important; }
 
-.pallete-info {
+.palette-info {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   -webkit-transform: translateX(-50%);
   width: 500px;
@@ -265,20 +265,20 @@ textarea {
   bottom: 70px;
   left: 50%;
   opacity: 0; }
-  .pallete-info .colorset {
+  .palette-info .colorset {
     margin: auto;
     width: 160px; }
-    .pallete-info .colorset .sweet-color {
+    .palette-info .colorset .sweet-color {
       width: 20%;
       height: 5px;
       float: left; }
-  .pallete-info .name {
+  .palette-info .name {
     text-transform: capitalize;
     font-weight: bold;
     padding-top: 14px;
     font-size: 25px;
     color: #000; }
-  .pallete-info .creator {
+  .palette-info .creator {
     letter-spacing: 0.8px;
     font-weight: bold;
     padding-top: 4px;
