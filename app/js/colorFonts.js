@@ -72,7 +72,7 @@ var colorFonts = (function() {
 
         setTimeout( function() {
             body.style.backgroundColor = '#f8f8f8'; // This fades in the color.
-            reloadColors();
+            assignFirstColorSet();
             loader( colorSet.colors );
         }, 0 );
 
@@ -82,7 +82,7 @@ var colorFonts = (function() {
 
         setTimeout( function() {
             paletteInfo.style.opacity = 1;
-        }, 1100 );
+        }, 1200 );
 
         setTimeout( function() {
             reloadButton.classList.add( 'active' );
@@ -231,6 +231,18 @@ var colorFonts = (function() {
 
     function reloadColors() {
         colorSet = colors[ Math.floor( Math.random() * colors.length )]; //Random
+        assignColors( colorSet );
+    }
+
+    // Inneficient way to get a color set that has a small name.
+    function assignFirstColorSet() {
+
+        colorSet = colors[ Math.floor( Math.random() * colors.length )]; //Random      
+        var maxNameLength = 15;
+        while (colorSet.title.length > maxNameLength ) {
+            colorSet = colors[ Math.floor( Math.random() * colors.length )];
+        }
+
         assignColors( colorSet );
     }
 
