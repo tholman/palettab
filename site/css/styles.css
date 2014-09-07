@@ -134,16 +134,21 @@ body {
       background: #ff6900; }
 
 .card-holster {
-  -webkit-transition: -webkit-transform 600ms ease;
+  -webkit-transition: -webkit-transform 1000ms ease;
+  -webkit-transform: translateY(150%);
   -webkit-transform-origin: 50% 50%;
   -webkit-transform-style: preserve-3d;
   -webkit-perspective: 1800px;
-  -webkit-transform: translate3d(0%, -50%, 0px);
   height: 520px;
   width: 345px;
   position: absolute;
   right: 100px;
-  top: 50%; }
+  top: 50%;
+  margin-top: -260px; }
+  .card-holster.active {
+    -webkit-transform: translateY(0%); }
+  .card-holster.hide {
+    -webkit-transform: translateY(-150%); }
   .card-holster .card {
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
     position: absolute;
@@ -170,6 +175,14 @@ body {
       width: 100%;
       left: 0px;
       top: 0px; }
+      .card-holster .card .top-half .shine {
+        box-shadow: 0px 0px 80px 15px rgba(255, 255, 255, 0.5);
+        -webkit-transform: rotateZ(-35deg);
+        position: absolute;
+        width: 260px;
+        height: 0px;
+        left: -35px;
+        top: 60px; }
       .card-holster .card .top-half .font-container {
         position: absolute;
         height: 270px;
