@@ -224,8 +224,16 @@ $squareWidth: 10px;
 
 		.color-wrapper {
 			border-radius: 5px 5px 10px 10px;
-			height: 100%;
 			background: #3B0A2E;
+			height: 100%;
+		}
+
+		.discovered {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: bold;
+			margin-top: 20px;
+			font-size: 12px;
+			color: #fff;
 		}
 
 		.top-half {
@@ -239,7 +247,7 @@ $squareWidth: 10px;
 				position: absolute;
 				height: 270px;
 				width: 100%;
-				top: 75px;
+				top: 80px;
 
 				.sample-container {
 					font-family: 'Lobster', cursive;
@@ -258,7 +266,7 @@ $squareWidth: 10px;
 					}
 
 					&.small {
-						bottom: 20px;
+						bottom: 25px;
 						.sample {
 							font-size: 50px;
 						}
@@ -305,25 +313,24 @@ $squareWidth: 10px;
 
 			.bottom-bottom-container {
 				background: #fff;
-				height: 90px;
+				height: 110px;
 
 				.font-details {
 					-webkit-transition: opacity 300ms ease;
 					font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-					padding-top: 20px;
+					padding-top: 25px;
 					font-weight: bold;
 
 					.name {
-						text-transform: uppercase;
 						letter-spacing: 0.5px;
-						font-size: 15px;
+						font-size: 20px;
 						color: #000;
 					}
 
 					.creator {
 						letter-spacing: 0.4px;
 						margin-top: 4px;
-						font-size: 12px;
+						font-size: 14px;
 						color: #cccccc;
 					}
 				}

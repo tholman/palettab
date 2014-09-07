@@ -156,8 +156,14 @@ body {
     width: 345px; }
     .card-holster .card .color-wrapper {
       border-radius: 5px 5px 10px 10px;
-      height: 100%;
-      background: #3B0A2E; }
+      background: #3B0A2E;
+      height: 100%; }
+    .card-holster .card .discovered {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: 12px;
+      color: #fff; }
     .card-holster .card .top-half {
       position: absolute;
       height: 415px;
@@ -168,7 +174,7 @@ body {
         position: absolute;
         height: 270px;
         width: 100%;
-        top: 75px; }
+        top: 80px; }
         .card-holster .card .top-half .font-container .sample-container {
           font-family: 'Lobster', cursive;
           text-decoration: none;
@@ -181,7 +187,7 @@ body {
             .card-holster .card .top-half .font-container .sample-container.large .sample {
               font-size: 180px; }
           .card-holster .card .top-half .font-container .sample-container.small {
-            bottom: 20px; }
+            bottom: 25px; }
             .card-holster .card .top-half .font-container .sample-container.small .sample {
               font-size: 50px; }
     .card-holster .card .bottom-half {
@@ -211,19 +217,18 @@ body {
           fill: #fff; }
       .card-holster .card .bottom-half .bottom-bottom-container {
         background: #fff;
-        height: 90px; }
+        height: 110px; }
         .card-holster .card .bottom-half .bottom-bottom-container .font-details {
           -webkit-transition: opacity 300ms ease;
           font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-          padding-top: 20px;
+          padding-top: 25px;
           font-weight: bold; }
           .card-holster .card .bottom-half .bottom-bottom-container .font-details .name {
-            text-transform: uppercase;
             letter-spacing: 0.5px;
-            font-size: 15px;
+            font-size: 20px;
             color: #000; }
           .card-holster .card .bottom-half .bottom-bottom-container .font-details .creator {
             letter-spacing: 0.4px;
             margin-top: 4px;
-            font-size: 12px;
+            font-size: 14px;
             color: #cccccc; }
