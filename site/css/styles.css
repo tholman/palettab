@@ -27,7 +27,8 @@ body {
   height: 100%;
   width: 50%;
   float: left;
-  padding-right: 270px; }
+  padding-right: 270px;
+  position: relative; }
   .left .colors {
     height: 100%;
     width: 100%;
@@ -131,3 +132,98 @@ body {
       background: #f5efde; }
     .logo-colors .square:nth-child(5) {
       background: #ff6900; }
+
+.card-holster {
+  -webkit-transition: -webkit-transform 600ms ease;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-perspective: 1800px;
+  -webkit-transform: translate3d(0%, -50%, 0px);
+  height: 520px;
+  width: 345px;
+  position: absolute;
+  right: 100px;
+  top: 50%; }
+  .card-holster .card {
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    text-align: center;
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden;
+    z-index: 2;
+    height: 520px;
+    width: 345px; }
+    .card-holster .card .color-wrapper {
+      border-radius: 5px 5px 10px 10px;
+      height: 100%;
+      background: #3B0A2E; }
+    .card-holster .card .top-half {
+      position: absolute;
+      height: 415px;
+      width: 100%;
+      left: 0px;
+      top: 0px; }
+      .card-holster .card .top-half .font-container {
+        position: absolute;
+        height: 270px;
+        width: 100%;
+        top: 75px; }
+        .card-holster .card .top-half .font-container .sample-container {
+          font-family: 'Lobster', cursive;
+          text-decoration: none;
+          position: absolute;
+          line-height: 100%;
+          color: #fff;
+          width: 100%; }
+          .card-holster .card .top-half .font-container .sample-container.large {
+            bottom: 120px; }
+            .card-holster .card .top-half .font-container .sample-container.large .sample {
+              font-size: 180px; }
+          .card-holster .card .top-half .font-container .sample-container.small {
+            bottom: 20px; }
+            .card-holster .card .top-half .font-container .sample-container.small .sample {
+              font-size: 50px; }
+    .card-holster .card .bottom-half {
+      -webkit-transition: -webkit-transform 300ms ease;
+      position: absolute;
+      text-decoration: none;
+      width: 100%;
+      bottom: 0px;
+      left: 0; }
+      .card-holster .card .bottom-half .sexy-tricky-to-code-dip {
+        overflow: hidden;
+        height: 13px; }
+        .card-holster .card .bottom-half .sexy-tricky-to-code-dip .left-part, .card-holster .card .bottom-half .sexy-tricky-to-code-dip .right-part {
+          width: 50%;
+          height: 100%;
+          background: #fff; }
+        .card-holster .card .bottom-half .sexy-tricky-to-code-dip .left-part {
+          margin-left: -20px;
+          float: left; }
+        .card-holster .card .bottom-half .sexy-tricky-to-code-dip .right-part {
+          margin-right: -20px;
+          float: right; }
+        .card-holster .card .bottom-half .sexy-tricky-to-code-dip svg {
+          height: 13px;
+          width: 40px;
+          float: left;
+          fill: #fff; }
+      .card-holster .card .bottom-half .bottom-bottom-container {
+        background: #fff;
+        height: 90px; }
+        .card-holster .card .bottom-half .bottom-bottom-container .font-details {
+          -webkit-transition: opacity 300ms ease;
+          font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+          padding-top: 20px;
+          font-weight: bold; }
+          .card-holster .card .bottom-half .bottom-bottom-container .font-details .name {
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 15px;
+            color: #000; }
+          .card-holster .card .bottom-half .bottom-bottom-container .font-details .creator {
+            letter-spacing: 0.4px;
+            margin-top: 4px;
+            font-size: 12px;
+            color: #cccccc; }

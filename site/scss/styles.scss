@@ -33,6 +33,7 @@ body {
 	width: 50%;
 	float: left;
 	padding-right: 270px;
+	position: relative;
 
 	.colors {
 		height: 100%;
@@ -197,5 +198,137 @@ $squareWidth: 10px;
 }
 
 
+.card-holster {
 
+	-webkit-transition: -webkit-transform 600ms ease;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-transform-style: preserve-3d;
+	-webkit-perspective: 1800px;
+	-webkit-transform: translate3d(0%, -50%, 0px);
+	height: 520px;
+	width: 345px;
+	position: absolute;
+	right: 100px;
+	top: 50%;
+
+	.card {
+		box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.1);
+		position: absolute;
+		text-align: center;
+		border-radius: 5px;
+		background: #fff;
+		overflow: hidden;
+		z-index: 2;
+		height: 520px;
+		width: 345px;
+
+		.color-wrapper {
+			border-radius: 5px 5px 10px 10px;
+			height: 100%;
+			background: #3B0A2E;
+		}
+
+		.top-half {
+			position: absolute;
+			height: 415px;
+			width: 100%;
+			left: 0px;
+			top: 0px;
+
+			.font-container {
+				position: absolute;
+				height: 270px;
+				width: 100%;
+				top: 75px;
+
+				.sample-container {
+					font-family: 'Lobster', cursive;
+					text-decoration: none;
+					position: absolute;
+					line-height: 100%;
+					color: #fff;
+					width: 100%;
+
+					&.large {
+						bottom: 120px;
+
+						.sample {
+							font-size: 180px;
+						}
+					}
+
+					&.small {
+						bottom: 20px;
+						.sample {
+							font-size: 50px;
+						}
+					}
+				}
+			}
+		}
+
+		.bottom-half {
+			-webkit-transition: -webkit-transform 300ms ease;
+			position: absolute;
+			text-decoration: none;
+			width: 100%;
+			bottom: 0px;
+			left: 0;
+
+			.sexy-tricky-to-code-dip {
+				overflow: hidden;
+				height: 13px;
+
+				.left-part, .right-part {
+					width: 50%;
+					height: 100%;
+					background: #fff;
+				}
+
+				.left-part {
+					margin-left: -20px;
+					float: left;
+				}
+
+				.right-part {
+					margin-right: -20px;
+					float: right;
+				}
+
+				svg {
+					height: 13px;
+					width: 40px;
+					float: left;
+					fill: #fff;
+				}
+			}
+
+			.bottom-bottom-container {
+				background: #fff;
+				height: 90px;
+
+				.font-details {
+					-webkit-transition: opacity 300ms ease;
+					font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+					padding-top: 20px;
+					font-weight: bold;
+
+					.name {
+						text-transform: uppercase;
+						letter-spacing: 0.5px;
+						font-size: 15px;
+						color: #000;
+					}
+
+					.creator {
+						letter-spacing: 0.4px;
+						margin-top: 4px;
+						font-size: 12px;
+						color: #cccccc;
+					}
+				}
+			}
+		}
+	}
+}
 
