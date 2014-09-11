@@ -5,7 +5,10 @@
  * Copyright (C) 2013 Tim Holman, http://tholman.com
  */
 /*********************************************
- *
+ * Mixins
+ *********************************************/
+/*********************************************
+ * Site
  *********************************************/
 * {
   -webkit-font-smoothing: antialiased;
@@ -63,6 +66,10 @@ body {
 .right {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
   position: relative;
   margin-left: -30px;
   margin-top: -5px;
@@ -96,9 +103,9 @@ body {
     width: 500px; }
   .right .button {
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-    background: #4d7bd6;
-    background: linear-gradient(to top, #4d7bd6 0%, #5587da 100%);
     box-shadow: inset 0px 2px 0px 0px #6191de, 0px 2px 3px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to top, #4d7bd6 0%, #5587da 100%);
+    background: #4d7bd6;
     border: 1px solid #2d53af;
     text-decoration: none;
     text-align: center;
@@ -154,14 +161,34 @@ body {
   top: 50%;
   margin-top: -260px; }
   .card-holster.inactive {
-    -webkit-transition: -webkit-transform 0ms ease; }
+    -webkit-transition: -webkit-transform 0ms ease;
+    -moz-transition: -moz-transform 0ms ease;
+    -ms-transition: -ms-transform 0ms ease;
+    -o-transition: -o-transform 0ms ease;
+    transition: transform 0ms ease; }
   .card-holster.active {
     -webkit-transition: -webkit-transform 1000ms ease;
-    -webkit-transform: translateY(0%); }
+    -moz-transition: -moz-transform 1000ms ease;
+    -ms-transition: -ms-transform 1000ms ease;
+    -o-transition: -o-transform 1000ms ease;
+    transition: transform 1000ms ease;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%); }
   .card-holster.higher {
-    -webkit-transform: translateY(-150%); }
+    -webkit-transform: translateY(-150%);
+    -moz-transform: translateY(-150%);
+    -ms-transform: translateY(-150%);
+    -o-transform: translateY(-150%);
+    transform: translateY(-150%); }
   .card-holster.lower {
-    -webkit-transform: translateY(150%); }
+    -webkit-transform: translateY(150%);
+    -moz-transform: translateY(150%);
+    -ms-transform: translateY(150%);
+    -o-transform: translateY(150%);
+    transform: translateY(150%); }
   .card-holster .card {
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
     position: absolute;
@@ -191,6 +218,10 @@ body {
       .card-holster .card .top-half .shine {
         box-shadow: 0px 0px 90px 15px rgba(255, 255, 255, 0.3);
         -webkit-transform: rotateZ(-35deg);
+        -moz-transform: rotateZ(-35deg);
+        -ms-transform: rotateZ(-35deg);
+        -o-transform: rotateZ(-35deg);
+        transform: rotateZ(-35deg);
         position: absolute;
         width: 260px;
         height: 0px;
@@ -218,6 +249,10 @@ body {
               font-size: 50px; }
     .card-holster .card .bottom-half {
       -webkit-transition: -webkit-transform 300ms ease;
+      -moz-transition: -moz-transform 300ms ease;
+      -ms-transition: -ms-transform 300ms ease;
+      -o-transition: -o-transform 300ms ease;
+      transition: transform 300ms ease;
       position: absolute;
       text-decoration: none;
       width: 100%;
@@ -246,6 +281,10 @@ body {
         height: 110px; }
         .card-holster .card .bottom-half .bottom-bottom-container .font-details {
           -webkit-transition: opacity 300ms ease;
+          -moz-transition: opacity 300ms ease;
+          -ms-transition: opacity 300ms ease;
+          -o-transition: opacity 300ms ease;
+          transition: opacity 300ms ease;
           font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
           padding-top: 25px;
           font-weight: bold; }
