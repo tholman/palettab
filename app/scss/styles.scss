@@ -9,10 +9,6 @@
  * VARIABLES + MIXINS
  *********************************************/
 
-$black: #241F20;
-$red: #d60000;
-$topLevel: 1000;
-
 @mixin transition( $what: all, $length: 1s, $easing: ease-in-out ) {
     -webkit-transition: $what $length $easing;
     -moz-transition:    $what $length $easing;
@@ -213,6 +209,16 @@ $squareWidth: 10px;
 			width: 100%;
 			left: 0px;
 			top: 0px;
+
+			.shine {
+				box-shadow: 0px 0px 90px 10px rgba(255, 255, 255, 0.3);
+				@include transform(rotateZ(-30deg));
+				position: absolute;
+				width: 260px;
+				height: 0px;
+				left: -90px;
+				top: 38px;
+			}
 
 			&:hover {
 
