@@ -21,14 +21,24 @@ html, body {
   color: #292e36; }
 
 body {
-  background: url("/img/bg.jpg"); }
+  background: url("/img/bg.jpg");
+  min-width: 1050px; }
+
+.wrapper {
+  position: relative;
+  min-width: 1050px;
+  min-height: 600px;
+  height: 100%;
+  width: 100%; }
 
 .left {
+  min-height: 600px;
   height: 100%;
   width: 50%;
   float: left;
   padding-right: 270px;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .left .colors {
     height: 100%;
     width: 100%;
@@ -107,7 +117,7 @@ body {
       background: linear-gradient(to top, #5c8ded 0%, #5587da 100%); }
 
 .sharing {
-  position: fixed;
+  position: absolute;
   bottom: 15px;
   right: 15px; }
   .sharing .twitter-share-button {

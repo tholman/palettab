@@ -26,14 +26,25 @@ html, body {
 
 body {
 	background: url( '/img/bg.jpg' );
+	min-width: 1050px;
+}
+
+.wrapper {
+	position: relative;
+	min-width: 1050px;
+	min-height: 600px;
+	height: 100%;
+	width: 100%;
 }
 
 .left {
+	min-height: 600px;
 	height: 100%;
 	width: 50%;
 	float: left;
 	padding-right: 270px;
 	position: relative;
+	overflow: hidden;
 
 	.colors {
 		height: 100%;
@@ -148,7 +159,7 @@ body {
 }
 
 .sharing {
-	position: fixed;
+	position: absolute;
 	bottom: 15px;
 	right: 15px;
 
