@@ -65,14 +65,9 @@ body {
 
 .right {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
   position: relative;
   margin-left: -30px;
-  margin-top: -5px;
+  margin-top: -235px;
   float: left;
   width: 50%;
   top: 50%; }
