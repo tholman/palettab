@@ -11,10 +11,20 @@
 
 function Palettab() {
 
-    var palettes = [[]];
+    var palettes = [
+        ['#FFF1BA', '#FFC6AB', '#E02856', '#84294E', '#3B0A2E'],
+        ['#2F2833', '#19A2A6', '#28D9C2', '#BEF371', '#FDFEA6'],
+        ['#FFF1BA', '#FFC6AB', '#E02856', '#84294E', '#3B0A2E'],
+        ['#2F2833', '#19A2A6', '#28D9C2', '#BEF371', '#FDFEA6']
+    ];
+    
+    // Cards
     var cards;
-    var currentCard = 0;
+    var currentSet = 0;
     var lastCard;
+
+    // Colors
+    var colors;
 
     this.init = function() {
 
@@ -37,34 +47,44 @@ function Palettab() {
     function bindElements() {
 
         cards = document.querySelectorAll( '.card-holster' );
+        colors = document.querySelectorAll( '.colors .color' );
         lastCard = cards.length - 1;
         cards[0].className = 'card-holster active';
     }
 
     function bindEvents() {
 
-        setInterval( cycleCards, 5000 );
+        setInterval( cycle, 5000 );
     }
 
+    function cycle() {
+        cycleCards();
+        cycleColors();
+    }
+
+    // Also cycle the set.
     function cycleCards() {
 
         cards[ lastCard ].className = 'card-holster lower';
 
-        cards[ currentCard ].className = 'card-holster active higher';
-        lastCard = currentCard;
-        currentCard++;
-        if( currentCard > (cards.length - 1) ) {
-            currentCard = 0;
+        cards[ currentSet ].className = 'card-holster active higher';
+        lastCard = currentSet;
+        currentSet++;
+        if( currentSet > (cards.length - 1) ) {
+            currentSet = 0;
         }
 
-
-        cards[ currentCard ].className = 'card-holster active';
-
+        cards[ currentSet ].className = 'card-holster active';
     }
 
+    function cycleColors() {
 
-
-
+        var i = 0;
+        for( i; i < colors.length; i++ ) {
+            console.log( palettes[currentSet][i], i );
+            colors[i].style.backgroundColor = palettes[currentSet][i];
+        }
+    }
 }
 
 var site = new Palettab();

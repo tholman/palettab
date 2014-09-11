@@ -48,19 +48,49 @@ body {
     float: left;
     background: #eee; }
     .left .colors .color {
+      -webkit-transition: background-color 200ms;
+      -moz-transition: background-color 200ms;
+      -ms-transition: background-color 200ms;
+      -o-transition: background-color 200ms;
+      transition: background-color 200ms;
       box-shadow: inset -2px 0 5px -2px rgba(0, 0, 0, 0.1);
       float: left;
       width: 100%;
       height: 20%; }
       .left .colors .color:nth-child(1) {
+        -webkit-transition-delay: 800ms;
+        -moz-transition-delay: 800ms;
+        -ms-transition-delay: 800ms;
+        -o-transition-delay: 800ms;
+        transition-delay: 800ms;
         background: #FFF1BA; }
       .left .colors .color:nth-child(2) {
+        -webkit-transition-delay: 600ms;
+        -moz-transition-delay: 600ms;
+        -ms-transition-delay: 600ms;
+        -o-transition-delay: 600ms;
+        transition-delay: 600ms;
         background: #FFC6AB; }
       .left .colors .color:nth-child(3) {
+        -webkit-transition-delay: 400ms;
+        -moz-transition-delay: 400ms;
+        -ms-transition-delay: 400ms;
+        -o-transition-delay: 400ms;
+        transition-delay: 400ms;
         background: #E02856; }
       .left .colors .color:nth-child(4) {
+        -webkit-transition-delay: 200ms;
+        -moz-transition-delay: 200ms;
+        -ms-transition-delay: 200ms;
+        -o-transition-delay: 200ms;
+        transition-delay: 200ms;
         background: #84294E; }
       .left .colors .color:nth-child(5) {
+        -webkit-transition-delay: 0ms;
+        -moz-transition-delay: 0ms;
+        -ms-transition-delay: 0ms;
+        -o-transition-delay: 0ms;
+        transition-delay: 0ms;
         background: #3B0A2E; }
 
 .right {
@@ -196,8 +226,15 @@ body {
     width: 345px; }
     .card-holster .card .color-wrapper {
       border-radius: 5px 5px 10px 10px;
-      background: #3B0A2E;
       height: 100%; }
+      .card-holster .card .color-wrapper.first {
+        background: #E02856; }
+      .card-holster .card .color-wrapper.second {
+        background: #28D9C2; }
+      .card-holster .card .color-wrapper.third {
+        background: #E02856; }
+      .card-holster .card .color-wrapper.fourth {
+        background: #28D9C2; }
     .card-holster .card .discovered {
       font-family: 'Montserrat', sans-serif;
       font-weight: bold;
