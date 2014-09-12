@@ -185,8 +185,6 @@ textarea {
           position: absolute;
           width: 100%;
           top: 155px; }
-        .card-holster .card .top-half .hex-container .hexy-icon {
-          margin-bottom: 12px; }
         .card-holster .card .top-half .hex-container .hex-value {
           text-transform: lowercase;
           letter-spacing: 0.5px;
