@@ -12,10 +12,11 @@
 function Palettab() {
 
     var palettes = [
+        ['#F9FFA2', '#AAFD6D', '#00E2C5', '#00A7A8', '#312633'],
+        ['#E01B1E', '#FFECA9', '#A4E798', '#009678', '#1C2030'],
         ['#FFF1BA', '#FFC6AB', '#E02856', '#84294E', '#3B0A2E'],
-        ['#2F2833', '#19A2A6', '#28D9C2', '#BEF371', '#FDFEA6'],
-        ['#FFF1BA', '#FFC6AB', '#E02856', '#84294E', '#3B0A2E'],
-        ['#2F2833', '#19A2A6', '#28D9C2', '#BEF371', '#FDFEA6']
+        ['#511F19', '#612D23', '#00C8D7', '#51E9FF', '#FFF7E9'],
+        ['#DCEDE6', '#81CDA3', '#00A7A4', '#045B6E', '#2D2D29']
     ];
     
     // Cards
@@ -54,7 +55,7 @@ function Palettab() {
 
     function bindEvents() {
 
-        setInterval( cycle, 5000 );
+        setInterval( cycle, 3000 );
     }
 
     function cycle() {

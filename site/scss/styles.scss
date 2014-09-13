@@ -96,30 +96,31 @@ body {
 			width: 100%;
 			height: 20%;
 
-			$delay: 200ms;
+			$delay: 150ms;
 			&:nth-child(1) {
 				@include transitionDelay($delay * 4);
-				background: #FFF1BA;
+				background: #F9FFA2;
 			}
 
 			&:nth-child(2) {
 				@include transitionDelay($delay * 3);
-				background: #FFC6AB;
+				background: #AAFD6D;
 			}
 
 			&:nth-child(3) {
 				@include transitionDelay($delay * 2);
-				background: #E02856;
+				background: #00E2C5;
 			}
 
 			&:nth-child(4) {
 				@include transitionDelay($delay * 1);
-				background: #84294E;
+				background: #00A7A8;
 			}
 
 			&:nth-child(5) {
 				@include transitionDelay(0ms);
-				background: #3B0A2E;
+				background: #312633;
+				
 			}	
 		}
 	} 
@@ -263,11 +264,11 @@ $squareWidth: 10px;
 	margin-top: -260px;
 
 	&.inactive {
-		@include transformTransition(0ms ease);
+		@include transformTransition(0ms ease-out);
 	}
 
 	&.active {
-		@include transformTransition(1000ms ease);
+		@include transformTransition(700ms ease-out);
 		@include transform(translateY(0%));
 	}
 
@@ -295,19 +296,28 @@ $squareWidth: 10px;
 			height: 100%;
 
 			&.first {
-				background: #E02856;
+				font-family: 'Lobster', cursive;
+				background: #51E9FF;
 			}
 
 			&.second {
-				background: #28D9C2;
+				font-family: 'Righteous', cursive;
+				background: #00E2C5;
 			}
 
 			&.third {
-				background: #E02856;
+				font-family: 'Trochut', cursive;
+				background: #1C2030;
 			}
 
 			&.fourth {
-				background: #28D9C2;
+				font-family: 'Fascinate Inline', cursive;
+				background: #3B0A2E;
+			}
+
+			&.fifth {
+				font-family: 'Sniglet', cursive;
+				background: #2D2D29;
 			}
 		}
 
@@ -343,7 +353,6 @@ $squareWidth: 10px;
 				top: 80px;
 
 				.sample-container {
-					font-family: 'Lobster', cursive;
 					text-decoration: none;
 					position: absolute;
 					line-height: 100%;

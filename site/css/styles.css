@@ -58,40 +58,40 @@ body {
       width: 100%;
       height: 20%; }
       .left .colors .color:nth-child(1) {
-        -webkit-transition-delay: 800ms;
-        -moz-transition-delay: 800ms;
-        -ms-transition-delay: 800ms;
-        -o-transition-delay: 800ms;
-        transition-delay: 800ms;
-        background: #FFF1BA; }
-      .left .colors .color:nth-child(2) {
         -webkit-transition-delay: 600ms;
         -moz-transition-delay: 600ms;
         -ms-transition-delay: 600ms;
         -o-transition-delay: 600ms;
         transition-delay: 600ms;
-        background: #FFC6AB; }
+        background: #F9FFA2; }
+      .left .colors .color:nth-child(2) {
+        -webkit-transition-delay: 450ms;
+        -moz-transition-delay: 450ms;
+        -ms-transition-delay: 450ms;
+        -o-transition-delay: 450ms;
+        transition-delay: 450ms;
+        background: #AAFD6D; }
       .left .colors .color:nth-child(3) {
-        -webkit-transition-delay: 400ms;
-        -moz-transition-delay: 400ms;
-        -ms-transition-delay: 400ms;
-        -o-transition-delay: 400ms;
-        transition-delay: 400ms;
-        background: #E02856; }
+        -webkit-transition-delay: 300ms;
+        -moz-transition-delay: 300ms;
+        -ms-transition-delay: 300ms;
+        -o-transition-delay: 300ms;
+        transition-delay: 300ms;
+        background: #00E2C5; }
       .left .colors .color:nth-child(4) {
-        -webkit-transition-delay: 200ms;
-        -moz-transition-delay: 200ms;
-        -ms-transition-delay: 200ms;
-        -o-transition-delay: 200ms;
-        transition-delay: 200ms;
-        background: #84294E; }
+        -webkit-transition-delay: 150ms;
+        -moz-transition-delay: 150ms;
+        -ms-transition-delay: 150ms;
+        -o-transition-delay: 150ms;
+        transition-delay: 150ms;
+        background: #00A7A8; }
       .left .colors .color:nth-child(5) {
         -webkit-transition-delay: 0ms;
         -moz-transition-delay: 0ms;
         -ms-transition-delay: 0ms;
         -o-transition-delay: 0ms;
         transition-delay: 0ms;
-        background: #3B0A2E; }
+        background: #312633; }
 
 .right {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -186,17 +186,17 @@ body {
   top: 50%;
   margin-top: -260px; }
   .card-holster.inactive {
-    -webkit-transition: -webkit-transform 0ms ease;
-    -moz-transition: -moz-transform 0ms ease;
-    -ms-transition: -ms-transform 0ms ease;
-    -o-transition: -o-transform 0ms ease;
-    transition: transform 0ms ease; }
+    -webkit-transition: -webkit-transform 0ms ease-out;
+    -moz-transition: -moz-transform 0ms ease-out;
+    -ms-transition: -ms-transform 0ms ease-out;
+    -o-transition: -o-transform 0ms ease-out;
+    transition: transform 0ms ease-out; }
   .card-holster.active {
-    -webkit-transition: -webkit-transform 1000ms ease;
-    -moz-transition: -moz-transform 1000ms ease;
-    -ms-transition: -ms-transform 1000ms ease;
-    -o-transition: -o-transform 1000ms ease;
-    transition: transform 1000ms ease;
+    -webkit-transition: -webkit-transform 700ms ease-out;
+    -moz-transition: -moz-transform 700ms ease-out;
+    -ms-transition: -ms-transform 700ms ease-out;
+    -o-transition: -o-transform 700ms ease-out;
+    transition: transform 700ms ease-out;
     -webkit-transform: translateY(0%);
     -moz-transform: translateY(0%);
     -ms-transform: translateY(0%);
@@ -228,13 +228,20 @@ body {
       border-radius: 5px 5px 10px 10px;
       height: 100%; }
       .card-holster .card .color-wrapper.first {
-        background: #E02856; }
+        font-family: 'Lobster', cursive;
+        background: #51E9FF; }
       .card-holster .card .color-wrapper.second {
-        background: #28D9C2; }
+        font-family: 'Righteous', cursive;
+        background: #00E2C5; }
       .card-holster .card .color-wrapper.third {
-        background: #E02856; }
+        font-family: 'Trochut', cursive;
+        background: #1C2030; }
       .card-holster .card .color-wrapper.fourth {
-        background: #28D9C2; }
+        font-family: 'Fascinate Inline', cursive;
+        background: #3B0A2E; }
+      .card-holster .card .color-wrapper.fifth {
+        font-family: 'Sniglet', cursive;
+        background: #2D2D29; }
     .card-holster .card .discovered {
       font-family: 'Montserrat', sans-serif;
       font-weight: bold;
@@ -265,7 +272,6 @@ body {
         width: 100%;
         top: 80px; }
         .card-holster .card .top-half .font-container .sample-container {
-          font-family: 'Lobster', cursive;
           text-decoration: none;
           position: absolute;
           line-height: 100%;
