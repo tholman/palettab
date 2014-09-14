@@ -267,6 +267,8 @@ var colorFonts = (function() {
             card.eye.style.fill = hashColor;
         }
 
+        paletteInfo.href = set.url;
+
         for( i = 0; i < paletteColors.length; i++ ) {
             paletteColors[i].style.background = '#' + colorSet[i];
         }

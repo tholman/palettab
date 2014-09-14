@@ -413,7 +413,7 @@ $squareWidth: 10px;
 .palette-info {
 	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	-webkit-transform: translateX(-50%);
-	width: 500px;
+	text-decoration: none;
 	position: absolute;
 	text-align: center;
 	bottom: 70px;
@@ -432,6 +432,7 @@ $squareWidth: 10px;
 	}
 
 	.name {
+		text-decoration: none;
 		text-transform: capitalize;
 		font-weight: bold;
 		padding-top: 14px;
@@ -440,6 +441,7 @@ $squareWidth: 10px;
 	}
 
 	.creator {
+		text-decoration: none;
 		letter-spacing: 0.8px;
 		font-weight: bold;
 		padding-top: 4px;

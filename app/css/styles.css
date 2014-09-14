@@ -269,7 +269,7 @@ textarea {
 .palette-info {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   -webkit-transform: translateX(-50%);
-  width: 500px;
+  text-decoration: none;
   position: absolute;
   text-align: center;
   bottom: 70px;
@@ -283,12 +283,14 @@ textarea {
       height: 5px;
       float: left; }
   .palette-info .name {
+    text-decoration: none;
     text-transform: capitalize;
     font-weight: bold;
     padding-top: 14px;
     font-size: 25px;
     color: #000; }
   .palette-info .creator {
+    text-decoration: none;
     letter-spacing: 0.8px;
     font-weight: bold;
     padding-top: 4px;
