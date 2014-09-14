@@ -48,49 +48,24 @@ body {
     float: left;
     background: #eee; }
     .left .colors .color {
-      -webkit-transition: background-color 200ms;
-      -moz-transition: background-color 200ms;
-      -ms-transition: background-color 200ms;
-      -o-transition: background-color 200ms;
-      transition: background-color 200ms;
+      -webkit-transition: background-color 800ms ease-in-out;
+      -moz-transition: background-color 800ms ease-in-out;
+      -ms-transition: background-color 800ms ease-in-out;
+      -o-transition: background-color 800ms ease-in-out;
+      transition: background-color 800ms ease-in-out;
       box-shadow: inset -2px 0 5px -2px rgba(0, 0, 0, 0.1);
       float: left;
       width: 100%;
       height: 20%; }
       .left .colors .color:nth-child(1) {
-        -webkit-transition-delay: 600ms;
-        -moz-transition-delay: 600ms;
-        -ms-transition-delay: 600ms;
-        -o-transition-delay: 600ms;
-        transition-delay: 600ms;
         background: #F9FFA2; }
       .left .colors .color:nth-child(2) {
-        -webkit-transition-delay: 450ms;
-        -moz-transition-delay: 450ms;
-        -ms-transition-delay: 450ms;
-        -o-transition-delay: 450ms;
-        transition-delay: 450ms;
         background: #AAFD6D; }
       .left .colors .color:nth-child(3) {
-        -webkit-transition-delay: 300ms;
-        -moz-transition-delay: 300ms;
-        -ms-transition-delay: 300ms;
-        -o-transition-delay: 300ms;
-        transition-delay: 300ms;
         background: #00E2C5; }
       .left .colors .color:nth-child(4) {
-        -webkit-transition-delay: 150ms;
-        -moz-transition-delay: 150ms;
-        -ms-transition-delay: 150ms;
-        -o-transition-delay: 150ms;
-        transition-delay: 150ms;
         background: #00A7A8; }
       .left .colors .color:nth-child(5) {
-        -webkit-transition-delay: 0ms;
-        -moz-transition-delay: 0ms;
-        -ms-transition-delay: 0ms;
-        -o-transition-delay: 0ms;
-        transition-delay: 0ms;
         background: #312633; }
 
 .right {
@@ -186,17 +161,17 @@ body {
   top: 50%;
   margin-top: -260px; }
   .card-holster.inactive {
-    -webkit-transition: -webkit-transform 0ms ease-out;
-    -moz-transition: -moz-transform 0ms ease-out;
-    -ms-transition: -ms-transform 0ms ease-out;
-    -o-transition: -o-transform 0ms ease-out;
-    transition: transform 0ms ease-out; }
+    -webkit-transition: -webkit-transform 0ms ease-in-out;
+    -moz-transition: -moz-transform 0ms ease-in-out;
+    -ms-transition: -ms-transform 0ms ease-in-out;
+    -o-transition: -o-transform 0ms ease-in-out;
+    transition: transform 0ms ease-in-out; }
   .card-holster.active {
-    -webkit-transition: -webkit-transform 700ms ease-out;
-    -moz-transition: -moz-transform 700ms ease-out;
-    -ms-transition: -ms-transform 700ms ease-out;
-    -o-transition: -o-transform 700ms ease-out;
-    transition: transform 700ms ease-out;
+    -webkit-transition: -webkit-transform 800ms ease-in-out;
+    -moz-transition: -moz-transform 800ms ease-in-out;
+    -ms-transition: -ms-transform 800ms ease-in-out;
+    -o-transition: -o-transform 800ms ease-in-out;
+    transition: transform 800ms ease-in-out;
     -webkit-transform: translateY(0%);
     -moz-transform: translateY(0%);
     -ms-transform: translateY(0%);

@@ -90,37 +90,30 @@ body {
 		background: #eee;
 
 		.color {
-			@include transition(background-color 200ms);
+			@include transition(background-color 800ms ease-in-out);
 			box-shadow: inset -2px 0 5px -2px rgba(0,0,0,0.1);
 			float: left;
 			width: 100%;
 			height: 20%;
 
-			$delay: 150ms;
 			&:nth-child(1) {
-				@include transitionDelay($delay * 4);
 				background: #F9FFA2;
 			}
 
 			&:nth-child(2) {
-				@include transitionDelay($delay * 3);
 				background: #AAFD6D;
 			}
 
 			&:nth-child(3) {
-				@include transitionDelay($delay * 2);
 				background: #00E2C5;
 			}
 
 			&:nth-child(4) {
-				@include transitionDelay($delay * 1);
 				background: #00A7A8;
 			}
 
 			&:nth-child(5) {
-				@include transitionDelay(0ms);
 				background: #312633;
-				
 			}	
 		}
 	} 
@@ -264,11 +257,11 @@ $squareWidth: 10px;
 	margin-top: -260px;
 
 	&.inactive {
-		@include transformTransition(0ms ease-out);
+		@include transformTransition(0ms ease-in-out);
 	}
 
 	&.active {
-		@include transformTransition(700ms ease-out);
+		@include transformTransition(800ms ease-in-out);
 		@include transform(translateY(0%));
 	}
 
