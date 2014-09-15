@@ -279,16 +279,19 @@ body {
           height: 100%;
           background: #fff; }
         .card-holster .card .bottom-half .sexy-tricky-to-code-dip .left-part {
-          margin-left: -20px;
+          margin-left: -19px;
           float: left; }
         .card-holster .card .bottom-half .sexy-tricky-to-code-dip .right-part {
-          margin-right: -20px;
+          margin-right: -19px;
           float: right; }
         .card-holster .card .bottom-half .sexy-tricky-to-code-dip svg {
+          position: absolute;
+          margin-left: -20px;
           height: 13px;
           width: 40px;
-          float: left;
-          fill: #fff; }
+          fill: #FFF;
+          left: 50%;
+          top: 0px; }
       .card-holster .card .bottom-half .bottom-bottom-container {
         background: #fff;
         height: 110px; }

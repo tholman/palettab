@@ -389,20 +389,23 @@ $squareWidth: 10px;
 				}
 
 				.left-part {
-					margin-left: -20px;
+					margin-left: -19px;
 					float: left;
 				}
 
 				.right-part {
-					margin-right: -20px;
+					margin-right: -19px;
 					float: right;
 				}
 
 				svg {
+					position: absolute;
+					margin-left: -20px;
 					height: 13px;
 					width: 40px;
-					float: left;
-					fill: #fff;
+					fill: #FFF;
+					left: 50%;
+					top: 0px;
 				}
 			}
 
