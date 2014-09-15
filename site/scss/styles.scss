@@ -257,6 +257,7 @@ $squareWidth: 10px;
 	margin-top: -260px;
 
 	.shine {
+		box-shadow: 0px 0px 90px 15px rgba(255, 255, 255, 0.3);
 		@include transform(translateY(50px) translateX(0px) rotateZ(-35deg));
 	}
 
@@ -269,6 +270,7 @@ $squareWidth: 10px;
 		@include transform(translateY(0%));
 
 		.shine {
+			box-shadow: 0px 0px 90px 15px rgba(255, 255, 255, 0.3);
 			@include transform(translateY(0px) translateX(0px) rotateZ(-35deg));
 		}
 	}
@@ -277,6 +279,7 @@ $squareWidth: 10px;
 		@include transform(translateY(-150%));
 
 		.shine {
+			box-shadow: 0px 0px 90px 30px rgba(255, 255, 255, 0.3);
 			@include transform(translateY(-150px) translateX(-150px) rotateZ(-35deg));
 		}
 	}
@@ -285,6 +288,7 @@ $squareWidth: 10px;
 		@include transform(translateY(150%));
 
 		.shine {
+			box-shadow: 0px 0px 190px 50px rgba(255, 255, 255, 0.2);
 			@include transform(translateY(150px) translateX(150px) rotateZ(-35deg));
 		}
 	}
@@ -346,8 +350,12 @@ $squareWidth: 10px;
 			top: 0px;
 
 			.shine {
-				@include transformTransition( 800ms ease-in-out );
-				box-shadow: 0px 0px 90px 15px rgba(255, 255, 255, 0.3);
+				-webkit-transition: -webkit-transform 800ms ease-in-out, box-shadow 800ms ease-in-out;
+				-moz-transition: -moz-transform 800ms ease-in-out, box-shadow 800ms ease-in-out;
+				-ms-transition: -ms-transform 800ms ease-in-out, box-shadow 800ms ease-in-out;
+				-o-transition: -o-transform 800ms ease-in-out, box-shadow 800ms ease-in-out;
+				transition: transform 800ms ease-in-out, box-shadow 800ms ease-in-out;
+
 				position: absolute;
 				width: 260px;
 				height: 0px;
