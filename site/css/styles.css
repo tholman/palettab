@@ -160,6 +160,12 @@ body {
   right: 100px;
   top: 50%;
   margin-top: -260px; }
+  .card-holster .shine {
+    -webkit-transform: translateY(50px) translateX(0px) rotateZ(-35deg);
+    -moz-transform: translateY(50px) translateX(0px) rotateZ(-35deg);
+    -ms-transform: translateY(50px) translateX(0px) rotateZ(-35deg);
+    -o-transform: translateY(50px) translateX(0px) rotateZ(-35deg);
+    transform: translateY(50px) translateX(0px) rotateZ(-35deg); }
   .card-holster.inactive {
     -webkit-transition: -webkit-transform 0ms ease-in-out;
     -moz-transition: -moz-transform 0ms ease-in-out;
@@ -177,18 +183,36 @@ body {
     -ms-transform: translateY(0%);
     -o-transform: translateY(0%);
     transform: translateY(0%); }
+    .card-holster.active .shine {
+      -webkit-transform: translateY(0px) translateX(0px) rotateZ(-35deg);
+      -moz-transform: translateY(0px) translateX(0px) rotateZ(-35deg);
+      -ms-transform: translateY(0px) translateX(0px) rotateZ(-35deg);
+      -o-transform: translateY(0px) translateX(0px) rotateZ(-35deg);
+      transform: translateY(0px) translateX(0px) rotateZ(-35deg); }
   .card-holster.higher {
     -webkit-transform: translateY(-150%);
     -moz-transform: translateY(-150%);
     -ms-transform: translateY(-150%);
     -o-transform: translateY(-150%);
     transform: translateY(-150%); }
+    .card-holster.higher .shine {
+      -webkit-transform: translateY(-150px) translateX(-150px) rotateZ(-35deg);
+      -moz-transform: translateY(-150px) translateX(-150px) rotateZ(-35deg);
+      -ms-transform: translateY(-150px) translateX(-150px) rotateZ(-35deg);
+      -o-transform: translateY(-150px) translateX(-150px) rotateZ(-35deg);
+      transform: translateY(-150px) translateX(-150px) rotateZ(-35deg); }
   .card-holster.lower {
     -webkit-transform: translateY(150%);
     -moz-transform: translateY(150%);
     -ms-transform: translateY(150%);
     -o-transform: translateY(150%);
     transform: translateY(150%); }
+    .card-holster.lower .shine {
+      -webkit-transform: translateY(150px) translateX(150px) rotateZ(-35deg);
+      -moz-transform: translateY(150px) translateX(150px) rotateZ(-35deg);
+      -ms-transform: translateY(150px) translateX(150px) rotateZ(-35deg);
+      -o-transform: translateY(150px) translateX(150px) rotateZ(-35deg);
+      transform: translateY(150px) translateX(150px) rotateZ(-35deg); }
   .card-holster .card {
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
     position: absolute;
@@ -230,12 +254,12 @@ body {
       left: 0px;
       top: 0px; }
       .card-holster .card .top-half .shine {
+        -webkit-transition: -webkit-transform 800ms ease-in-out;
+        -moz-transition: -moz-transform 800ms ease-in-out;
+        -ms-transition: -ms-transform 800ms ease-in-out;
+        -o-transition: -o-transform 800ms ease-in-out;
+        transition: transform 800ms ease-in-out;
         box-shadow: 0px 0px 90px 15px rgba(255, 255, 255, 0.3);
-        -webkit-transform: rotateZ(-35deg);
-        -moz-transform: rotateZ(-35deg);
-        -ms-transform: rotateZ(-35deg);
-        -o-transform: rotateZ(-35deg);
-        transform: rotateZ(-35deg);
         position: absolute;
         width: 260px;
         height: 0px;

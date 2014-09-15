@@ -256,6 +256,10 @@ $squareWidth: 10px;
 	top: 50%;
 	margin-top: -260px;
 
+	.shine {
+		@include transform(translateY(50px) translateX(0px) rotateZ(-35deg));
+	}
+
 	&.inactive {
 		@include transformTransition(0ms ease-in-out);
 	}
@@ -263,14 +267,26 @@ $squareWidth: 10px;
 	&.active {
 		@include transformTransition(800ms ease-in-out);
 		@include transform(translateY(0%));
+
+		.shine {
+			@include transform(translateY(0px) translateX(0px) rotateZ(-35deg));
+		}
 	}
 
 	&.higher {
 		@include transform(translateY(-150%));
+
+		.shine {
+			@include transform(translateY(-150px) translateX(-150px) rotateZ(-35deg));
+		}
 	}
 
 	&.lower {
 		@include transform(translateY(150%));
+
+		.shine {
+			@include transform(translateY(150px) translateX(150px) rotateZ(-35deg));
+		}
 	}
 
 	.card {
@@ -330,8 +346,8 @@ $squareWidth: 10px;
 			top: 0px;
 
 			.shine {
+				@include transformTransition( 800ms ease-in-out );
 				box-shadow: 0px 0px 90px 15px rgba(255, 255, 255, 0.3);
-				@include transform(rotateZ(-35deg));
 				position: absolute;
 				width: 260px;
 				height: 0px;
