@@ -283,7 +283,7 @@ var colorFonts = (function() {
         var usedFonts = fontLoader.getCurrentFontNames();
 
         // Balls fonts failed to load!
-        if( usedFont === null ) {
+        if( usedFonts === null ) {
             onFontLoadFail();
             return;
         }
