@@ -28,8 +28,19 @@ var fontLoader = (function( options ) {
       google: {
         families: [ nextFonts[0].name, nextFonts[1].name, nextFonts[2].name, nextFonts[3].name, nextFonts[4].name ],
         text: setText
+      },
+      fontinactive: function() {
+        loadFail();
+      },
+      inactive: function() {
+        loadFail();
       }
     });
+  }
+
+  // Next fonts will be set to null if they fail to load.
+  function loadFail() {
+    nextFonts = null;
   }
 
   // Loads the next 5 fonts, to be cached

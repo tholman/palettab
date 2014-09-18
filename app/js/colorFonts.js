@@ -281,6 +281,13 @@ var colorFonts = (function() {
 
         var i = 0;
         var usedFonts = fontLoader.getCurrentFontNames();
+
+        // Balls fonts failed to load!
+        if( usedFont === null ) {
+            onFontLoadFail();
+            return;
+        }
+
         for( i; i < cardSets.length; i++ ) {
 
             var card;
@@ -296,6 +303,11 @@ var colorFonts = (function() {
             card.bottom.href           = "http://www.google.com/fonts/specimen/" + usedFonts[i].name
         }
         fontLoader.cacheNextFonts();
+    }
+
+    // Function called when the fonts don't load (user is probably offline)
+    function onFontLoadFail() {
+        console.log( "fail!" );
     }
 
     // Yeah, this is a bit excessive, but eh, nicer I feel than 3 functions that do small things.
