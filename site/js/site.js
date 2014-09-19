@@ -82,7 +82,6 @@ function Palettab() {
 
         var i = 0;
         for( i; i < colors.length; i++ ) {
-            console.log( palettes[currentSet][i], i );
             colors[i].style.backgroundColor = palettes[currentSet][i];
         }
     }
