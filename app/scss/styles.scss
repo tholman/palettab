@@ -1,5 +1,5 @@
 /*!
- * Color Fonts
+ * Palettab!
  *
  * MIT licensed
  * Copyright (C) 2013 Tim Holman, http://tholman.com
@@ -8,6 +8,11 @@
 /*********************************************
  * VARIABLES + MIXINS
  *********************************************/
+
+/**
+ *  Don't really need to use mixins here, since its a chrome app.
+ *  can't hurt though!
+ */
 
 @mixin transition( $what: all, $length: 1s, $easing: ease-in-out ) {
     -webkit-transition: $what $length $easing;
@@ -552,7 +557,6 @@ footer {
 }
 
 .expander {
-	// -webkit-transition: box-shadow 1000ms ease-out;
 	box-shadow: 0px 0px 1px 0px;
 	border-radius: 100%;
 	position: absolute;

@@ -1,13 +1,9 @@
 /*!
- * site
+ * Palettab site!
  *
  * MIT licensed
  * Copyright (C) 2013 Tim Holman, http://tholman.com
  */
-
-/*********************************************
- *
- *********************************************/
 
 function Palettab() {
 
@@ -89,3 +85,5 @@ function Palettab() {
 
 var site = new Palettab();
 site.init();
+
+console.log( "Hey friend, kapow here we are in the console! ~ If you're interested, you can check out the source on github: http://github.com/tholman/palettab" )
