@@ -184,7 +184,6 @@ $squareWidth: 10px;
 		}
 	}
 
-	// Fixed now, will be dynamic later!
 	.card {
 		-webkit-transition: -webkit-transform 500ms ease, box-shadow 150ms ease;
 		-webkit-transform: translate3d(-50%, -50%, 0px);
@@ -310,6 +309,10 @@ $squareWidth: 10px;
 
 				-webkit-transform: translateY( -50px );
 				opacity: 0;
+			}
+
+			.success-box {
+				
 			}
 		}
 
