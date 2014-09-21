@@ -1,5 +1,5 @@
 /*
- * Color Fonts
+ * Palettab!
  *
  * MIT licensed
  * Copyright (C) 2013 Tim Holman, http://tholman.com
@@ -7,6 +7,10 @@
 /*********************************************
  * VARIABLES + MIXINS
  *********************************************/
+/**
+ *  Don't really need to use mixins here, since its a chrome app.
+ *  can't hurt though!
+ */
 /*********************************************
  * MAIN
  *********************************************/
@@ -92,6 +96,13 @@ textarea {
   .card-holster:hover .back {
     -webkit-transition-delay: 0ms !important;
     box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.05); }
+    .card-holster:hover .front .shine,
+    .card-holster:hover .back .shine {
+      -webkit-transform: translateX(-150px) rotateZ(-30deg) !important;
+      -moz-transform: translateX(-150px) rotateZ(-30deg) !important;
+      -ms-transform: translateX(-150px) rotateZ(-30deg) !important;
+      -o-transform: translateX(-150px) rotateZ(-30deg) !important;
+      transform: translateX(-150px) rotateZ(-30deg) !important; }
   .card-holster .outer-wrapper {
     -webkit-transform-style: preserve-3d;
     -webkit-transform-origin: 50% 50%;
@@ -133,6 +144,7 @@ textarea {
       top: 0px; }
       .card-holster .card .top-half .shine {
         box-shadow: 0px 0px 90px 10px rgba(255, 255, 255, 0.3);
+        -webkit-transition: -webkit-transform 150ms ease;
         -webkit-transform: rotateZ(-30deg);
         -moz-transform: rotateZ(-30deg);
         -ms-transform: rotateZ(-30deg);

@@ -1,4 +1,3 @@
-// @TODO: Create via colorfonts, and not be a global var.
 var loader = (function() {
 
     'use strict';

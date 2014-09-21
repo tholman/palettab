@@ -1,5 +1,5 @@
 /*!
- * Color Fonts
+ * Palettab
  *
  * colors.js contains api results from colourlovers.com
  */

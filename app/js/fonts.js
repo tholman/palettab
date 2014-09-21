@@ -1,5 +1,5 @@
 /*!
- * Color Fonts
+ * Palettab
  *
  * fonts.js loads (random) fonts using googles web font loader
  * and assigns to useable variable!
