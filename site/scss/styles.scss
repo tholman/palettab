@@ -276,7 +276,7 @@ $squareWidth: 10px;
 	}
 
 	&.higher {
-		@include transform(translateY(-150%));
+		@include transform(translateY(-250%));
 
 		.shine {
 			box-shadow: 0px 0px 90px 30px rgba(255, 255, 255, 0.3);
@@ -285,7 +285,7 @@ $squareWidth: 10px;
 	}
 
 	&.lower {
-		@include transform(translateY(150%));
+		@include transform(translateY(250%));
 
 		.shine {
 			box-shadow: 0px 0px 190px 50px rgba(255, 255, 255, 0.2);

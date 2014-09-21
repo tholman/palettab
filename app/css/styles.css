@@ -214,6 +214,37 @@ textarea {
         width: 100%;
         -webkit-transform: translateY(-50px);
         opacity: 0; }
+      .card-holster .card .top-half .success-box {
+        -webkit-transform: translateX(-50%) translateY(40px);
+        position: absolute;
+        border-radius: 5px;
+        margin-top: 100px;
+        padding-top: 25px;
+        background: #fff;
+        height: 130px;
+        width: 150px;
+        opacity: 0;
+        left: 50%; }
+        .card-holster .card .top-half .success-box.active {
+          -webkit-transition: all 150ms ease;
+          -webkit-transform: translateX(-50%) translateY(0px);
+          opacity: 1; }
+        .card-holster .card .top-half .success-box.out {
+          -webkit-transition: all 150ms ease;
+          -webkit-transform: translateX(-50%) translateY(0px);
+          opacity: 0; }
+        .card-holster .card .top-half .success-box img {
+          margin-right: -10px; }
+        .card-holster .card .top-half .success-box span {
+          font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+          letter-spacing: 1px;
+          font-weight: normal;
+          text-align: center;
+          margin-top: 15px;
+          font-size: 11px;
+          display: block;
+          color: black;
+          width: 100%; }
     .card-holster .card .bottom-half {
       -webkit-transition: -webkit-transform 300ms ease;
       -webkit-transform: translateY(75px);

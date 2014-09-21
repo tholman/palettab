@@ -226,7 +226,19 @@ var colorFonts = (function() {
         document.body.removeChild( this );
     }
 
-    function copySuccess( element ) {
+    function copySuccess( card ) {
+
+        var successBox = card.querySelector( '.success-box' );
+        successBox.classList.add( 'active' );
+
+        setTimeout( function() {
+            successBox.classList.add('out');
+            successBox.classList.remove('active');
+        }, 2000 );
+
+        setTimeout( function() {
+            successBox.classList.remove('out');
+        }, 2400 );
     }
 
     function reloadColors() {
