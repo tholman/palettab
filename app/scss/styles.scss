@@ -313,6 +313,7 @@ $squareWidth: 10px;
 
 			.success-box {
 				-webkit-transform: translateX(-50%) translateY(100px);
+				box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
 				position: absolute;
 				border-radius: 5px;
 				margin-top: 100px;
@@ -324,7 +325,7 @@ $squareWidth: 10px;
 				left: 50%;
 
 				&.active {
-					-webkit-transition: all 150ms ease-out;
+					-webkit-transition: all 200ms ease-out;
 					-webkit-transform: translateX(-50%) translateY(0px);
 					opacity: 1;
 				}
