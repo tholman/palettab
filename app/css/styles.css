@@ -319,13 +319,17 @@ textarea {
   bottom: 70px;
   left: 50%;
   opacity: 0; }
-  .palette-info .colorset {
-    margin: auto;
-    width: 160px; }
-    .palette-info .colorset .sweet-color {
-      width: 20%;
-      height: 5px;
-      float: left; }
+  .palette-info .colorset .sweet-color {
+    -webkit-transition: width 100ms ease;
+    -moz-transition: width 100ms ease;
+    -ms-transition: width 100ms ease;
+    -o-transition: width 100ms ease;
+    transition: width 100ms ease;
+    width: 35px;
+    height: 5px;
+    float: left; }
+  .palette-info:hover .colorset .sweet-color {
+    width: 45px; }
   .palette-info .name {
     text-decoration: none;
     text-transform: capitalize;

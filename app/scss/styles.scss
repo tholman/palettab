@@ -472,13 +472,21 @@ $squareWidth: 10px;
 	opacity: 0;
 
 	.colorset {
-		margin: auto;
-		width: 160px;
+		// margin: auto;
+		// width: 160px;
 
 		.sweet-color {
-			width: 20%;
+			@include transition( width, 100ms, ease );
+			width: 35px;
 			height: 5px;
 			float: left;
+		}
+	}
+
+	&:hover {
+
+		.colorset .sweet-color {
+			width: 45px;
 		}
 	}
 
