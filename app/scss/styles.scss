@@ -472,21 +472,22 @@ $squareWidth: 10px;
 	opacity: 0;
 
 	.colorset {
-		// margin: auto;
-		// width: 160px;
+		-webkit-transition: -webkit-transform 300ms ease;
+		margin: auto;
+		width: 160px;
+		height: 5px;
 
 		.sweet-color {
-			@include transition( width, 100ms, ease );
-			width: 35px;
+			width: 33px;
+			margin-left: -1px;
 			height: 5px;
 			float: left;
 		}
 	}
 
 	&:hover {
-
-		.colorset .sweet-color {
-			width: 45px;
+		.colorset {
+			@include transform( scaleX(1.3) );
 		}
 	}
 
