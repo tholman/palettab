@@ -1,6 +1,6 @@
 {
-	"name": "Color Fonts",
-	"description": "A chrome extension to bring awesome colors and fonts to the new tab page!",
+	"name": "Palettab",
+	"description": "Bringing awesome colors and fonts to the new tab page! A little bit of something fresh every time you hit that new tab button.",
 	"version": "1.0",
 	"incognito": "split",
 
