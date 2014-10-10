@@ -78,16 +78,16 @@ var colorFonts = (function() {
 
         setTimeout( function() {
             revealCards();
-        }, 1000 );
+        }, 2000 );
 
         setTimeout( function() {
             paletteInfo.style.opacity = 1;
-        }, 1200 );
+        }, 2200 );
 
         setTimeout( function() {
             reloadButton.classList.add( 'active' );
             loader.stop();
-        }, 1500 );
+        }, 2500 );
 
     }
 
