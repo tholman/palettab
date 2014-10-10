@@ -472,7 +472,7 @@ $squareWidth: 10px;
 	opacity: 0;
 
 	.colorset {
-		-webkit-transition: -webkit-transform 300ms ease;
+		-webkit-transition: -webkit-transform 100ms ease-out;
 		margin: auto;
 		width: 160px;
 		height: 5px;
