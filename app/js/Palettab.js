@@ -1,4 +1,10 @@
-var colorFonts = (function() {
+/**
+ * Palettab by Claudio & Tim.
+ *  - This is a chrome extension at the moment, so no need for
+ *    browser prefixes. Should fix them anyway... but oh well.
+ */
+
+var Palettab = (function() {
 
     'use strict';
     var body, reloadButton, reloadSvg, textField;
@@ -66,9 +72,11 @@ var colorFonts = (function() {
 
         // Bind events
         reloadButton.addEventListener('click', function() { reloadClick() });
+        window.addEventListener('resize', function() { onResize() });
         assignFonts();
 
         initializePositions();
+        positionReload();
 
         setTimeout( function() {
             body.style.backgroundColor = '#f8f8f8'; // This fades in the color.
@@ -89,12 +97,34 @@ var colorFonts = (function() {
             loader.stop();
         }, 2500 );
 
+        setTimeout( function() {
+            // Remove main card delays, they won't animate in or out again.
+            for( var i = 0; i < 5; i++ ) {
+                cardSets[i].main.style.webkitTransitionDelay = '0ms';
+                cardSets[i].main.style.webkitTransitionDuration = '0ms';
+            }
+
+            reloadButton.style.webkitTransitionDuration = '0ms';
+        }, 3000 );
+
+    }
+
+    function onResize() {
+        revealCards();
+        positionReload();
+    }
+
+    function positionReload() {
+
+        var cardTop = window.innerHeight / 2 - (cardHeight / 2);
+        reloadButton.style.top = (( cardTop / 2 ) - 35) + 'px';
+
     }
 
     // Series of timed animations, to reveal the font cards.
     function revealCards() {
 
-        var top = Math.floor(window.innerHeight / 2);
+        var top = Math.floor(window.innerHeight / 2) - 20;
         var center = Math.floor(window.innerWidth / 2);
         var j = 0;
         for( var i = -2; i < 3; i++ ){
@@ -384,7 +414,6 @@ var colorFonts = (function() {
 
         var cardElements = document.querySelectorAll( '.card-holster' );
         for( i = 0; i < cardElements.length; i++ ) {
-            
             var card = createCard( cardElements[i] );
             card.front.main.style["-webkit-transition-delay"] = (( i * 200 ) + 'ms, 0ms');
             card.back.main.style["-webkit-transition-delay"] = (( i * 200 ) + 'ms, 0ms');
@@ -405,4 +434,4 @@ var colorFonts = (function() {
 
 })();
 
-colorFonts();
+Palettab();
