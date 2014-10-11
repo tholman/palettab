@@ -1,8 +1,9 @@
 {
 	"name": "Palettab",
 	"description": "Bringing awesome colors and fonts to the new tab page! A little bit of something fresh every time you hit that new tab button.",
-	"version": "1.0",
+	"version": "1.0.1",
 	"incognito": "split",
+	"author": "Tim & Claudio",
 
 	"chrome_url_overrides": {
 		"newtab": "index.html"
