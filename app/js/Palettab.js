@@ -89,7 +89,9 @@ var Palettab = (function() {
         }, 2000 );
 
         setTimeout( function() {
-            paletteInfo.style.opacity = 1;
+            if( window.innerHeight > 650) {
+                paletteInfo.style.opacity = 1;
+            }
         }, 2200 );
 
         setTimeout( function() {
@@ -112,19 +114,35 @@ var Palettab = (function() {
     function onResize() {
         revealCards();
         positionReload();
+
+        if (window.innerHeight < 650) {
+            paletteInfo.style.opacity = '0';
+        } else {
+            paletteInfo.style.opacity = '1';
+        }
     }
 
     function positionReload() {
 
+        var modifier = -35;
+        if( window.innerHeight < 650) {
+            modifier = -25;
+        }
+
         var cardTop = window.innerHeight / 2 - (cardHeight / 2);
-        reloadButton.style.top = (( cardTop / 2 ) - 35) + 'px';
+        reloadButton.style.top = (( cardTop / 2 ) + modifier) + 'px';
 
     }
 
     // Series of timed animations, to reveal the font cards.
     function revealCards() {
 
-        var top = Math.floor(window.innerHeight / 2) - 20;
+        var modifier = -20;
+        if( window.innerHeight < 650) {
+            modifier = 0;
+        }
+
+        var top = Math.floor(window.innerHeight / 2) + modifier;
         var center = Math.floor(window.innerWidth / 2);
         var j = 0;
         for( var i = -2; i < 3; i++ ){
