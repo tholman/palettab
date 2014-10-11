@@ -533,7 +533,6 @@ footer {
 		}
 	}
 
-
 	.footer-item {
 		-webkit-transition: -webkit-transform 200ms ease-out;
 		-webkit-transform: translateY( 50px );
@@ -616,6 +615,19 @@ footer {
 		float: left;
 		fill: #fff;
 	}
+
+	.share {
+		margin-top: 7px;
+		float: right;
+		
+		.facebook, .twitter {
+			cursor: pointer;
+		}
+
+		.facebook {
+			margin-left: 6px;
+		}
+	}
 }
 
 .expander {
@@ -642,3 +654,11 @@ footer {
     	opacity: 0;
     }
 }
+
+@media only screen and (max-width : 1129px) {
+
+	.footer-item .about {
+		padding-top: 10px !important;
+	}
+}
+

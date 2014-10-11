@@ -9,6 +9,7 @@ var Palettab = (function() {
     'use strict';
     var body, reloadButton, reloadSvg, textField;
 
+    var twitterButton, facebookButton;
     var colorSet, localLoader;
     var cardSets = [];
     var paletteInfo, paletteName, paletteCreator, paletteColors;
@@ -74,12 +75,15 @@ var Palettab = (function() {
         reloadButton.addEventListener('click', function() { reloadClick() });
         window.addEventListener('resize', function() { onResize() });
         assignFonts();
+        twitterButton.addEventListener( 'click', function() { twitterClick() });
+        facebookButton.addEventListener( 'click', function() { facebookClick() });
 
         initializePositions();
         positionReload();
 
+        // Nice, a ton of setTimeouts. Cool Tim, What were you thinking?
         setTimeout( function() {
-            body.style.backgroundColor = '#f8f8f8'; // This fades in the color.
+            body.style.backgroundColor = '#f8f8f8'; // This fades in the bg color.
             assignFirstColorSet();
             loader( colorSet.colors );
         }, 0 );
@@ -108,7 +112,6 @@ var Palettab = (function() {
 
             reloadButton.style.webkitTransitionDuration = '0ms';
         }, 3000 );
-
     }
 
     function onResize() {
@@ -131,7 +134,6 @@ var Palettab = (function() {
 
         var cardTop = window.innerHeight / 2 - (cardHeight / 2);
         reloadButton.style.top = (( cardTop / 2 ) + modifier) + 'px';
-
     }
 
     // Series of timed animations, to reveal the font cards.
@@ -370,6 +372,38 @@ var Palettab = (function() {
         console.log( "fail!" );
     }
 
+    function twitterClick() {
+
+        var leftPosition, topPosition;
+        var width = 600;
+        var height = 250;
+        leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
+        topPosition = (window.screen.height / 2) - ((height / 2) + 50);
+
+        var text = "Palettab, something new with every tab! by @twholman & @claudioguglieri -";
+        var url  = "http://palettab.com/";
+
+        var tweet_url = 'https://twitter.com/intent/tweet?text=';
+        tweet_url     += encodeURIComponent(text);
+        tweet_url     += '&url=' + encodeURIComponent(url);
+        window.open( tweet_url, '_blank', "height=250,width=600,modal=yes,alwaysRaised=yes,top=" + topPosition + ',left=' + leftPosition );
+    }
+
+    function facebookClick() {
+
+        var leftPosition, topPosition;
+        var width = 700;
+        var height = 330;
+        leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
+        topPosition = (window.screen.height / 2) - ((height / 2) + 50);
+        var windowFeatures = "status=no,height=" + height + ",width=" + width + ",resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no";
+        
+        var u = 'http://palettab.com/'
+        var t = 'Palettab, a chrome extension to bring something new, to the new tab button.';
+
+        window.open('http://www.facebook.com/sharer.php?u=' + encodeURIComponent(u) + '&t=' + encodeURIComponent(t),'sharer', windowFeatures);
+    }
+
     // Yeah, this is a bit excessive, but eh, nicer I feel than 3 functions that do small things.
     function createCard( baseElement ) {
 
@@ -420,12 +454,13 @@ var Palettab = (function() {
         reloadSvg        = reloadButton.querySelector( 'svg' );
         textField        = document.createElement( 'textarea' );
 
+        twitterButton    = document.querySelector( '.share .twitter' );
+        facebookButton   = document.querySelector( '.share .facebook' );
+
         // Cards
-        var cardElement     = document.querySelector( '.card-holster' );
-        // Clone this card, 4 more times.
+        var cardElement  = document.querySelector( '.card-holster' );
         var i = 0;
         for( i; i < 4; i++ ) {
-
             var newCard = cardElement.cloneNode( true );
             cardElement.parentNode.insertBefore(newCard, cardElement.nextSibling);
         }
