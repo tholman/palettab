@@ -255,6 +255,7 @@ textarea {
       bottom: 0px;
       left: 0; }
       .card-holster .card .bottom-half .sexy-tricky-to-code-dip {
+        margin-bottom: -1px;
         overflow: hidden;
         height: 10px; }
         .card-holster .card .bottom-half .sexy-tricky-to-code-dip .left-part, .card-holster .card .bottom-half .sexy-tricky-to-code-dip .right-part {
