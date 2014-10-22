@@ -72,11 +72,6 @@ body {
 	min-height: 600px;
 	height: 100%;
 	width: 100%;
-
-	a {
-		color: #FF6900;
-		text-decoration: none;
-	}
 }
 
 .left {
@@ -211,6 +206,31 @@ body {
 	}
 }
 
+.us {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	margin-left: -250px;
+	position: absolute;
+	font-size: 12px;
+	bottom: 15px;
+	height: 20px;
+	color: #aaa;
+	left: 50%;
+	line-height: 25px;
+	vertical-align: top;
+	z-index: 1;
+
+	.description {
+		vertical-align: top;
+		line-height: 20px;
+		margin-right: 6px;
+	}
+
+	a {
+		vertical-align: top;
+		color: #aaa;
+	}
+}
+
 $squareWidth: 10px;
 .logo-colors {
 
@@ -260,6 +280,7 @@ $squareWidth: 10px;
 	right: 100px;
 	top: 50%;
 	margin-top: -260px;
+	z-index: 2;
 
 	.shine {
 		box-shadow: 0px 0px 90px 15px rgba(255, 255, 255, 0.3);

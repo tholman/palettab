@@ -33,9 +33,6 @@ body {
   min-height: 600px;
   height: 100%;
   width: 100%; }
-  .wrapper a {
-    color: #FF6900;
-    text-decoration: none; }
 
 .left {
   min-height: 600px;
@@ -134,6 +131,26 @@ body {
     vertical-align: bottom;
     margin-right: 10px; }
 
+.us {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  margin-left: -250px;
+  position: absolute;
+  font-size: 12px;
+  bottom: 15px;
+  height: 20px;
+  color: #aaa;
+  left: 50%;
+  line-height: 25px;
+  vertical-align: top;
+  z-index: 1; }
+  .us .description {
+    vertical-align: top;
+    line-height: 20px;
+    margin-right: 6px; }
+  .us a {
+    vertical-align: top;
+    color: #aaa; }
+
 .logo-colors {
   height: 30px;
   width: 30px;
@@ -162,7 +179,8 @@ body {
   position: absolute;
   right: 100px;
   top: 50%;
-  margin-top: -260px; }
+  margin-top: -260px;
+  z-index: 2; }
   .card-holster .shine {
     box-shadow: 0px 0px 90px 15px rgba(255, 255, 255, 0.3);
     -webkit-transform: translateY(50px) translateX(0px) rotateZ(-35deg);
