@@ -316,7 +316,7 @@ var Palettab = (function() {
         colorSet = getColorSet();
         var maxNameLength = 15;
         while (colorSet.title.length > maxNameLength ) {
-            colorSet = colors[ Math.floor( Math.random() * colors.length )];
+            colorSet = getColorSet(true);
         }
 
         assignColors( colorSet );
