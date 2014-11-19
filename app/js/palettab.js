@@ -10,7 +10,7 @@ var Palettab = (function() {
     var body, reloadButton, reloadSvg, textField;
 
     var twitterButton, facebookButton;
-    var colorSet, localLoader;
+    var colorSet;
     var cardSets = [];
     var paletteInfo, paletteName, paletteCreator, paletteColors;
 
@@ -21,8 +21,6 @@ var Palettab = (function() {
 
     var flipped = false;
     var reloadEnabled = true;
-
-    var inertiaNames = [ 'inertia-a', 'inertia-b', 'inertia-x', 'inertia-c', 'inertia-d']
 
     /* -------------------------
     /* UTILS
@@ -47,9 +45,8 @@ var Palettab = (function() {
     // Initialize
     function init() {
 
-        var i = 0, j;
+        var i = 0;
         for( i; i < cardSets.length; i++ ) {
-            var j = 0;
 
             (function() {
                 var card = cardSets[i];
@@ -168,11 +165,11 @@ var Palettab = (function() {
         }
 
         // @TODO: Move into above loop.
-        cardSets[0].main.style.zIndex = 1
-        cardSets[1].main.style.zIndex = 2
-        cardSets[2].main.style.zIndex = 3
-        cardSets[3].main.style.zIndex = 2
-        cardSets[4].main.style.zIndex = 1
+        cardSets[0].main.style.zIndex = 1;
+        cardSets[1].main.style.zIndex = 2;
+        cardSets[2].main.style.zIndex = 3;
+        cardSets[3].main.style.zIndex = 2;
+        cardSets[4].main.style.zIndex = 1;
 
         cardSets[0].main.style.webkitTransitionDelay = '300ms';
         cardSets[1].main.style.webkitTransitionDelay = '150ms';
@@ -291,15 +288,32 @@ var Palettab = (function() {
         }, 2400 );
     }
 
+    function getColorSet(forceFresh)
+    {
+        var index;
+        var storedIndex = parseInt(sessionStorage.getItem("lastColorIndex"), 10);
+
+        // We use history.length to determine if the back button was pressed
+        // in order to restore the last used color set
+        if (history.length > 1 && !isNaN(storedIndex) && !forceFresh)
+            index = storedIndex;
+        else
+            index = Math.floor( Math.random() * colors.length);
+
+        sessionStorage.setItem("lastColorIndex", index);
+
+        return colors[index];
+    }
+
     function reloadColors() {
-        colorSet = colors[ Math.floor( Math.random() * colors.length )]; //Random
+        colorSet = getColorSet(true);
         assignColors( colorSet );
     }
 
-    // Inneficient way to get a color set that has a small name.
+    // Inefficient way to get a color set that has a small name.
     function assignFirstColorSet() {
 
-        colorSet = colors[ Math.floor( Math.random() * colors.length )]; //Random      
+        colorSet = getColorSet();
         var maxNameLength = 15;
         while (colorSet.title.length > maxNameLength ) {
             colorSet = colors[ Math.floor( Math.random() * colors.length )];
@@ -398,7 +412,7 @@ var Palettab = (function() {
         topPosition = (window.screen.height / 2) - ((height / 2) + 50);
         var windowFeatures = "status=no,height=" + height + ",width=" + width + ",resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no";
         
-        var u = 'http://palettab.com/'
+        var u = 'http://palettab.com/';
         var t = 'Palettab, a chrome extension to bring something new, to the new tab button.';
 
         window.open('http://www.facebook.com/sharer.php?u=' + encodeURIComponent(u) + '&t=' + encodeURIComponent(t),'sharer', windowFeatures);
