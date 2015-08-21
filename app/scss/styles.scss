@@ -656,6 +656,59 @@ footer {
     }
 }
 
+@media only screen and (max-width : 1300px) {
+
+	.card-holster {
+
+		.card {
+			height: 390px;
+			width: 230px;
+
+			.top-half .font-container {
+				top: 70px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width : 1200px) {
+
+	.card-holster {
+
+		.card {
+			height: 320px;
+			width: 200px;
+
+			.top-half {
+
+				.font-container {
+					top: 20px;
+
+					.sample-container.large {
+						bottom: 50px;
+
+						.sample {
+							font-size: 65px;
+						}
+					}
+
+					.sample-container.small {
+						bottom: 5px;
+
+						.sample {
+					    	font-size: 26px;
+					    }
+					}
+				}
+
+				.hex-container .hex-centerer {
+				    top: 110px;
+				}
+			}
+		}
+	}
+}
+
 @media only screen and (max-width : 1129px) {
 
 	.footer-item .about {

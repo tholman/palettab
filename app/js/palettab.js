@@ -112,9 +112,11 @@ var Palettab = (function() {
     }
 
     function onResize() {
+
         revealCards();
         positionReload();
 
+        // @TODO: Should be media query.
         if (window.innerHeight < 650) {
             paletteInfo.style.opacity = '0';
         } else {
@@ -135,6 +137,9 @@ var Palettab = (function() {
 
     // Series of timed animations, to reveal the font cards.
     function revealCards() {
+        
+        cardWidth = cardSets[0].front.main.clientWidth;
+        cardHeight = cardSets[0].front.main.clientHeight;
 
         var modifier = -20;
         if( window.innerHeight < 650) {

@@ -1,4 +1,4 @@
-/*
+/*!
  * Palettab!
  *
  * MIT licensed
@@ -24,7 +24,7 @@ html, body, .main {
   height: 100%;
   width: 100%;
   padding: 0px;
-  margin: 0px;}
+  margin: 0px; }
 
 body {
   -webkit-transition: background-color 1000ms linear;
@@ -447,11 +447,33 @@ footer {
 @-webkit-keyframes expand {
   0% {
     box-shadow: 0px 0px 1px 0px; }
-
   100% {
     box-shadow: 0px 0px 100px 500px;
     opacity: 0; } }
-
+@media only screen and (max-width: 1300px) {
+  .card-holster .card {
+    height: 390px;
+    width: 230px; }
+    .card-holster .card .top-half .font-container {
+      top: 70px; } }
+@media only screen and (max-width: 1200px) {
+  .card-holster .card {
+    height: 320px;
+    width: 200px; }
+    .card-holster .card .top-half .font-container {
+      top: 20px; }
+      .card-holster .card .top-half .font-container .sample-container.large {
+        bottom: 50px; }
+        .card-holster .card .top-half .font-container .sample-container.large .sample {
+          font-size: 65px; }
+      .card-holster .card .top-half .font-container .sample-container.small {
+        bottom: 5px; }
+        .card-holster .card .top-half .font-container .sample-container.small .sample {
+          font-size: 26px; }
+    .card-holster .card .top-half .hex-container .hex-centerer {
+      top: 110px; } }
 @media only screen and (max-width: 1129px) {
   .footer-item .about {
     padding-top: 10px !important; } }
+
+/*# sourceMappingURL=styles.css.map */
