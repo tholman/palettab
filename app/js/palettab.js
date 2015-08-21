@@ -288,17 +288,17 @@ var Palettab = (function() {
         }, 2400 );
     }
 
-    function getColorSet(forceFresh)
-    {
+    function getColorSet(forceFresh) {
         var index;
         var storedIndex = parseInt(sessionStorage.getItem("lastColorIndex"), 10);
 
         // We use history.length to determine if the back button was pressed
         // in order to restore the last used color set
-        if (history.length > 1 && !isNaN(storedIndex) && !forceFresh)
+        if (history.length > 1 && !isNaN(storedIndex) && !forceFresh) {
             index = storedIndex;
-        else
+        } else {
             index = Math.floor( Math.random() * colors.length);
+        }
 
         sessionStorage.setItem("lastColorIndex", index);
 
