@@ -1,4 +1,4 @@
-/*
+/*!
  * site
  *
  * MIT licensed
@@ -114,8 +114,9 @@ body {
     font-size: 12px;
     font-weight: bold;
     margin-top: 40px;
-    display: block;
-    width: 340px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 210px;
     height: 40px;
     color: #fff; }
     .right .button:hover {
@@ -361,3 +362,5 @@ body {
             margin-top: 4px;
             font-size: 14px;
             color: #cccccc; }
+
+/*# sourceMappingURL=styles.css.map */

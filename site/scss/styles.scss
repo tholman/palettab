@@ -114,9 +114,9 @@ body {
 
 			&:nth-child(5) {
 				background: #312633;
-			}	
+			}
 		}
-	} 
+	}
 }
 
 .right {
@@ -179,15 +179,16 @@ body {
 		font-size: 12px;
 		font-weight: bold;
 		margin-top: 40px;
-		display: block;
-		width: 340px;
+		margin-right: 10px;
+		display: inline-block;
+		width: 210px;
 		height: 40px;
 		color: #fff;
 
 		&:hover {
-			background: linear-gradient(to top, #5587da 0%, #5c8ded 100%); 
+			background: linear-gradient(to top, #5587da 0%, #5c8ded 100%);
 	  	}
-    	
+
     	&:active {
       		background: linear-gradient(to top, #5c8ded 0%, #5587da 100%);
       	}
