@@ -1,9 +1,9 @@
 {
-	"name": "Palettab",
+  "name": "Palettab",
 	"description": "Bringing awesome colors and fonts to the new tab page! A little bit of something fresh every time you hit that new tab button.",
-	"version": "1.0.5",
-	"incognito": "split",
-	"author": "Tim & Claudio",
+	"version": "1.1.0",
+	"incognito": "spanning",
+	"author": "Tim & Claudio & wildsky",
 
 	"chrome_url_overrides": {
 		"newtab": "index.html"
@@ -13,5 +13,20 @@
 		"clipboardWrite"
 	],
 
-	"manifest_version": 2
+  "manifest_version": 2,
+
+  "applications": {
+    "gecko": {
+      "id": "@palettab",
+      "strict_min_version": "54.0"
+    }
+  },
+
+  "homepage_url": "https://github.com/tholman/palettab",
+
+  "license": "MIT",
+
+  "keywords": [
+    "tab", "color", "Palettab"
+  ]
 }
