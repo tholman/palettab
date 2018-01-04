@@ -7,7 +7,7 @@ FireFox edits done by [Wildskyf](https://github.com/tholman/palettab/pull/9/)
 ## Installation:
 
 - You can install on Chrome from the [Chrome Store](https://chrome.google.com/webstore/detail/palettab/bidckpnndigbjhmojikkhmejkfkpgoih)
-- You can install on Firefox via [Firefox Add Ons](https://addons.mozilla.org/en-US/firefox/addon/palettab-fx/)
+- You can install on Firefox via [Firefox Add Ons](https://addons.mozilla.org/en-US/firefox/addon/palettab-newtab/)
 
 ## App:
 
